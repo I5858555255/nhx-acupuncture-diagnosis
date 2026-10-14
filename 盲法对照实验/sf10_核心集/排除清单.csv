@@ -1,0 +1,23 @@
+﻿case_id,主类别,全部命中类别,判定依据摘要,证据定位,备注
+67_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[67_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+68_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[68_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+69_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[69_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+70_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[70_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+71_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[71_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+72_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[72_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+73_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[73_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+74_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[74_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+75_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[75_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+76_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[76_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+77_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[77_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+78_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[78_01]=followup_66（锚案 66_01）；组装清单.csv chain=followup_66,
+148_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[148_01]=followup_146（锚案 146_01）；组装清单.csv chain=followup_146,
+149_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[149_01]=followup_146（锚案 146_01）；组装清单.csv chain=followup_146,
+199_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[199_01]=followup_198（锚案 198_01）；组装清单.csv chain=followup_198,
+200_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[200_01]=followup_198（锚案 198_01）；组装清单.csv chain=followup_198,
+201_01,①,"①,②",gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[201_01]=followup_198（锚案 198_01）；组装清单.csv chain=followup_198,"主①次②：症状仅一行『弱視/作療程中』(symptoms_v2 缺 9/14，K 缺5)；hist 对照 TP 0→{三陰交,太沖} 已证链继承有效"
+202_01,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[202_01]=followup_198（锚案 198_01）；组装清单.csv chain=followup_198,
+216_02,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[216_02]=followup_216（锚案 216_01）；组装清单.csv chain=followup_216,
+216_03,①,①,gold 由锚案处方链解析（同前/续方+加减），symptom-only 无既往处方，继承穴不可重建,gold pkl summary.chain_map[216_03]=followup_216（锚案 216_01）；组装清单.csv chain=followup_216,
+216_04,②,②,K 缺 5/5（脉/舌/触诊压痛/耳穴/望诊），symptoms_v2 缺 11/14；症状仅孤立『右耳孔覺變小了』，診斷『作療程中』；gold 面瘫疗程穴组(合谷/地倉/廉泉/攢竹/解谿/陽白/頰車/魚腰)在 symptom-only 下无触发依据，廉泉依赖舌麻既往史,symptoms_v2\216_04_symptoms_v2.json（缺失字段清单11项）；全集针灸首诊\full\216_04_full.txt『來診原因：右耳孔覺變小了…診斷：作療程中』；误差分类表v10.csv FN归类=规则未命中:7;资料缺失:1,visit_type=复诊但非 chain followup（chain_map 仅 216_02/03）；与 owner 指定裁决一致
+207_01,③,③,gold『左太淵→右手腕橈側痛』无原书依据：太渊在知识库仅肺经母穴/脉会(补肺虚/久咳/鼻久病/心肺同治)；妈妈手/腕管/狭窄性腱鞘炎/拇指/手腕痛全库零命中；知识库对称治疗明载『太渊痛取太溪』，与 gold 对侧取太渊方向相反→技能不可规则化,知识库检索：诊断与针灸实施指南.md L390(太渊=俞母穴补肺虚久咳)、特效库全量.json L68/L157(鼻久病/肺虚)、针灸篇-知识条目整理.md L686-710(太渊穴条)、L1400(养老透间使=主妇手)、L1892(太渊痛取太溪)；误差分类表v10.csv FN归类=规则未命中:3,E1 判『规则未命中(养老透间使 vs gold 太渊)』与本裁决不矛盾：太渊治手腕无原书依据→天然不可开
