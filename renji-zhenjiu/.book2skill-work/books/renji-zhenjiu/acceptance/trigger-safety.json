@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "suite_id": "eval-safety",
+  "target": "cap.renji-zhenjiu.safety-contraindications",
+  "split_seed": 42,
+  "train_ratio": 0.6,
+  "trigger_cases": [
+    {
+      "case_id": "safe-trigger-01",
+      "prompt": "孕妇能针灸吗，有哪些穴不能碰",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "safe-trigger-02",
+      "prompt": "头部和面部能不能灸",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "safe-trigger-03",
+      "prompt": "针灸留针一般留多久，怎么起针",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "safe-sibling-01",
+      "prompt": "感冒流鼻涕怎么针灸",
+      "expected": "sibling",
+      "sibling_target": "renji-acupuncture-formulas",
+      "runs": 1
+    },
+    {
+      "case_id": "safe-edge-01",
+      "prompt": "自己在家想艾灸保健，该灸哪些位置",
+      "expected": "sibling",
+      "sibling_target": "renji-pediatric-tuina-wellness",
+      "runs": 1
+    }
+  ]
+}

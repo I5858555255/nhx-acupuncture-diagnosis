@@ -1,0 +1,3 @@
+﻿盲法主穴/案 mean= 3.81  median= 4
+gold穴/案 mean= 5.78  median= 5
+盲法主穴命中gold均值= 1.43

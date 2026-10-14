@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "suite_id": "eval-formulas",
+  "target": "cap.renji-zhenjiu.formula-library",
+  "split_seed": 42,
+  "train_ratio": 0.6,
+  "trigger_cases": [
+    {
+      "case_id": "fml-trigger-01",
+      "prompt": "痛经特别厉害，怎么针灸能止痛",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "fml-trigger-02",
+      "prompt": "高血压有什么针灸调理方案",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "fml-trigger-03",
+      "prompt": "偏头痛总是右侧太阳穴跳着疼，扎哪里",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "fml-sibling-01",
+      "prompt": "什么是同身寸，怎么量",
+      "expected": "sibling",
+      "sibling_target": "renji-zhenjiu-source",
+      "runs": 1
+    },
+    {
+      "case_id": "fml-sibling-02",
+      "prompt": "这个肩痛该怎么判断它属哪条经、用子母还是俞募治疗",
+      "expected": "sibling",
+      "sibling_target": "renji-acupuncture-selection",
+      "runs": 1
+    },
+    {
+      "case_id": "fml-edge-01",
+      "prompt": "给我推荐一部好看的电影",
+      "expected": "should_not_trigger",
+      "runs": 1
+    }
+  ]
+}

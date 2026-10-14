@@ -1,0 +1,405 @@
+schema_version: 1
+bundle_id: bundle.renji-zhenjiu
+book:
+  title: 人纪系列·针灸篇（倪海厦针灸课程转录）
+  author: 倪海厦（主讲）
+  source_pack: workdir/books/renji-zhenjiu
+  baseline_tag: contract-renji-zhenjiu
+entry:
+  name: renji-zhenjiu
+  description: |
+    倪海厦《人纪·针灸篇》系统课程蒸馏包。覆盖传统针灸完整链条：穴位丈量与经络走行、
+    五行取穴文法（井荣俞原经合、子母补泻）、治疗法则分工（俞募/会郄/原络/本穴）、
+    四诊诊断（背俞压痛点、眼诊、耳针、望诊、时症）、治症选穴方案（头面五官、脏腑、妇科、
+    伤科、急症）、安全禁忌与急救序列（回阳九针、十三鬼穴、灵龟八法、放血法）、
+    小儿指针术与家庭养生。适用于"某症怎么取穴""某穴在哪/怎么找/主治什么""怎么判断虚实寒热"
+    "针灸有哪些禁忌"等问诊与取穴辅助；仅供专业针灸医师与中医药学习者参考。
+  core_principles:
+  - 辨证选穴先归经：必须知道痛在哪条经、病在哪个脏腑，绝不"哪里痛扎哪里"。
+  - 五行生克是决策文法：虚则补其母、实则泻其子；先强将被克之脏阻断传变。
+  - 按病性分派法则：内科病用俞募、经络四肢痛用子母、骨伤急症用会郄、表里同病用原络。
+  - 诊断靠压痛点+望闻问：背俞穴压痛定脏腑、耳针压痛定病位、眼诊五色定五脏；脚热=健康。
+  - 安全第一：针而勿灸灸勿针、大虚/汗/酒后不针、热/汗处/眼/阴不灸、孕妇禁针合谷三阴交。
+  - 疗效立竿见影：正确取穴下针即效；病退不改方，病进必改穴。
+  - 操作须专业：放血、深刺、灸百壮等属专业医疗行为，禁止非专业人士自行施治。
+  out_of_scope:
+  - 西医诊断与用药建议（本书对现代医学的批评属作者立场，非循证结论，不得作为医疗建议）。
+  - 治癌/治AIDS 等超出循证范围的声称（仅作为历史观点引用，不提供治疗方案）。
+  - 真人示范类操作细节（进针手势、放血手法）——文字无法替代临床指导。
+  - 繁体/简体的古籍原文考据与版本校勘。
+  stop_conditions:
+  - 用户描述的是急症/危重症（昏迷、大出血、剧烈胸痛等）时，停止给出针灸方案，提示立即就医。
+  - 用户明确是孕妇、婴幼儿（非指针术场景）或体质极度虚弱者时，仅给禁忌提示，不给针刺方案。
+  - 用户表明自己非医疗专业人员且准备自行施针时，停止输出具体操作，提示必须由执业医师操作。
+  - 涉及"治愈癌症/肿瘤/艾滋病"等重大疾病承诺时，拒绝并按边界处理。
+router_entry:
+  name: renji-zhenjiu-source
+  description: |
+    人纪针灸全书来源路由入口。当用户询问书中任意术语定义（同身寸、井荣俞原经合、天应穴、
+    灵龟八法、回阳九针等）、经络穴位索引、书中案例细节、作者观点原文，或不确定该用哪个
+    子能力时，由此入口路由到对应能力卡或共享词典；也承载未晋级为独立 Skill 的术语与案例素材。
+promotion_budget: 8
+capabilities:
+  - capability_id: cap.renji-zhenjiu.dialectical-selection
+    revision: 1
+    status: active
+    slug: renji-acupuncture-selection
+    title: 针灸辨证选穴决策
+    importance: critical
+    importance_rationale: |
+      全书核心方法论：覆盖 12 个已通过验证的候选单元（f02/f03/f04/f05/f06/f07/f08/f09/f10/
+      f15/f16/f20 及 p06/p11/p12/p15/p18/p19/p20/p25），在第二/三/四/五/六章反复出现，
+      是"辨证→取穴"主决策链路，所有治症方案的通用入口。
+    one_liner: 病位归经→辨虚实寒热→按法则（子母/俞募/会郄/原络/本穴）选穴，左病右治。
+    intents:
+      - 帮我看这个肩痛/腰痛/头痛应该怎么取穴
+      - 这种痛是新病还是久病，该补还是泻
+      - 内科病（胃病/心脏病/肝病）怎么选穴
+      - 怎么判断该用哪个治疗法则（子母/俞募/会郄）
+      - 某个穴位怎么找到具体位置
+    also_read:
+      - cap.renji-zhenjiu.diagnosis
+      - cap.renji-zhenjiu.meridian-point-db
+      - cap.renji-zhenjiu.safety-contraindications
+      - cap.renji-zhenjiu.formula-library
+    keywords:
+      - 针灸选穴
+      - 辨证取穴
+      - 子母补泻
+      - 俞募治疗
+      - 会郄治疗
+      - 原络治疗
+      - 五行生克
+      - 天应穴
+      - 近取远取
+      - acupoint selection
+      - mother-son tonify-disperse
+    also_read: []
+    card: cards/renji-acupuncture-selection.md
+    frontmatter:
+      description: |
+        用户描述疼痛/病症并询问"怎么取穴、扎哪里、该补还是泻"时使用。输入：病位/症状/虚实
+        （喜按拒按、新久、寒热）+ 可选时辰；输出：归经→虚实→法则→取穴组合+补泻+留针。
+        不适用：穴位只查定位主治（用穴位经络知识库）、安全禁忌咨询（用安全禁忌）、
+        纯西医诊断与用药。语言信号："怎么取穴/扎哪里/补还是泻/俞募/子母"。
+      tags: [acupuncture, decision, five-elements, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第三、四、五、六章（五行取穴基础/各经穴位/针刺手法/治症系列）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 全书最高频意图（取穴问诊），契约清晰（症状→方案），与其余 6 个能力近邻可区分。
+  - capability_id: cap.renji-zhenjiu.formula-library
+    revision: 1
+    status: active
+    slug: renji-acupuncture-formulas
+    title: 治症选穴方案库
+    importance: critical
+    importance_rationale: |
+      第六章治症系列（头面五官/心肺/肝胆脾胃/血症/妇科/伤科/急症）全部方案 + 23 个案例池
+      绑定，是"按病检索取穴"的直接命中路径，全书最长章节之一，用户最常按病名提问。
+    one_liner: 按病证（痛经/便秘/腰痛/失眠/咳嗽…）查辨证要点与取穴组合。
+    intents:
+      - 痛经/便秘/头痛/腰痛/失眠/咳嗽怎么针灸
+      - 某某病（乳癌/痔疮/盲肠炎/扁桃腺…）怎么治
+      - 高血压/糖尿病/心脏病有什么针灸方案
+      - 这个症状（眼干/耳鸣/牙痛/喉痛）扎哪里
+    also_read:
+      - cap.renji-zhenjiu.diagnosis
+      - cap.renji-zhenjiu.meridian-point-db
+      - cap.renji-zhenjiu.safety-contraindications
+    keywords:
+      - 治症
+      - 头痛
+      - 痛经
+      - 便秘
+      - 腰痛
+      - 失眠
+      - 痔疮
+      - 咳嗽
+      - 高血压
+      - 糖尿病
+      - 乳癌
+      - formula
+      - treatment protocol
+    also_read: []
+    card: cards/renji-acupuncture-formulas.md
+    frontmatter:
+      description: |
+        用户直接报病名/症状询问"怎么针灸/怎么治/扎哪里"时使用。输入：病证+关键鉴别
+        （寒热虚实/新久/位置）；输出：辨证要点→主穴组合→补泻手法→操作与留针。
+        不适用：泛泛的取穴方法论问题（用辨证选穴决策）、只查穴位知识（用穴位知识库）。
+        语言信号："痛经怎么针/便秘怎么治/偏头痛扎哪里/高血压针灸"。
+      tags: [acupuncture, formulas, treatment, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第六章·针灸治症系列（各科治症）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 按病检索是最自然的用户意图之一，与决策能力（方法论）互补不冲突。
+  - capability_id: cap.renji-zhenjiu.meridian-point-db
+    revision: 1
+    status: active
+    slug: renji-meridian-point-db
+    title: 穴位经络知识库
+    importance: critical
+    importance_rationale: |
+      第四、五章主体（十二正经+任督二脉+奇经八脉逐穴详解），占全书约 60% 篇幅；
+      24 条术语词典的承载基础，支撑其余所有能力的穴位定位数据源。
+    one_liner: 十二正经/任督/奇经穴位定位、找法、主治、针法、禁忌一键查询。
+    intents:
+      - 列缺/足三里/委中/太冲…穴在哪里、怎么找
+      - 某某穴主治什么、针多深、能不能灸
+      - 某条经络（肺经/胃经/胆经…）的循行和穴位
+      - 井荣俞原经合属性、原穴络穴郄穴在哪
+    also_read:
+      - cap.renji-zhenjiu.dialectical-selection
+      - cap.renji-zhenjiu.formula-library
+    keywords:
+      - 穴位
+      - 经络
+      - 列缺
+      - 足三里
+      - 委中
+      - 太冲
+      - 十二正经
+      - 任督二脉
+      - 井荣俞原经合
+      - acupoint
+      - meridian
+    also_read: []
+    card: cards/renji-meridian-point-db.md
+    frontmatter:
+      description: |
+        用户查询具体穴位/经络的定位、找法、主治、针法深浅、补泻属性、禁忌时使用。
+        输出：归经+定位+找法+主治+针法+禁忌+五俞属性。不适用：症状问"怎么治"（用治症方案库）、
+        方法论问题（用辨证选穴决策）。语言信号："某某穴在哪/怎么找/主治什么/针多深/禁灸吗"。
+      tags: [acupuncture, meridian, reference, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第四、五章（十二经络与奇经八脉逐穴详解）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 查询型知识库，独立契约明确（穴位→信息），不与其他决策类冲突。
+  - capability_id: cap.renji-zhenjiu.diagnosis
+    revision: 1
+    status: active
+    slug: renji-diagnosis
+    title: 四诊合参诊断法
+    importance: high
+    importance_rationale: |
+      6 个诊断类候选单元（f11 背俞压痛点/f12 眼诊/f13 耳针/f14 望诊/f18 时症 + p20/p21）
+      支撑；诊断是选穴决策的输入前提，血癌/狼疮/肺癌案例均以压痛点诊断为主线。
+    one_liner: 压痛点（背俞/耳针/天应）+眼诊+望诊+时症+虚实寒热，四诊合参定病位。
+    intents:
+      - 怎么判断病人哪里有问题（压哪个椎/耳部哪个点）
+      - 帮我看看这个症状属于哪个脏腑/哪条经
+      - 眼诊/耳针/望诊怎么辨病
+      - 如何判断虚实寒热（喜按拒按、脚冷脚热）
+    also_read:
+      - cap.renji-zhenjiu.dialectical-selection
+      - cap.renji-zhenjiu.formula-library
+    keywords:
+      - 诊断
+      - 压痛点
+      - 背俞穴
+      - 眼诊
+      - 耳针
+      - 望诊
+      - 虚实
+      - 寒热
+      - 脚冷脚热
+      - diagnosis
+      - palpation
+    also_read: []
+    card: cards/renji-diagnosis.md
+    frontmatter:
+      description: |
+        用户问"怎么判断是哪里有问题/属哪个脏腑/虚实寒热"时使用。输入：症状/体征/按压反应/
+        时辰；输出：辨证结论（病位归经+虚实寒热+诊断依据）。不适用：直接要取穴方案
+        （用辨证选穴决策）、查穴位（用知识库）。语言信号："怎么诊断/压哪里痛/眼诊/耳针/
+        虚实/寒热/脚冷脚热"。
+      tags: [acupuncture, diagnosis, inspection, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第四、六章（俞穴诊断/眼诊法/耳针/治症辨证）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 诊断意图独立且高频，输出契约（辨证结论）与治疗类能力清晰区分。
+  - capability_id: cap.renji-zhenjiu.safety-contraindications
+    revision: 1
+    status: active
+    slug: renji-safety-contraindications
+    title: 针灸安全禁忌与操作规范
+    importance: high
+    importance_rationale: |
+      安全底线贯穿全书（p01-p10/p16/p17/p22 及 16 条反例池），任何取穴方案的安全前置；
+      孕妇禁针、禁灸部位、深浅规范等属于不可妥协的硬规则，直接关系人身安全。
+    one_liner: 针灸禁忌清单（不下针/不灸时机、禁针穴、深浅、孕妇、火罐）+操作规范。
+    intents:
+      - 这个穴/部位能不能灸、能不能针
+      - 孕妇/生理期能不能针灸
+      - 针灸有什么禁忌和注意事项
+      - 留针多久、怎么起针、灸后怎么办
+    also_read:
+      - cap.renji-zhenjiu.dialectical-selection
+      - cap.renji-zhenjiu.formula-library
+      - cap.renji-zhenjiu.emergency-special
+      - cap.renji-zhenjiu.pediatric-wellness
+    keywords:
+      - 禁忌
+      - 禁针
+      - 禁灸
+      - 孕妇
+      - 安全
+      - 深浅
+      - 火罐
+      - 留针
+      - 补泻
+      - contraindication
+      - safety
+    also_read: []
+    card: cards/renji-safety-contraindications.md
+    frontmatter:
+      description: |
+        用户问"能不能灸/能不能针/有什么禁忌/孕妇能针灸吗/留针多久/灸后怎么办"时使用。
+        输出：禁忌判断+操作规范+风险提示。不适用：取穴方案（用辨证选穴决策）、
+        病证治疗（用治症方案库）。语言信号："禁忌/禁针/禁灸/孕妇/深浅/留针/火罐"。
+      tags: [acupuncture, safety, contraindication, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第一、二、五、六章（针灸时机/深浅/手法/孕期忌针）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 安全咨询独立意图强，是任何针灸操作的前置检查项。
+  - capability_id: cap.renji-zhenjiu.emergency-special
+    revision: 1
+    status: active
+    slug: renji-emergency-special-needling
+    title: 急救与特殊针法
+    importance: medium
+    importance_rationale: |
+      f21 急救序列+回阳九针+十三鬼穴+灵龟八法/子午流注+放血法；低频但高价值场景
+      （昏迷、脑震荡、癫狂痫、时间开穴），案例池 c09/c10/c11/c18 绑定。
+    one_liner: 昏迷急救阶梯、放血急救、回阳九针/十三鬼穴序列、灵龟八法时间开穴。
+    intents:
+      - 昏迷/晕倒怎么急救
+      - 脑震荡/中风的针灸处理
+      - 灵龟八法/子午流注怎么开穴
+      - 放血（十宣/委中/然谷）怎么做
+    also_read:
+      - cap.renji-zhenjiu.safety-contraindications
+      - cap.renji-zhenjiu.formula-library
+    keywords:
+      - 急救
+      - 昏迷
+      - 放血
+      - 中风
+      - 灵龟八法
+      - 子午流注
+      - 回阳九针
+      - 十三鬼穴
+      - emergency
+      - bloodletting
+    also_read: []
+    card: cards/renji-emergency-special-needling.md
+    frontmatter:
+      description: |
+        用户问昏迷/晕厥/脑震荡/中风的针灸急救序列、放血操作、灵龟八法/子午流注开穴、
+        回阳九针/十三鬼穴序列时使用。输出：操作序列+顺序+注意。不适用：日常病证取穴
+        （用治症方案库）、安全咨询（用安全禁忌）。语言信号："急救/昏迷/放血/灵龟八法/
+        回阳九针/十三鬼穴"。紧急场景优先提示就医。
+      tags: [acupuncture, emergency, special-technique, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第一章（急救法）、第六章（灵龟八法/回阳九针/十三鬼穴）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 急救与特殊针法场景特殊、序列明确，独立成技能无近邻冲突。
+  - capability_id: cap.renji-zhenjiu.pediatric-wellness
+    revision: 1
+    status: active
+    slug: renji-pediatric-tuina-wellness
+    title: 小儿指针与家庭养生
+    importance: medium
+    importance_rationale: |
+      f17 指针术+三关辨证+开天河水+耳轮调眼珠（c22 案例）+养生功法（耳按摩/五脏逼毒/
+      灸关元膏肓）；儿科与家庭保健是独立场景，对普通用户（非医师）价值最高。
+    one_liner: 小儿指针推拿（三关/天河水）与日常养生功法（耳按摩/逼毒/艾灸保健）。
+    intents:
+      - 小儿发烧/惊风/黄疸怎么推拿
+      - 三关怎么辨证、天河水怎么开
+      - 日常怎么养生（耳朵按摩/五脏逼毒）
+      - 家里怎么艾灸保健（关元/足三里）
+    also_read:
+      - cap.renji-zhenjiu.safety-contraindications
+      - cap.renji-zhenjiu.formula-library
+    keywords:
+      - 小儿推拿
+      - 指针
+      - 三关
+      - 天河水
+      - 养生
+      - 艾灸
+      - 耳朵按摩
+      - 五脏逼毒
+      - pediatric
+      - tuina
+      - wellness
+    also_read: []
+    card: cards/renji-pediatric-tuina-wellness.md
+    frontmatter:
+      description: |
+        用户问小儿（发烧/惊风/黄疸/吐奶/眼珠异常）推拿指针、三关辨证、开散天河水，
+        或家庭养生（耳按摩、五脏逼毒、艾灸保健穴）时使用。输出：操作+方向+注意事项。
+        不适用：成人针刺方案（用治症方案库/选穴决策）、针灸禁忌（用安全禁忌）。
+        语言信号："小儿/宝宝/小孩 推拿、发烧、三关、天河水、养生、保健艾灸"。
+      tags: [acupuncture, pediatric, tuina, wellness, TCM]
+    source_evidence:
+      - source_id: src-renji-zhenjiu
+        location: 第六章（三关/指针术/养生功法）
+    promotion:
+      destination: promoted
+      gate:
+        independent_intent: true
+        independent_contract: true
+        independent_run: true
+        independent_reuse: true
+        independent_eval: true
+      notes: 儿科与家庭保健对普通用户是可安全触达的独立场景，与临床针刺类能力边界清晰。

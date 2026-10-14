@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>诊断与针灸实施全流程</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23a8301f'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23f6f0e5'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%23a8301f'/%3E%3C/svg%3E">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#f6f0e5;
+    color:#2b2b28;
+    font-family:"STSong","SimSun","Songti SC","Noto Serif SC",serif;
+    line-height:1.7;
+  }
+  .wrap { max-width:980px; margin:0 auto; padding:40px 20px 60px; }
+
+  .head { text-align:center; padding-bottom:14px; border-bottom:2px solid #a8301f; }
+  .head .kicker { font-size:13px; letter-spacing:3px; color:#6b655c; }
+  .head h1 { font-size:30px; font-weight:700; color:#8f2418; margin-top:6px; letter-spacing:2px; }
+  .head .sub { font-size:14px; color:#5a534a; margin-top:8px; }
+
+  /* 主流程：左列圆点+竖线，右列卡片 */
+  .flow { margin-top:26px; position:relative; }
+  .flow::before {
+    content:""; position:absolute; left:22px; top:0; bottom:0;
+    width:2px; background:#c9b996;
+  }
+  .step {
+    display:grid; grid-template-columns:44px 1fr; gap:16px;
+    margin-bottom:18px; position:relative;
+  }
+  .dot {
+    justify-self:center; width:34px; height:34px; border-radius:50%;
+    background:#f6f0e5; border:2px solid #a8301f;
+    display:flex; align-items:center; justify-content:center;
+    font-size:15px; font-weight:700; color:#a8301f;
+    position:relative; z-index:1;
+  }
+  .card {
+    background:#fffdf8; border:1px solid #e2d9c6; border-radius:8px;
+    padding:14px 18px 12px;
+  }
+  .card .t { font-size:18px; font-weight:700; color:#2b2b28; }
+  .card .t small { font-size:12px; color:#6b655c; font-weight:400; margin-left:8px; }
+  .card .body { font-size:14px; color:#3c3832; margin-top:6px; }
+  .card .out { font-size:13px; color:#8f2418; margin-top:8px; border-top:1px dashed #d8cfba; padding-top:6px; }
+
+  /* 决策块 */
+  .decide { margin-top:14px; display:grid; grid-template-columns:1fr; gap:10px; }
+  .decide .b {
+    background:#f6f0e5; border-left:4px solid #2e5f5c;
+    padding:10px 14px; font-size:13.5px; color:#3c3832;
+  }
+  .decide .b b { color:#2e5f5c; }
+  .decide.rows { grid-template-columns:1fr 1fr; }
+  @media (max-width:640px){ .decide.rows { grid-template-columns:1fr; } }
+
+  /* 环节定位标注 */
+  .tag { font-size:12px; color:#6b655c; }
+
+  /* 结束状态 */
+  .final {
+    margin-top:8px; border:2px solid #b3872f; border-radius:10px;
+    background:#fdf6e8; padding:16px 20px;
+  }
+  .final .t { font-size:17px; font-weight:700; color:#8a6515; }
+  .final ul { margin-top:8px; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:6px 20px; }
+  .final li { font-size:13.5px; color:#3c3832; padding-left:18px; position:relative; }
+  .final li::before { content:""; position:absolute; left:0; top:8px; width:10px; height:10px; border-radius:2px; border:1px solid #b3872f; }
+  @media (max-width:640px){ .final ul { grid-template-columns:1fr; } }
+
+  .foot { text-align:center; font-size:12px; color:#8a857a; margin-top:30px; }
+  .btn-b { display:inline-block; margin-top:14px; padding:10px 22px; background:#8f2418; color:#fff; font-size:14px; text-decoration:none; border-radius:6px; letter-spacing:1px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="kicker">基于《人纪系列·针灸篇》</div>
+    <h1>诊断与针灸实施全流程</h1>
+    <div class="sub">从病人进门到治疗结束 · 九个环节 · 贯穿八纲（虚实寒热）与安全禁忌 · 不把脉，以望闻问 + 触诊 + 倪师特色观察信号为主</div>
+  </div>
+
+  <div class="flow">
+
+    <!-- 01 -->
+    <div class="step">
+      <div class="dot">01</div>
+      <div class="card">
+        <div class="t">接诊与问诊 <small>闻</small></div>
+        <div class="body">安定病人（急症先急救/定喘再问）→ 逐项问诊清单：部位 · 病程 · 痛/酸/麻 · 寒热喜冷喜热 · 饮食胃口 · 渴饮 · 睡眠时辰 · 二便 · 汗 · 妇女经带。</div>
+        <div class="out">产出：初判 病位 · 病久 · 虚实 · 禁忌初筛</div>
+        <div class="decide">
+          <div class="b"><b>第一道安全门：</b>气血大虚 · 重病失血 · 房事后 · 大汗后 · 酒后 · 体力不够 → 当下不下针（可灸或改日再治）。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="step">
+      <div class="dot">02</div>
+      <div class="card">
+        <div class="t">望诊观察 <small>倪师特色信号 · 核心</small></div>
+        <div class="body">眼诊五脏分区（眼白肺 · 内眦心 · 瞳孔肾 · 外圈脾 · 外片肝）· 瞳孔对光反应 · 舌与金津玉液 · 小儿指纹风关气关命关 · 面部五色（青肝赤心黄脾白肺黑肾）· 手掌 · 形体脚温 · 毛发指甲 · 人中。</div>
+        <div class="out">产出：定 病脏 · 虚实 · 寒热 线索</div>
+        <div class="decide">
+          <div class="b"><b>动态信号（贯穿全程）：</b>四肢末梢→身上 = 病进（处方错了，重议）；身上→四肢 = 病退（不改，等病好为止）。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="step">
+      <div class="dot">03</div>
+      <div class="card">
+        <div class="t">触诊与按压 <small>切 · 按</small></div>
+        <div class="body">阿是（本经寻压痛点）· 背俞压痛（第3肺 / 5心 / 6血癌 / 7血会 / 9肝 / 10胆 / 14肾椎）· 腹诊（关元外三寸瘀血 · 天枢宿便）· 特定穴压痛（阑尾 · 胆石 · 肾结石 · 消积 · 百虫窝 · 三阴交）· 太溪/冲阳/太冲/人迎候脏气存亡。</div>
+        <div class="out">产出：精确定病位 · 虚实确认（拒按=实，喜按=虚）</div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="step">
+      <div class="dot">04</div>
+      <div class="card">
+        <div class="t">辨证定案 <small>决策点</small></div>
+        <div class="body">汇总①②③ → 定「何脏/何经 + 虚实 + 寒热」。</div>
+        <div class="out">产出：辨证结论</div>
+        <div class="decide rows">
+          <div class="b"><b>虚实（第一入口）：</b>一周内纯实（痛拒按）→ 泻子穴；痛多酸少→先泻后补；酸多痛少→先补后泻；纯酸不痛→补母；麻→纯补最虚难治。</div>
+          <div class="b"><b>寒热：</b>寒（小便清白 · 苔白 · 喜热 · 面青）用灸；热（小便黄赤 · 苔黄 · 渴冷 · 面赤）用针。时辰定时醒 → 取当令经俞/荥穴（子午流注）。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="step">
+      <div class="dot">05</div>
+      <div class="card">
+        <div class="t">选经 · 辨病经</div>
+        <div class="body">循行定位归经 · 经验信号（手三阳分主前抬/外展/后伸 · 肩痛三经 · 腰痛督脉/膀胱/带脉 · 胸胁内关外关 · 头痛分经）· 压痛点定位。不能指认经络 → 先开四关（合谷+太冲）。</div>
+        <div class="out">产出：锁定病经（一条或数条）</div>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="step">
+      <div class="dot">06</div>
+      <div class="card">
+        <div class="t">选穴 <small>多方案 · 重原理</small></div>
+        <div class="body">实泻子穴 / 虚补母穴（补井当补合 · 泻井当泻荥）→ 五输穴规则（病在脏取井 · 色变取荥 · 时间病取俞 · 音变取经 · 饮食病取合 · 脏不平取原）→ 配穴法则（俞募 · 原络 · 会郄 · 八脉交会 · 担截 · 对称 · 导引）。</div>
+        <div class="out">产出：取穴方案（可同时备多套）</div>
+        <div class="decide">
+          <div class="b"><b>分工：</b>经络四肢痛 → 子母补泻；内科脏腑病 → 俞募治疗；俞募不效 → 会郄治疗。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="step">
+      <div class="dot">07</div>
+      <div class="card">
+        <div class="t">下针实施</div>
+        <div class="body">禁忌检查（孕妇禁合谷三阴交腹部 · 禁针穴神阙乳中 · 禁灸部位）→ 一律卧姿 → 同身寸丈量 → 筋骨肌缝隙找穴 → 深浅（春浅秋冬深 · 腹深背薄 · 胖深瘦浅 · 病在皮毛浅/骨深）→ 进针（刺动脉旁先以指甲拨开血管）→ 引气得气。</div>
+        <div class="out">产出：针入 · 气至（酸麻胀 / 针周粉红圈）</div>
+        <div class="decide">
+          <div class="b"><b>引气：</b>捻转 → 提插二下 → 针下皮肤推戳 → 呼吸引气；仍无气 = 元气大伤，停针改用灸。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="step">
+      <div class="dot">08</div>
+      <div class="card">
+        <div class="t">补泻操作 <small>按虚实定手法</small></div>
+        <div class="body">先引气，再补泻；补用阳数（3/5/7/9）· 泻用阴数（6）；补则按针孔，泻则不按针孔。</div>
+        <div class="out">产出：完成补或泻</div>
+        <div class="decide rows">
+          <div class="b"><b>补法：</b>捻转顺经 · 迎随（顺）· 呼吸补（紧按慢提）· 烧山火（天-人-地三部紧按慢提9数 · 里寒）· 阳中引阴 · 青龙摆尾 · 子午捣臼（九入）。</div>
+          <div class="b"><b>泻法：</b>捻转逆经 · 迎随（逆）· 呼吸泻（紧提慢按）· 透天凉（三部紧提慢按6数 · 大热）· 白虎摇头 · 赤凤迎源 · 龙虎交战（镇痛）· 放血（十宣 · 委中 · 攒竹）。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 09 -->
+    <div class="step">
+      <div class="dot">09</div>
+      <div class="card">
+        <div class="t">观察与收尾</div>
+        <div class="body">得气与补泻后反应 · 晕针处理（下人中 · 开领扣 · 十宣放血）· 留针（新病3–5分 · 久病20分 · 中风30–60分；14岁以下单刺不留）· 起针（压皮肤慢拔，出毛孔停30秒）。</div>
+        <div class="out">产出：判断疗效 · 安排疗程 · 交代针后禁忌</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="final">
+    <div class="t">治疗结束状态 · 痊愈信号判断</div>
+    <ul>
+      <li>能睡：一觉到天亮（肝病者一点到三点不再醒等）</li>
+      <li>胃口复：有饥饿感能进食（有胃气则生）</li>
+      <li>二便调：大便有时、小便通利</li>
+      <li>手脚温、头面身体凉：阴阳平衡</li>
+      <li>病退方向：痛由身上向四肢走</li>
+      <li>面色 / 眼诊转正常：鸡爪血丝消失等</li>
+      <li>特定压痛点消失：背俞 / 胆石点 / 消积穴</li>
+      <li>腑病恢复中午会饿 · 脏病恢复半夜醒饿</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    针后禁忌：72 小时内不饮酒 · 不食辛辣 · 不用麻油；隔日治疗，须完全去掉才停。详判标准见《诊断与针灸实施指南》第二至九篇。
+  </div>
+  <div style="text-align:center;">
+    <a class="btn-b" href="诊断与针灸实施指南.md">查看配套方法论文档</a>
+  </div>
+
+</div>
+</body>
+</html>

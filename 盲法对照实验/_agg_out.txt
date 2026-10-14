@@ -1,0 +1,14 @@
+﻿mean prec(主穴命中率)= 0.385
+mean F1(主穴)= 0.312
+r_main min/max: 0.0 1.0
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 12, in <module>
+    miss=[v['r_main'] for k,v in d.items() if int(k[2:]) not in al]
+                                              ~~~^^^^^^^
+ValueError: invalid literal for int() with base 10: ''

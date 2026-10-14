@@ -1,0 +1,11 @@
+﻿python : Traceback (most recent call last):
+所在位置 行:1 字符: 1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 9, in <module>
+    b=[num(r['本轮盲法主穴数']) for r in rows if num(r['本轮盲法主穴数']) is not None]
+                                                     ~^^^^^^^^^^^^^^^^^^
+KeyError: '本轮盲法主穴数'

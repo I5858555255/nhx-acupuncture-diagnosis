@@ -1,0 +1,45 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "capability-destinations.json": "8b2caffc88485551ade822fbc42c0823844d2c09e781cd19ebdb6959d2b015e3",
+    "renji-acupuncture-formulas\\SKILL.md": "b5f02506079dbcfb5a6fe0f2b69c995479ea6d9c281254c9c674be31c75466c3",
+    "renji-acupuncture-selection\\SKILL.md": "bde630b2694e24fdf18c9e5d9522276aff583af893419ce0dd2c796faa877d4a",
+    "renji-diagnosis\\SKILL.md": "9336021e900ac481834d5f11939b2c4f07718c356904303c5fa9fd9a2c697fe4",
+    "renji-emergency-special-needling\\SKILL.md": "ac8f870b0855e310b10f1d4c7229bcc8d2b10b8169772c1e2cf7fff16b11a841",
+    "renji-meridian-point-db\\SKILL.md": "2dade2b0c0684e2ff791cff3124f49db2676eeb5ff73dd08ff8cf31d47a89d5a",
+    "renji-pediatric-tuina-wellness\\SKILL.md": "496de379a262c436ee11d24e409dcff9a0f4fde13958b328f9be9906850a41a4",
+    "renji-safety-contraindications\\SKILL.md": "ec6615979e488001f07465909a85754f834922840c1df23eb15884066b50e61c",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-acupuncture-formulas.md": "c9e94b41f478e85c1ae1b669da1f9ba75d50b5dbb0bd242beb2920dd2d0d58bb",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-acupuncture-selection.md": "f5cb7c6512c7c0acb4a856e1cd91cb9c2eddbaf7f887638e1a85bf519d5260d6",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-diagnosis.md": "267a7090d231a1e0d697c1cbe659ab2c93044bc61f52adac1f1c063dc38ffa9a",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-emergency-special-needling.md": "f08d58656c6e1442166d19636139fe92893770969c98677272bd92cfb4c4281a",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-meridian-point-db.md": "522aa5068b34435402597e16f22083c2e8c4cac98a4c09ebf2089c989c76f8cd",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-pediatric-tuina-wellness.md": "d15f8a9f02a0645a799cc8f8980703efc6f5f1d2f45bfe551cb2bd695387a0d5",
+    "renji-zhenjiu-source\\references\\capabilities\\renji-safety-contraindications.md": "94723829aa02816d081e838d7b70e2c7ee37115aee04c8410afd46ba8c17437d",
+    "renji-zhenjiu-source\\references\\capability-index.md": "feceaabfe85fde52943ffeebac0fce1a0e22a0c20aa798b585602e002bbfea80",
+    "renji-zhenjiu-source\\references\\cheatsheet.md": "c7719529d7cd48153d0b8b1c80fb3c45fa50f84a2c8ba64858c96e42af443633",
+    "renji-zhenjiu-source\\references\\glossary.md": "8fddda6f500365945ca61effca5bc0f48b5af40c0169da3855959155181a6280",
+    "renji-zhenjiu-source\\references\\overview.md": "566a9a675ecc1415e9a545bcb8a0f027660d9f36db845e096d692ccc7b637a13",
+    "renji-zhenjiu-source\\SKILL.md": "195f7dd56aa5b2ad386b57260c2cb1718f29ef7ff9cb7ce060cde7de833d007b"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.renji-zhenjiu",
+  "bundle_sha256": "f7d08996a26a5ba88f86323c434d893cd1ee03d0d768856888f52004bce57892",
+  "variant": "pack",
+  "run_id": "run-20261010-222500-fbb74d",
+  "decision": {
+    "schema_version": 1,
+    "requested": "pack",
+    "selected": "pack",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 7,
+    "capability_count": 7,
+    "reasons": [
+      "用户显式选择 pack，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "single（1 个入口 + 7 张内部能力卡）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}

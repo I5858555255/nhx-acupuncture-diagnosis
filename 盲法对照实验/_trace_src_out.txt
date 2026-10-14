@@ -1,0 +1,40 @@
+﻿indexed 358 docs
+fenxi医案  1 | 命中doc(1) | score=1.19 cont=True | SAME | fx=胸膈环绕一圈胀满，无穿心痛（维脉），心下硬块，鼻痰清不出。小 | doc=小時有氣喘病史胸膈環繞一圈脹滿，無穿心痛(維脈心下硬塊，鼻痰
+fenxi医案  8 | 命中doc(8) | score=1.50 cont=True | SAME | fx=类风湿性关节炎。双膝、双肩及手指关节痛且不灵活，特别怕风怕冷 | doc=類風濕性關節炎。雙膝、雙肩及手指關節痛且不靈活，特別怕風怕冷
+fenxi医案 22 | 命中doc(22) | score=0.87 cont=False | SAME | fx=怕冷，只能吃热的食物，喝冷水会全身痛；颈部及手足关节痛；经痛 | doc=怕冷，只能吃熱的食物，若喝冷水會全身痛(寒!頸部及手足關節痛
+fenxi医案 23 | 命中doc(115) | score=0.70 cont=True | OTHER | fx=怕冷，喝冷水全身痛；颈部及手足关节痛；经痛 | doc=痛經
+fenxi医案 37 | 命中doc(37) | score=0.90 cont=False | SAME | fx=右侧肝区剧痛，痛到背后（穿过肋间到后背），持续痛2天，全身发 | doc=右側肝區劇痛，且痛到背後(穿過肋間身體到後背)，持續的痛，2
+fenxi医案 38 | 命中doc(168) | score=0.50 cont=True | OTHER | fx=病人自述双脚、小腿到大腿麻得不得了，脚掌双侧麻已4个月，脚腕 | doc=1.)
+fenxi医案 49 | 命中doc(323) | score=0.18 cont=False | ALIGN | fx=右足跗疼痛，初起因跑步扭伤右脚，右足痛，已经2个月。自感觉关 | doc=左眼瞼眼皮下﹑頰(足陽明經)抖動不止﹐項痛
+fenxi医案 60 | 命中doc(1) | score=0.18 cont=False | ALIGN | fx=从初一开始胃部胀满，胃口差。现食后心下痞鞭，约5天。恶心但不 | doc=小時有氣喘病史胸膈環繞一圈脹滿，無穿心痛(維脈心下硬塊，鼻痰
+fenxi医案107 | 命中doc(8) | score=0.21 cont=False | ALIGN | fx=患者左肩关节痛，痛在肩侧，此痛已2周。早上起床时特别痛，无手 | doc=類風濕性關節炎。雙膝、雙肩及手指關節痛且不靈活，特別怕風怕冷
+fenxi医案136 | 命中doc(136) | score=0.18 cont=False | SAME | fx=患者女，开眼部整型公司，每日打电脑工作。从一年前开始左肩痛， | doc=不明原因全身痛，約2年，時好時壞，背痛在足太陽經上，右肩痛
+fenxi医案160 | 命中doc(212) | score=0.25 cont=False | ALIGN | fx=右侧足阳明经附近自膝盖以下到脚背上疼痛，痛在足三里到解溪一带 | doc=兩側頭痛,延足少陽經,自肩後而上頭兩側, 周日較易頭痛, 1
+fenxi医案194 | 命中doc(136) | score=0.28 cont=False | ALIGN | fx=右小腿外侧风市穴附近痛（少阳胆经），自去年十月开始，每天都会 | doc=不明原因全身痛，約2年，時好時壞，背痛在足太陽經上，右肩痛
+fenxi医案195 | 命中doc(168) | score=0.56 cont=True | OTHER | fx=左脚踝外侧扭伤后，至今仍有踝外侧痛（骨边）。痛已约1个月，无 | doc=1.)
+fenxi医案198 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=病人来诊时说我下背痛（背后两片肌痛），有自去年十月开始，每周 | doc=1.)
+fenxi医案207 | 命中doc(241) | score=0.28 cont=False | OTHER | fx=初诊日期2008/05/28，女，左肩关节痛，痛在肩前侧，已 | doc=1. 宿矢未出;          2. 左腎有時刺痛,痛甚
+fenxi医案208 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足背肿痛，自去年十月开始 | doc=1.)
+fenxi医案209 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，双脚足底痛，自去年十月开始 | doc=1.)
+fenxi医案212 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，左足内侧痛，自去年十月开始 | doc=1.)
+fenxi医案214 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右膝外侧痛，自去年十月开始 | doc=1.)
+fenxi医案221 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足踝肿痛，自去年十月开始 | doc=1.)
+fenxi医案223 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，左足背痛，自去年十月开始， | doc=1.)
+fenxi医案225 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足小趾侧痛，自去年十月开 | doc=1.)
+fenxi医案234 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足大趾侧痛，自去年十月开 | doc=1.)
+fenxi医案236 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足二趾侧痛，自去年十月开 | doc=1.)
+fenxi医案249 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足三趾侧痛，自去年十月开 | doc=1.)
+fenxi医案270 | 命中doc(168) | score=0.55 cont=True | OTHER | fx=初诊日期2008/05/28，女，右足四趾侧痛，自去年十月开 | doc=1.)
+fenxi医案274 | 命中doc(274) | score=1.46 cont=True | SAME | fx=1990年手术割除脸部右侧鼻腔内之鼻瘜肉，现在右侧脸部鼻腔内 | doc=1.)1990年手術割除臉部右側鼻腔內之鼻瘜肉2.)現在右側
+fenxi医案298 | 命中doc(298) | score=1.50 cont=True | SAME | fx=去年十月被告知ALS，去年五月左腿肌肉萎缩（因为火不生土了） | doc=去年十月被告知ALS，去年五月左腿肌肉萎縮(因為火不生土了)
+fenxi医案303 | 命中doc(303) | score=0.85 cont=False | SAME | fx=皮肤因为使用类固醇药物造成干燥粗；自述从小有过敏；疫苗伤害免 | doc=1.)皮膚已經因為使用類固醇藥物，造成很乾燥、粗。2.)自述
+fenxi医案311 | 命中doc(311) | score=1.50 cont=True | SAME | fx=右肋下方有时痛，会痛到后背，多时没有 | doc=右肋下方有時痛,會痛到後背，多時沒有
+fenxi医案312 | 命中doc(312) | score=1.50 cont=True | SAME | fx=肾结石，被西医告知肾结石后干咳（因忧伤肺造成），平时喝蒸馏水 | doc=腎結石被西醫告知腎結石後乾咳(因憂傷肺造成平時喝蒸餾水。有服
+fenxi医案323 | 命中doc(323) | score=1.50 cont=True | SAME | fx=左眼睑眼皮下、颊（足阳明经）抖动不止，项痛 | doc=左眼瞼眼皮下﹑頰(足陽明經)抖動不止﹐項痛
+fenxi医案340 | 命中doc(340) | score=1.50 cont=True | SAME | fx=肾结石（一年前也有过肾结石，吃中药排出来了）。上周六，右肾很 | doc=腎結石（一年前也有過腎結石，吃中藥排出來了）。上周六，右腎很
+fenxi医案345 | 命中doc(345) | score=1.50 cont=True | SAME | fx=晕眩，头涨，肩膀酸，颈项痛。容易疲劳。已有三年之久 | doc=暈眩，頭漲，肩膀酸，頸項痛。容易疲勞。已有三年之久。
+fenxi医案346 | 命中doc(346) | score=1.35 cont=True | SAME | fx=右膏肓痛，感冒，喉痛，月经第一天来则后项会很紧，手肘手腕关节 | doc=右膏肓痛，感冒，喉痛，月經第一天來則後項會很緊，手肘手腕關節
+fenxi医案347 | 命中doc(347) | score=1.50 cont=True | SAME | fx=乳癌移转肺及骨癌，西医检查右边骨仍有癌，减少了，仍有痛 | doc=乳癌移轉肺及骨癌西醫檢查右邊骨仍有癌，減少了，仍有痛
+fenxi医案355 | 命中doc(355) | score=1.50 cont=True | SAME | fx=小便未尽出感，大便每日多次粘稠，气很多，双脚踝水肿；左边膏肓 | doc=小便未盡出感, 大便每日多次粘稠，氣很多，雙腳踝水腫左邊膏肓
+
+SAME(编号即内容): 16 | ALIGN(命中另一首诊doc): 5 | OTHER(命中非首诊doc或未命中): 16

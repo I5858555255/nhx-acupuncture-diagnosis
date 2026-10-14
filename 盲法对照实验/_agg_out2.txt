@@ -1,0 +1,1 @@
+﻿对齐16 mean r_main= 0.375  错位21 mean r_main= 0.241

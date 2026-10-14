@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "suite_id": "eval-selection",
+  "target": "cap.renji-zhenjiu.dialectical-selection",
+  "split_seed": 42,
+  "train_ratio": 0.6,
+  "trigger_cases": [
+    {
+      "case_id": "sel-trigger-01",
+      "prompt": "肩颈痛了一周，酸胀发紧，帮我看看怎么取穴，该补还是泻",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "sel-trigger-02",
+      "prompt": "胃胀气好几个月了，按压舒服，中医说我是虚证，针灸该选哪些穴",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "sel-sibling-01",
+      "prompt": "列缺穴在哪个位置，怎么找",
+      "expected": "sibling",
+      "sibling_target": "renji-meridian-point-db",
+      "runs": 1
+    },
+    {
+      "case_id": "sel-sibling-02",
+      "prompt": "便秘三天了，针灸怎么处理",
+      "expected": "sibling",
+      "sibling_target": "renji-acupuncture-formulas",
+      "runs": 1
+    },
+    {
+      "case_id": "sel-sibling-03",
+      "prompt": "我脚总是冷的，是不是身体有问题",
+      "expected": "sibling",
+      "sibling_target": "renji-diagnosis",
+      "runs": 1
+    },
+    {
+      "case_id": "sel-edge-01",
+      "prompt": "帮我查一下今天股市行情",
+      "expected": "should_not_trigger",
+      "runs": 1
+    }
+  ]
+}

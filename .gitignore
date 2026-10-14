@@ -1,0 +1,24 @@
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.log
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 临时/诊断输出（发布不含本轮诊断临时文件，保留处理脚本）
+盲法对照实验/_bkcheck.txt
+盲法对照实验/_r8check.txt
+盲法对照实验/_v9check.txt
+盲法对照实验/_restore.txt
+盲法对照实验/_demo_cases.txt
+盲法对照实验/_diag318.txt
+盲法对照实验/_diag274.txt
+盲法对照实验/_diag4.txt
+盲法对照实验/_gh_nhx_root.json
+盲法对照实验/_gh_nhx_root.txt
+
+# Git
+.git/

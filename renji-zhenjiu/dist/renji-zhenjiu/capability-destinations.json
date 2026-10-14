@@ -1,0 +1,37 @@
+{
+  "generated_by": "cangjie-tools v2.5.0",
+  "bundle_id": "bundle.renji-zhenjiu",
+  "router_entrypoint": "renji-zhenjiu-source",
+  "entrypoint_count": 8,
+  "capability_count": 7,
+  "destinations": {
+    "cap.renji-zhenjiu.dialectical-selection": {
+      "promoted_to": "renji-acupuncture-selection",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-acupuncture-selection.md"
+    },
+    "cap.renji-zhenjiu.formula-library": {
+      "promoted_to": "renji-acupuncture-formulas",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-acupuncture-formulas.md"
+    },
+    "cap.renji-zhenjiu.meridian-point-db": {
+      "promoted_to": "renji-meridian-point-db",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-meridian-point-db.md"
+    },
+    "cap.renji-zhenjiu.diagnosis": {
+      "promoted_to": "renji-diagnosis",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-diagnosis.md"
+    },
+    "cap.renji-zhenjiu.safety-contraindications": {
+      "promoted_to": "renji-safety-contraindications",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-safety-contraindications.md"
+    },
+    "cap.renji-zhenjiu.emergency-special": {
+      "promoted_to": "renji-emergency-special-needling",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-emergency-special-needling.md"
+    },
+    "cap.renji-zhenjiu.pediatric-wellness": {
+      "promoted_to": "renji-pediatric-tuina-wellness",
+      "router_view": "renji-zhenjiu-source/references/capabilities/renji-pediatric-tuina-wellness.md"
+    }
+  }
+}

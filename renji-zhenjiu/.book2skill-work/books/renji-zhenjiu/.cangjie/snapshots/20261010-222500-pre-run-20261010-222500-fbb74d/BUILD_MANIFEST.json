@@ -1,0 +1,37 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "references\\capabilities\\renji-acupuncture-formulas.md": "c9e94b41f478e85c1ae1b669da1f9ba75d50b5dbb0bd242beb2920dd2d0d58bb",
+    "references\\capabilities\\renji-acupuncture-selection.md": "f5cb7c6512c7c0acb4a856e1cd91cb9c2eddbaf7f887638e1a85bf519d5260d6",
+    "references\\capabilities\\renji-diagnosis.md": "267a7090d231a1e0d697c1cbe659ab2c93044bc61f52adac1f1c063dc38ffa9a",
+    "references\\capabilities\\renji-emergency-special-needling.md": "f08d58656c6e1442166d19636139fe92893770969c98677272bd92cfb4c4281a",
+    "references\\capabilities\\renji-meridian-point-db.md": "522aa5068b34435402597e16f22083c2e8c4cac98a4c09ebf2089c989c76f8cd",
+    "references\\capabilities\\renji-pediatric-tuina-wellness.md": "d15f8a9f02a0645a799cc8f8980703efc6f5f1d2f45bfe551cb2bd695387a0d5",
+    "references\\capabilities\\renji-safety-contraindications.md": "94723829aa02816d081e838d7b70e2c7ee37115aee04c8410afd46ba8c17437d",
+    "references\\capability-index.md": "feceaabfe85fde52943ffeebac0fce1a0e22a0c20aa798b585602e002bbfea80",
+    "references\\cheatsheet.md": "c7719529d7cd48153d0b8b1c80fb3c45fa50f84a2c8ba64858c96e42af443633",
+    "references\\glossary.md": "8fddda6f500365945ca61effca5bc0f48b5af40c0169da3855959155181a6280",
+    "references\\overview.md": "566a9a675ecc1415e9a545bcb8a0f027660d9f36db845e096d692ccc7b637a13",
+    "SKILL.md": "1b009871668fd735a53e629d6dc6a353a9b31e3f16af348566f1c79f819d9c23"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.renji-zhenjiu",
+  "bundle_sha256": "05b70c24bf1e5ff3c8af9878d8b1916163ea04b018d00b318cb251fb64f6eff3",
+  "variant": "single",
+  "run_id": "run-20261010-221306-931533",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 7,
+    "capability_count": 7,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 7 个晋级 Skill，共 8 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}
