@@ -1,0 +1,23 @@
+﻿控制组一致= True
+86全量_v5 {'recall': {'got': 0.4308, 'want': 0.4308, 'match': True}, 'prec': {'got': 0.409, 'want': 0.409, 'match': True}, 'f1': {'got': 0.3988, 'want': 0.3988, 'match': True}, 'jac': {'got': 0.267, 'want': 0.267, 'match': True}}
+86全量_v9 {'recall': {'got': 0.439, 'want': 0.439, 'match': True}, 'prec': {'got': 0.3653, 'want': 0.3653, 'match': True}, 'f1': {'got': 0.3795, 'want': 0.3795, 'match': True}, 'jac': {'got': 0.2499, 'want': 0.2499, 'match': True}}
+86全量_v10 {'recall': {'got': 0.4125, 'want': 0.4125, 'match': True}, 'prec': {'got': 0.3732, 'want': 0.3732, 'match': True}, 'f1': {'got': 0.3685, 'want': 0.3685, 'match': True}, 'jac': {'got': 0.244, 'want': 0.244, 'match': True}}
+核心集_v5 {'recall': {'got': 0.4768, 'want': 0.4768, 'match': True}, 'prec': {'got': 0.4247, 'want': 0.4247, 'match': True}, 'f1': {'got': 0.424, 'want': 0.424, 'match': True}, 'jac': {'got': 0.2875, 'want': 0.2875, 'match': True}}
+核心集_v9 {'recall': {'got': 0.4914, 'want': 0.4914, 'match': True}, 'prec': {'got': 0.3827, 'want': 0.3827, 'match': True}, 'f1': {'got': 0.4074, 'want': 0.4074, 'match': True}, 'jac': {'got': 0.2722, 'want': 0.2722, 'match': True}}
+核心集_v10 {'recall': {'got': 0.4748, 'want': 0.4748, 'match': True}, 'prec': {'got': 0.3991, 'want': 0.3991, 'match': True}, 'f1': {'got': 0.4068, 'want': 0.4068, 'match': True}, 'jac': {'got': 0.2737, 'want': 0.2737, 'match': True}}
+=== 全量86 main macro ===
+v5: R=0.4308 P=0.409 F1=0.3988 Jac=0.267 单元均=6.081
+v6: R=0.4554 P=0.3857 F1=0.3977 Jac=0.2641 单元均=6.86
+v9: R=0.439 P=0.3653 F1=0.3795 Jac=0.2499 单元均=6.895
+v10: R=0.4125 P=0.3732 F1=0.3685 Jac=0.244 单元均=6.372
+v11: R=0.4488 P=0.4518 F1=0.4223 Jac=0.2871 单元均=5.814
+=== 核心集64 main macro ===
+v5: R=0.4768 P=0.4247 F1=0.424 Jac=0.2875
+v6: R=0.4947 P=0.3912 F1=0.4131 Jac=0.2764
+v9: R=0.4914 P=0.3827 F1=0.4074 Jac=0.2722
+v10: R=0.4748 P=0.3991 F1=0.4068 Jac=0.2737
+v11: R=0.4999 P=0.4582 F1=0.447 Jac=0.3075
+v11主穴统计= {'mean_units': 5.814, 'mean_points': 7.081, 'min': 1, 'max': 12}
+执行方差= {'一致案': 22, '差异案': 71, '差异单元': 172}
+零命中v11= ['207_01'] 满分= ['107_01', '22_01', '23_01', '274_01', '312_01', '340_01', '355_01']
+实测分差全量= {'dF1': 0.0538, 'dJac': 0.0431, 'dR': 0.0363, 'dP': 0.0786} 核心= {'dF1': 0.0402, 'dJac': 0.0338, 'dR': 0.0251, 'dP': 0.0591}
