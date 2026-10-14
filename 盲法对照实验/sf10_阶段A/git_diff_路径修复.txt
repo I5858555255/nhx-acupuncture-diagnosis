@@ -1,0 +1,78 @@
+﻿diff --git "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/gold_parse93v2.py" "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/gold_parse93v2.py"
+index ad6fb1c..30aab95 100644
+--- "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/gold_parse93v2.py"
++++ "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/gold_parse93v2.py"
+@@ -18,7 +18,8 @@ sys.path.insert(0, HERE)
+ from normalize_acupoints import normalize_acupoints
+ 
+ BASE = HERE
+-PRES_DIR = r"D:\projectAGI\nhx\盲法对照实验\盲法93\prescriptions"
++_ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
++PRES_DIR = os.path.join(_ROOT, "盲法93", "prescriptions")
+ 
+ # ============ 以下与旧版 gold_parse93v9.py 逐条一致 ============
+ TRAD2SIMP = {
+@@ -162,7 +163,7 @@ def expand_gold(tokens):
+     return members, len(members), log
+ 
+ 
+-with open(r"D:\projectAGI\nhx\盲法对照实验\盲法93_v9\_blind93v9_results.json", encoding='utf-8') as f:
++with open(os.path.join(_ROOT, "盲法93_v9", "_blind93v9_results.json"), encoding='utf-8') as f:
+     blind = json.load(f)
+ case_ids = sorted(blind.keys())
+ 
+diff --git "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/inspect_blind_files.py" "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/inspect_blind_files.py"
+index 34e19d7..05c0337 100644
+--- "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/inspect_blind_files.py"
++++ "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/inspect_blind_files.py"
+@@ -2,7 +2,8 @@
+ """inspect_blind_files.py — 探查 9 轮盲法结果 JSON 的结构与字段一致性"""
+ import json, os
+ 
+-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
++HERE = os.path.dirname(os.path.abspath(__file__))
++ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
+ FILES = {
+     "v140": os.path.join(ROOT, "盲法140", "_blind140_results.json"),
+     "v2":   os.path.join(ROOT, "盲法93", "_blind93_results.json"),
+diff --git "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/make_manifest.py" "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/make_manifest.py"
+index d299806..809e4d6 100644
+--- "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/make_manifest.py"
++++ "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/make_manifest.py"
+@@ -12,8 +12,8 @@
+ import json, os, hashlib, datetime
+ 
+ HERE = os.path.dirname(os.path.abspath(__file__))
+-ROOT = r"D:\projectAGI\nhx"
+-BLIND = r"D:\projectAGI\nhx\盲法对照实验"
++BLIND = os.path.dirname(HERE)          # 盲法对照实验目录
++ROOT = os.path.dirname(BLIND)           # 项目根（由脚本位置推导）
+ 
+ 
+ def sha256(path):
+diff --git "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/score_benchmark_v2.py" "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/score_benchmark_v2.py"
+index b5e6c2c..a24d918 100644
+--- "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/score_benchmark_v2.py"
++++ "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/score_benchmark_v2.py"
+@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
+ sys.path.insert(0, HERE)
+ from normalize_acupoints import normalize_acupoints
+ 
+-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
++ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
+ FILES = {
+     "v140": os.path.join(ROOT, "盲法140", "_blind140_results.json"),
+     "v2":   os.path.join(ROOT, "盲法93", "_blind93_results.json"),
+diff --git "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/verify_benchmark_v2.py" "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/verify_benchmark_v2.py"
+index d9d1456..2b458b1 100644
+--- "a/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/verify_benchmark_v2.py"
++++ "b/\347\233\262\346\263\225\345\257\271\347\205\247\345\256\236\351\252\214/benchmark_v2/verify_benchmark_v2.py"
+@@ -17,7 +17,7 @@ with open(os.path.join(HERE, '_gold_results93v2.pkl'), 'rb') as f:
+     GOLD = pickle.load(f)
+ RESULTS = GOLD['results']; CASE_IDS = GOLD['case_ids']; SUMMARY = GOLD['summary']
+ 
+-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
++ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
+ import json as _j
+ BLIND = {lab: _j.load(open(os.path.join(ROOT, d, f), encoding='utf-8'))
+          for lab, d, f in [

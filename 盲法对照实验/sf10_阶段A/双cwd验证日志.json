@@ -1,0 +1,26 @@
+[
+  {
+    "cwd": "D:\\projectAGI\\nhx",
+    "command": "C:\\Users\\JM.RADE\\AppData\\Local\\Doubao\\User Data\\sandbox_runtime\\bases\\d0ace100fdff5b2d247847aca1e3d83b\\python\\python.exe D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\score_benchmark_v2.py",
+    "returncode": 0,
+    "hashes": {
+      "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+      "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+      "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+    },
+    "output_in_benchmark_v2": true,
+    "hashes_equal_baseline": true
+  },
+  {
+    "cwd": "C:\\Users\\JM.RADE",
+    "command": "C:\\Users\\JM.RADE\\AppData\\Local\\Doubao\\User Data\\sandbox_runtime\\bases\\d0ace100fdff5b2d247847aca1e3d83b\\python\\python.exe D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\score_benchmark_v2.py",
+    "returncode": 0,
+    "hashes": {
+      "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+      "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+      "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+    },
+    "output_in_benchmark_v2": true,
+    "hashes_equal_baseline": true
+  }
+]

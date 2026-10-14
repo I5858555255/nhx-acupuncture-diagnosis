@@ -12,8 +12,8 @@
 import json, os, hashlib, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = r"D:\projectAGI\nhx"
-BLIND = r"D:\projectAGI\nhx\盲法对照实验"
+BLIND = os.path.dirname(HERE)          # 盲法对照实验目录
+ROOT = os.path.dirname(BLIND)           # 项目根（由脚本位置推导）
 
 
 def sha256(path):

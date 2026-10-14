@@ -1,0 +1,68 @@
+{
+  "backup_hashes": {
+    "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+    "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+    "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc",
+    "_gold_results93v2.json": "f9eb00930cf996bbcd2a828a25dab6486e8ae9bdc50739540b30cd7db3cb1a69",
+    "_gold_results93v2.pkl": "2a9ba7a1550543c4c21147038eb18bbdf7c2492785ac8f3f5dfc3d61aefdb724"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "returncode": 0,
+      "stdout_tail": [
+        "分层 v9: {'followup': {'n': 20, 'macro_recall': 0.3094, 'macro_prec': 0.3389}, 'anchor_first': {'n': 66, 'macro_recall': 0.4782, 'macro_prec': 0.3733}, 'chain_names': ['anchor_146', 'anchor_198', 'anchor_216', 'anchor_66', 'first_visit', 'followup_146', 'followup_198', 'followup_216', 'followup_66']}",
+        "旧口径 v9: r_main宏= 0.4223  sum_hm/sum_mc= 258 / 593",
+        "新口径 v9: recall宏= 0.439  sum_tp/sum_points= 268 / 746"
+      ],
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    },
+    {
+      "run": 2,
+      "returncode": 0,
+      "stdout_tail": [
+        "分层 v9: {'followup': {'n': 20, 'macro_recall': 0.3094, 'macro_prec': 0.3389}, 'anchor_first': {'n': 66, 'macro_recall': 0.4782, 'macro_prec': 0.3733}, 'chain_names': ['anchor_146', 'anchor_198', 'anchor_216', 'anchor_66', 'first_visit', 'followup_146', 'followup_198', 'followup_216', 'followup_66']}",
+        "旧口径 v9: r_main宏= 0.4223  sum_hm/sum_mc= 258 / 593",
+        "新口径 v9: recall宏= 0.439  sum_tp/sum_points= 268 / 746"
+      ],
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    },
+    {
+      "run": 3,
+      "returncode": 0,
+      "stdout_tail": [
+        "分层 v9: {'followup': {'n': 20, 'macro_recall': 0.3094, 'macro_prec': 0.3389}, 'anchor_first': {'n': 66, 'macro_recall': 0.4782, 'macro_prec': 0.3733}, 'chain_names': ['anchor_146', 'anchor_198', 'anchor_216', 'anchor_66', 'first_visit', 'followup_146', 'followup_198', 'followup_216', 'followup_66']}",
+        "旧口径 v9: r_main宏= 0.4223  sum_hm/sum_mc= 258 / 593",
+        "新口径 v9: recall宏= 0.439  sum_tp/sum_points= 268 / 746"
+      ],
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    }
+  ],
+  "checks": {
+    "判分明细v2.csv": {
+      "three_runs_pairwise_consistent": true,
+      "equals_backup": true
+    },
+    "判分汇总v2.json": {
+      "three_runs_pairwise_consistent": true,
+      "equals_backup": true
+    },
+    "审计日志v2.json": {
+      "three_runs_pairwise_consistent": true,
+      "equals_backup": true
+    }
+  },
+  "all_consistent": true
+}

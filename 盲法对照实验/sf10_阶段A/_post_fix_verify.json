@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+    "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+    "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc",
+    "_gold_results93v2.json": "f9eb00930cf996bbcd2a828a25dab6486e8ae9bdc50739540b30cd7db3cb1a69",
+    "_gold_results93v2.pkl": "2a9ba7a1550543c4c21147038eb18bbdf7c2492785ac8f3f5dfc3d61aefdb724"
+  },
+  "gold_rerun_rc": 0,
+  "gold_rerun_tail": [
+    "  8_01: count=8 members=['三间', '内膝眼', '后溪', '外膝眼', '曲池', '足三里', '阴陵泉', '鹤顶'] log=['膝五针->{鹤顶,内膝眼,外膝眼,阴陵泉}']",
+    "不可判分案: {'116_01': '原文未列出可解析穴名: 同前', '178_01': '原文标注无处方', '268_01': '原文未列出可解析穴名: 左：右：', '278_01': '原文标注无处方', '284_01': '原文标注无处方', '285_01': '原文标注无处方', '80_01': '原文标注无处方'}",
+    "人工校正: {'208_01': [{'removed': ['带脉'], 'reason': '注释词带脉(足临泣(带脉)之带脉为经脉说明,非取穴)'}], '63_01': [{'removed': ['极泉'], 'reason': '注释词极泉(肩禺与极泉对称之说明,非取穴)'}, {'removed': ['天应'], 'reason': '天应来自\"天應導引/下針\"手法注,非取穴'}], '209_01': [{'removed': ['商阳', '大敦'], 'reason': '解释文字中的商阳/大敦(五行泻井说明,非取穴)'}], '61_01': [{'removed': ['天应'], 'reason': '天应来自\"天應導引/下針\"手法注,非取穴'}], '62_01': [{'removed': ['天应'], 'reason': '天应来自\"天應導引/下針\"手法注,非取穴'}]}",
+    "链分层: {'116_01': 'unscored', '146_01': 'anchor_146', '148_01': 'followup_146', '149_01': 'followup_146', '178_01': 'unscored', '198_01': 'anchor_198', '199_01': 'followup_198', '200_01': 'followup_198', '201_01': 'followup_198', '202_01': 'followup_198', '216_01': 'anchor_216', '216_02': 'followup_216', '216_03': 'followup_216', '268_01': 'unscored', '278_01': 'unscored', '284_01': 'unscored', '285_01': 'unscored', '66_01': 'anchor_66', '67_01': 'followup_66', '68_01': 'followup_66', '69_01': 'followup_66', '70_01': 'followup_66', '71_01': 'followup_66', '72_01': 'followup_66', '73_01': 'followup_66', '74_01': 'followup_66', '75_01': 'followup_66', '76_01': 'followup_66', '77_01': 'followup_66', '78_01': 'followup_66', '80_01': 'unscored'}"
+  ],
+  "gold_after_rerun": {
+    "_gold_results93v2.json": "f9eb00930cf996bbcd2a828a25dab6486e8ae9bdc50739540b30cd7db3cb1a69",
+    "_gold_results93v2.pkl": "2a9ba7a1550543c4c21147038eb18bbdf7c2492785ac8f3f5dfc3d61aefdb724"
+  },
+  "gold_hashes_equal_baseline": true,
+  "score_runs": [
+    {
+      "run": 1,
+      "rc": 0,
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    },
+    {
+      "run": 2,
+      "rc": 0,
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    },
+    {
+      "run": 3,
+      "rc": 0,
+      "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      }
+    }
+  ],
+  "score_all_consistent": true
+}

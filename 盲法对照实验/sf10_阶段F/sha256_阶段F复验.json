@@ -1,0 +1,87 @@
+{
+  "阶段": "SF10 阶段F·统一验收复验 F1",
+  "日期": "2026-10-14",
+  "说明": "对 benchmark_v2 统一评分器 / v10 / hist 评分器做三连跑 SHA-256 复验。只读源文件，未改任何评分器/gold/盲法结果。",
+
+  "v2_三连跑": {
+    "脚本": "benchmark_v2/score_benchmark_v2.py",
+    "runs": [
+      {"run": 1, "rc": 0, "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"}},
+      {"run": 2, "rc": 0, "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"}},
+      {"run": 3, "rc": 0, "hashes": {
+        "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+        "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+        "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"}}
+    ],
+    "基线哈希": {
+      "判分明细v2.csv": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882",
+      "判分汇总v2.json": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+      "审计日志v2.json": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+    },
+    "两两一致": true,
+    "与基线一致": true
+  },
+
+  "v2_双cwd": {
+    "说明": "阶段A 路径修复复验：分别在两个 cwd 运行 score_benchmark_v2.py 各一次",
+    "cwd_D_projectAGI_nhx": {"rc": 0, "与基线一致": true},
+    "cwd_C_Users_JM.RADE": {"rc": 0, "与基线一致": true},
+    "全部与基线一致": true
+  },
+
+  "v10_三连跑": {
+    "脚本": "盲法93_v10/score_sf10_v10.py",
+    "runs": [
+      {"run": 1, "rc": 0, "hashes": {
+        "判分明细v10.csv": "05092432cf8faa6ef0acd843beff8a72552a1bf2fd4f3d1aa6e91f1b3a720698",
+        "判分汇总v10.json": "34b580826ea13a6fd1a347e3609d8199edc0eb83a53c18808dafedc7301d3da5",
+        "审计日志v10.json": "d01e855545b2fe9fbf6a4d0dbc72df1ab7a6ed5bb5c54eb8c73b503f2f0b0bb3"}},
+      {"run": 2, "rc": 0, "hashes": {
+        "判分明细v10.csv": "05092432cf8faa6ef0acd843beff8a72552a1bf2fd4f3d1aa6e91f1b3a720698",
+        "判分汇总v10.json": "34b580826ea13a6fd1a347e3609d8199edc0eb83a53c18808dafedc7301d3da5",
+        "审计日志v10.json": "d01e855545b2fe9fbf6a4d0dbc72df1ab7a6ed5bb5c54eb8c73b503f2f0b0bb3"}},
+      {"run": 3, "rc": 0, "hashes": {
+        "判分明细v10.csv": "05092432cf8faa6ef0acd843beff8a72552a1bf2fd4f3d1aa6e91f1b3a720698",
+        "判分汇总v10.json": "34b580826ea13a6fd1a347e3609d8199edc0eb83a53c18808dafedc7301d3da5",
+        "审计日志v10.json": "d01e855545b2fe9fbf6a4d0dbc72df1ab7a6ed5bb5c54eb8c73b503f2f0b0bb3"}}
+    ],
+    "两两一致": true
+  },
+
+  "hist_三连跑": {
+    "脚本": "sf10_阶段D/score_sf10_v10_hist.py",
+    "runs": [
+      {"run": 1, "rc": 0, "hashes": {
+        "判分明细v10_hist.csv": "f9a33ea492be89614758e0e25f7154e52aea44590daeb42edaf0f617e789b470",
+        "判分汇总v10_hist.json": "912a3b0b2d848c9db13fc2c95097bc5868e743ae9a6701640e01a44d87401a8d",
+        "审计日志v10_hist.json": "e7b3815291ad5671c5b2adc8f2414ea1d2601694fa18cc538b24cd79fb1e12a7"}},
+      {"run": 2, "rc": 0, "hashes": {
+        "判分明细v10_hist.csv": "f9a33ea492be89614758e0e25f7154e52aea44590daeb42edaf0f617e789b470",
+        "判分汇总v10_hist.json": "912a3b0b2d848c9db13fc2c95097bc5868e743ae9a6701640e01a44d87401a8d",
+        "审计日志v10_hist.json": "e7b3815291ad5671c5b2adc8f2414ea1d2601694fa18cc538b24cd79fb1e12a7"}},
+      {"run": 3, "rc": 0, "hashes": {
+        "判分明细v10_hist.csv": "f9a33ea492be89614758e0e25f7154e52aea44590daeb42edaf0f617e789b470",
+        "判分汇总v10_hist.json": "912a3b0b2d848c9db13fc2c95097bc5868e743ae9a6701640e01a44d87401a8d",
+        "审计日志v10_hist.json": "e7b3815291ad5671c5b2adc8f2414ea1d2601694fa18cc538b24cd79fb1e12a7"}}
+    ],
+    "两两一致": true
+  },
+
+  "执行方差复算": {
+    "口径": "v9 vs v10 symptom-only 主穴集合整体单元比较（透刺对/X+Y 不展开，按整体单元），全部 93 案",
+    "复算一致案": 53,
+    "复算差异案": 40,
+    "复算差异单元总数": 47,
+    "报告声称": "53/93",
+    "与报告匹配": true,
+    "与判分汇总v10.json记录匹配": true
+  },
+
+  "全部一致": true
+}

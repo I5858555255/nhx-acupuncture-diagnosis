@@ -18,7 +18,8 @@ sys.path.insert(0, HERE)
 from normalize_acupoints import normalize_acupoints
 
 BASE = HERE
-PRES_DIR = r"D:\projectAGI\nhx\盲法对照实验\盲法93\prescriptions"
+_ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
+PRES_DIR = os.path.join(_ROOT, "盲法93", "prescriptions")
 
 # ============ 以下与旧版 gold_parse93v9.py 逐条一致 ============
 TRAD2SIMP = {
@@ -162,7 +163,7 @@ def expand_gold(tokens):
     return members, len(members), log
 
 
-with open(r"D:\projectAGI\nhx\盲法对照实验\盲法93_v9\_blind93v9_results.json", encoding='utf-8') as f:
+with open(os.path.join(_ROOT, "盲法93_v9", "_blind93v9_results.json"), encoding='utf-8') as f:
     blind = json.load(f)
 case_ids = sorted(blind.keys())
 

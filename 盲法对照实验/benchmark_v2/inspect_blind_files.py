@@ -2,7 +2,8 @@
 """inspect_blind_files.py — 探查 9 轮盲法结果 JSON 的结构与字段一致性"""
 import json, os
 
-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
 FILES = {
     "v140": os.path.join(ROOT, "盲法140", "_blind140_results.json"),
     "v2":   os.path.join(ROOT, "盲法93", "_blind93_results.json"),

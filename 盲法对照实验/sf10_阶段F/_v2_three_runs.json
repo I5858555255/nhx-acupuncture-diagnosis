@@ -1,0 +1,29 @@
+﻿[
+    {
+        "run":  1,
+        "rc":  0,
+        "hashes":  {
+                       "判分汇总v2.json":  "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+                       "审计日志v2.json":  "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc",
+                       "判分明细v2.csv":  "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882"
+                   }
+    },
+    {
+        "run":  2,
+        "rc":  0,
+        "hashes":  {
+                       "判分汇总v2.json":  "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+                       "审计日志v2.json":  "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc",
+                       "判分明细v2.csv":  "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882"
+                   }
+    },
+    {
+        "run":  3,
+        "rc":  0,
+        "hashes":  {
+                       "判分汇总v2.json":  "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb",
+                       "审计日志v2.json":  "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc",
+                       "判分明细v2.csv":  "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882"
+                   }
+    }
+]

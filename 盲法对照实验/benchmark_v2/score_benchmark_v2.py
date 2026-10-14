@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from normalize_acupoints import normalize_acupoints
 
-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
+ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
 FILES = {
     "v140": os.path.join(ROOT, "盲法140", "_blind140_results.json"),
     "v2":   os.path.join(ROOT, "盲法93", "_blind93_results.json"),

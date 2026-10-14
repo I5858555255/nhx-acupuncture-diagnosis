@@ -17,7 +17,7 @@ with open(os.path.join(HERE, '_gold_results93v2.pkl'), 'rb') as f:
     GOLD = pickle.load(f)
 RESULTS = GOLD['results']; CASE_IDS = GOLD['case_ids']; SUMMARY = GOLD['summary']
 
-ROOT = r"D:\projectAGI\nhx\盲法对照实验"
+ROOT = os.path.dirname(HERE)  # 盲法对照实验目录（由脚本位置推导）
 import json as _j
 BLIND = {lab: _j.load(open(os.path.join(ROOT, d, f), encoding='utf-8'))
          for lab, d, f in [
