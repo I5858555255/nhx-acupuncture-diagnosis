@@ -1,0 +1,76 @@
+{
+ "git_head": "6f4dd053bc5c17bb5d1ed8c41eca61c662f255ec",
+ "登记时间": "2026-10-14T21:46:38.648627",
+ "登记": {
+  "主目录_SKILL": {
+   "sha256": "6595551f14fac59c154a2d321dc3709d6e139d065de4d16bfa1556f355faf299",
+   "bytes": 40134
+  },
+  "v12_SKILL": {
+   "sha256": "6595551f14fac59c154a2d321dc3709d6e139d065de4d16bfa1556f355faf299",
+   "bytes": 40134
+  },
+  "v12_典型案例": {
+   "sha256": "7503aa99254b1b68a97a07a9a7c7c98845ea1aa708787e6bf943e091899b9aad",
+   "bytes": 6980
+  },
+  "v12_治则": {
+   "sha256": "297c93a8014d6c1cece5204cde120dc101d943eda821eefee54cfdbab97ebb4e",
+   "bytes": 50889
+  },
+  "v12_特效": {
+   "sha256": "dc5b39f7980726ecf897994611d4573721ff6712c0e6e977c57955e0842afefa",
+   "bytes": 38227
+  },
+  "v12_指南": {
+   "sha256": "7080ed2dc1d38bd2f5db17b209c6df4086646e2d7304709b57d8f404567d4a1a",
+   "bytes": 48968
+  },
+  "normalize_acupoints.py": {
+   "sha256": "1171101675bbab9b51bf4dbfd0e6f4bc9dad00e21f49c7ec15a46f98980c10a8",
+   "bytes": 5540
+  },
+  "gold_json": {
+   "sha256": "f9eb00930cf996bbcd2a828a25dab6486e8ae9bdc50739540b30cd7db3cb1a69",
+   "bytes": 59185
+  },
+  "gold_pkl": {
+   "sha256": "2a9ba7a1550543c4c21147038eb18bbdf7c2492785ac8f3f5dfc3d61aefdb724",
+   "bytes": 22985
+  },
+  "score_benchmark_v2.py": {
+   "sha256": "adad2d9e1c18488e569d9238bed8a5845ba81edf33fe90f3c32b0ab60115149b",
+   "bytes": 16720
+  },
+  "verify_benchmark_v2.py": {
+   "sha256": "fd0efa34674ef51f6c2020ad8e12301154541306ce2b40dda45a16c3b0c12dab",
+   "bytes": 5243
+  },
+  "判分明细v12.csv": {
+   "sha256": "308984613b161658dae9471d2a81bf321ac77e68af2239c511670c6663c8ad7d",
+   "bytes": 20127
+  },
+  "判分汇总v12.json": {
+   "sha256": "a73a13b9ef0bad0341b8a98d4b321d060766078feefe7131472fbb69d8cb845b",
+   "bytes": 16007
+  },
+  "判分明细v11.csv": {
+   "sha256": "74cb29c21f86109a9fd638011b2d935589034cf4c22935f235bf5e1301da5360",
+   "bytes": 18292
+  },
+  "判分汇总v11.json": {
+   "sha256": "5d262f410ba2018948e078b0e615636d94a71543459c857498a5f7d9ded7e5eb",
+   "bytes": 15483
+  },
+  "判分汇总_核心集.json": {
+   "sha256": "8a4a8dde69167c7abd5e9a9990004f87fe8794b57a5ce7c688e438e1be675ca0",
+   "bytes": 14863
+  },
+  "_counts": {
+   "prescriptions": 93,
+   "symptoms": 93,
+   "symptoms_v2": 93,
+   "full_原案": 140
+  }
+ }
+}

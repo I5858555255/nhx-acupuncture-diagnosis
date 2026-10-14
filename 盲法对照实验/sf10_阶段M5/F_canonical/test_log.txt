@@ -1,0 +1,39 @@
+test_ear_aliases (test_canonical_scorer.TestAliasNormalization.test_ear_aliases) ... ok
+test_point_aliases (test_canonical_scorer.TestAliasNormalization.test_point_aliases) ... ok
+test_procedure_note (test_canonical_scorer.TestAliasNormalization.test_procedure_note) ... ok
+test_group_not_kept_as_point (test_canonical_scorer.TestCompositeExpansion.test_group_not_kept_as_point)
+组穴名本身不进入规范集。 ... ok
+test_kai_siguan (test_canonical_scorer.TestCompositeExpansion.test_kai_siguan) ... ok
+test_kiwu_zhen (test_canonical_scorer.TestCompositeExpansion.test_kiwu_zhen) ... ok
+test_sanhuang (test_canonical_scorer.TestCompositeExpansion.test_sanhuang) ... ok
+test_x_plus_y (test_canonical_scorer.TestCompositeExpansion.test_x_plus_y) ... ok
+test_duplicate_units_collapse (test_canonical_scorer.TestGoldDedup.test_duplicate_units_collapse) ... ok
+test_gold_set_dedup_in_metrics (test_canonical_scorer.TestGoldDedup.test_gold_set_dedup_in_metrics) ... ok
+test_macro_average_empty (test_canonical_scorer.TestMacroMicro.test_macro_average_empty) ... ok
+test_macro_recall (test_canonical_scorer.TestMacroMicro.test_macro_recall) ... ok
+test_macro_skips_none (test_canonical_scorer.TestMacroMicro.test_macro_skips_none) ... ok
+test_micro_all_none_when_no_hits (test_canonical_scorer.TestMacroMicro.test_micro_all_none_when_no_hits) ... ok
+test_micro_jac (test_canonical_scorer.TestMacroMicro.test_micro_jac) ... ok
+test_micro_prec (test_canonical_scorer.TestMacroMicro.test_micro_prec) ... ok
+test_micro_recall (test_canonical_scorer.TestMacroMicro.test_micro_recall) ... ok
+test_default_root_points_to_project (test_canonical_scorer.TestPathResolution.test_default_root_points_to_project) ... ok
+test_explicit_root (test_canonical_scorer.TestPathResolution.test_explicit_root) ... ok
+test_gold_pkl_exists (test_canonical_scorer.TestPathResolution.test_gold_pkl_exists) ... ok
+test_load_gold_roundtrip (test_canonical_scorer.TestPathResolution.test_load_gold_roundtrip) ... ok
+test_both_empty (test_canonical_scorer.TestPerCaseMetrics.test_both_empty) ... ok
+test_empty_gold (test_canonical_scorer.TestPerCaseMetrics.test_empty_gold)
+空 gold：G 空。recall=None；P 非空时 prec=0、F1=0.0、jac=0.0。 ... ok
+test_empty_prediction (test_canonical_scorer.TestPerCaseMetrics.test_empty_prediction)
+空预测：G 非空。prec=None，recall=0，F1=0.0，jac=0.0。 ... ok
+test_perfect_hit (test_canonical_scorer.TestPerCaseMetrics.test_perfect_hit) ... ok
+test_tp_fp_fn_counts (test_canonical_scorer.TestPerCaseMetrics.test_tp_fp_fn_counts) ... ok
+test_zero_tp_f1_is_zero (test_canonical_scorer.TestPerCaseMetrics.test_zero_tp_f1_is_zero)
+tp=0：F1=0.0（不是 None），recall=0，prec=0，jac=0。 ... ok
+test_both_ends_hit_precision_one (test_canonical_scorer.TestTransmissionNeedling.test_both_ends_hit_precision_one) ... ok
+test_ends_counted (test_canonical_scorer.TestTransmissionNeedling.test_ends_counted) ... ok
+test_only_one_end_hit (test_canonical_scorer.TestTransmissionNeedling.test_only_one_end_hit) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.002s
+
+OK
