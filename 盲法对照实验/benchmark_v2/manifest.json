@@ -1,0 +1,1332 @@
+{
+  "generated_at": "2026-10-14T13:09:38",
+  "purpose": "BENCHMARK-AUDIT-01 冻结基线；当前结果只归档不覆盖；新评分输出至 benchmark_v2/",
+  "groups": {
+    "skill_v9": [
+      {
+        "path": "D:\\projectAGI\\nhx\\doubao-acupuncture-diagnosis\\skill\\SKILL.md",
+        "exists": true,
+        "sha256": "fd332796c7fc064b62a9d58d7aff35759d3c4a0199d7901e17fe7e216420eb03",
+        "size": 21520
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\doubao-acupuncture-diagnosis\\skill\\references\\典型案例示范集.md",
+        "exists": true,
+        "sha256": "7503aa99254b1b68a97a07a9a7c7c98845ea1aa708787e6bf943e091899b9aad",
+        "size": 6980
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\doubao-acupuncture-diagnosis\\skill\\references\\治则手法库.json",
+        "exists": true,
+        "sha256": "297c93a8014d6c1cece5204cde120dc101d943eda821eefee54cfdbab97ebb4e",
+        "size": 50889
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\doubao-acupuncture-diagnosis\\skill\\references\\特效库全量.json",
+        "exists": true,
+        "sha256": "dc5b39f7980726ecf897994611d4573721ff6712c0e6e977c57955e0842afefa",
+        "size": 38227
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\doubao-acupuncture-diagnosis\\skill\\references\\诊断与针灸实施指南.md",
+        "exists": true,
+        "sha256": "7080ed2dc1d38bd2f5db17b209c6df4086646e2d7304709b57d8f404567d4a1a",
+        "size": 48968
+      }
+    ],
+    "symptoms93": [
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\107_01_symptoms.txt",
+        "exists": true,
+        "sha256": "63707e4901b1eae4242cae6eb4732cc9b2191ff5003eec3187750f91498a277c",
+        "size": 799
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\116_01_symptoms.txt",
+        "exists": true,
+        "sha256": "0969274501382fb4e70d4c15798bd9d38a4b90ba7c7d26342e4420797d94b6b7",
+        "size": 684
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\117_01_symptoms.txt",
+        "exists": true,
+        "sha256": "588a556d0d114553efc08443fabf27671a0f806857cb5e4a32c3c0053a14788e",
+        "size": 882
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\118_01_symptoms.txt",
+        "exists": true,
+        "sha256": "ac770aade50ba9e3af516f2bfc51a202d5da8e6913ae85acd468bdd29b5177b0",
+        "size": 861
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\136_01_symptoms.txt",
+        "exists": true,
+        "sha256": "5143b1fd1095271e7d9c1dc980393b10276c03991bbfc9ddc2514d9b8c7b2765",
+        "size": 267
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\137_01_symptoms.txt",
+        "exists": true,
+        "sha256": "0d724bc62809f9ea8d99b95ca3403b4a781b812161e3ce9105beb9be61aacfc1",
+        "size": 123
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\13_01_symptoms.txt",
+        "exists": true,
+        "sha256": "4285d4504527640623d7d3bfdb1692a6f2a29cdfea1881a1d06dc382da688571",
+        "size": 593
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\140_01_symptoms.txt",
+        "exists": true,
+        "sha256": "ed7e828a868d79254d744a724f114f88e246e31947432f00474593a8070faf97",
+        "size": 575
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\141_01_symptoms.txt",
+        "exists": true,
+        "sha256": "b1ef13d0e6930b99bd785411bde75ab56e2cefd18f873e76f44741eed71a0c68",
+        "size": 452
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\142_01_symptoms.txt",
+        "exists": true,
+        "sha256": "5301a7c08766fa19d41891f721ba7caf5e08f94cab31452b0264357a131d5d4a",
+        "size": 482
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\143_01_symptoms.txt",
+        "exists": true,
+        "sha256": "de31af75d68ad0a2fbebe32843cd28cf2dc14b033c5942c5ca41a19181e6b809",
+        "size": 412
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\144_01_symptoms.txt",
+        "exists": true,
+        "sha256": "fa78d0b873d892b732f53663bd2fcecbd02a7ac2a78b85033e1d2c59d01d03dd",
+        "size": 331
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\145_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7686cf345ecd97842ea2e5781a383611b649010ea180617bae861f7ceacd56fa",
+        "size": 291
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\146_01_symptoms.txt",
+        "exists": true,
+        "sha256": "2c0ad2555d5dd4432ecfb77b85c97b7bb6bb59b7884580210ebe5d7db5489d81",
+        "size": 382
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\148_01_symptoms.txt",
+        "exists": true,
+        "sha256": "28b513c344852be61eafdd4127bcf686c6fe47a4a5a7e4605ef39b6be670f8a7",
+        "size": 472
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\149_01_symptoms.txt",
+        "exists": true,
+        "sha256": "6eaac1827df0f79783d7f327061a71d9e5faf65a152aac59fa553c07313f5ed0",
+        "size": 554
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\156_03_symptoms.txt",
+        "exists": true,
+        "sha256": "c92b520cbfdaff4288d17ea18f57553dc46528defd52d1c775e35e26646fd23a",
+        "size": 600
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\156_04_symptoms.txt",
+        "exists": true,
+        "sha256": "219d652ebd2e1f78f204d2426504bc10848022b7dee28a7813b5e219d9c27097",
+        "size": 494
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\156_05_symptoms.txt",
+        "exists": true,
+        "sha256": "55e2f3b16d90505585791b51380077e1a368a648f64b30755dc11ff80a3adc11",
+        "size": 420
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\156_06_symptoms.txt",
+        "exists": true,
+        "sha256": "83320a793f3bd98d736cd8b5b1360dbe8de5fa95643615c22ed390b44b6d73d5",
+        "size": 462
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\160_01_symptoms.txt",
+        "exists": true,
+        "sha256": "4246a8f39f2494b1f552bdb15088fed02dd4274d4488ef103f0ebaaaa53f3f25",
+        "size": 481
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\178_01_symptoms.txt",
+        "exists": true,
+        "sha256": "44243dc86172ab978651f44dd67c79cdef5895fb1239180175fbe0c185a48a63",
+        "size": 1294
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\194_01_symptoms.txt",
+        "exists": true,
+        "sha256": "9f66b9842b3382512074efedc79c4a58138b4eb9aa53a41d0415daf785515ae0",
+        "size": 298
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\195_01_symptoms.txt",
+        "exists": true,
+        "sha256": "a25b82306447942750b561391d2b5ae1b7782651c18e884e918089834c0d9ee1",
+        "size": 569
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\198_01_symptoms.txt",
+        "exists": true,
+        "sha256": "57e05503224e696699feea4a5f98d0ec9c5bd52f6f816582b8cd25ddfd2d5305",
+        "size": 752
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\199_01_symptoms.txt",
+        "exists": true,
+        "sha256": "fdd58a34766c8144b230b3731edba3bb4373aa46a0b6f622da28310658a67d3d",
+        "size": 575
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\1_01_symptoms.txt",
+        "exists": true,
+        "sha256": "9384f27559c4ec4850dce101bb642d096b3ebe7995a39a85883f069ff9984da3",
+        "size": 731
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\200_01_symptoms.txt",
+        "exists": true,
+        "sha256": "e44ba085e1cde7d2c4777e10c0f66bd6c7d2b27a8d11e2bfd9b183b923b32f9e",
+        "size": 554
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\201_01_symptoms.txt",
+        "exists": true,
+        "sha256": "1353a4a5eb70846438b2b6c431e7c13d010d5b2ac2e6ee20ed8bc23942065f50",
+        "size": 159
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\202_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7bc1b01a2bdfee12e562da515e35781d3f5d51d990012eb3905765fb89f2d23a",
+        "size": 360
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\207_01_symptoms.txt",
+        "exists": true,
+        "sha256": "9dc26e8969612866adbcd2df1f734c56087246d8cdad2852b824ceadd9b28598",
+        "size": 600
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\208_01_symptoms.txt",
+        "exists": true,
+        "sha256": "cfd478ccbfa5476faa658ae6e3702ff58a60579cf608bbcc7fb3c87cdaeb7970",
+        "size": 492
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\209_01_symptoms.txt",
+        "exists": true,
+        "sha256": "acf4a3a900b2976a7eaa045e90299081c1b9422f0e66202feccf6ba22273d9ef",
+        "size": 776
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\212_01_symptoms.txt",
+        "exists": true,
+        "sha256": "bfb2cb247de36d766cdc1410d782ce77cfad44634e49af8b173af2180f754e1f",
+        "size": 396
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\213_01_symptoms.txt",
+        "exists": true,
+        "sha256": "cc653de8b8b948c311c2cc9529963826655b33f7855bb11f63f0d122ab9a77ed",
+        "size": 205
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\214_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7406a5a55bba3dcd4f5202cb305cd0affdf5d865c48be13636f55ca37da93c42",
+        "size": 475
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\216_01_symptoms.txt",
+        "exists": true,
+        "sha256": "f6ec9ca1a7594be94d255e52985ce556882c87106bf306ea14a603b5b4542c90",
+        "size": 220
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\216_02_symptoms.txt",
+        "exists": true,
+        "sha256": "b8979f7893821b02e6b712eec138e5a734c6cc900738d04fec1691d4919ed6ca",
+        "size": 232
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\216_03_symptoms.txt",
+        "exists": true,
+        "sha256": "f1faded31e99afbba34f2daa21db844337816f11819d07713abf288f2cd85e2d",
+        "size": 211
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\216_04_symptoms.txt",
+        "exists": true,
+        "sha256": "ee771dfe8e3c82867d5262c2cd8194dfbb8c22ef753a00b7eef9341d76f722cb",
+        "size": 166
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\216_05_symptoms.txt",
+        "exists": true,
+        "sha256": "8dfd9f8a0f2ed689ec3c979a69c07f4d07e28d3de83929ca26c3d3fdaf747430",
+        "size": 181
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\221_01_symptoms.txt",
+        "exists": true,
+        "sha256": "46ebf5a19b73a713af42ab4cbc006e670d423cf541ea5a3ece1a323743e62e2b",
+        "size": 464
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\223_01_symptoms.txt",
+        "exists": true,
+        "sha256": "ae01b3f3d0c3cbd82208d05247c787c233a701f7d243d02466fbef6a954b4c03",
+        "size": 141
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\225_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7ec5ad17c73253c1b66067294546ed9940a6f6d0ba6dde7f828a448d682f4523",
+        "size": 321
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\22_01_symptoms.txt",
+        "exists": true,
+        "sha256": "0feb0e557e8631fe1d427834a589fd4547d2e4c0ebf34306ef372190e086b022",
+        "size": 597
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\234_01_symptoms.txt",
+        "exists": true,
+        "sha256": "2147a93f495a2034508092989caf830e76ca18854637cd2556f589da3aee9d53",
+        "size": 466
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\236_01_symptoms.txt",
+        "exists": true,
+        "sha256": "0128f2ae5065df7d165c3c5e42e88b6a839e360c1962265c49c6fbabc5dd1d4b",
+        "size": 357
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\23_01_symptoms.txt",
+        "exists": true,
+        "sha256": "6975e59a2526eabf41fd82a152f88e09e4b93d8adfc3229518d160e81e8c969b",
+        "size": 639
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\249_01_symptoms.txt",
+        "exists": true,
+        "sha256": "d7ea03dacbac14def65869ddc329b1cb31aa4be6157e89d3ad05277871735a1b",
+        "size": 458
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\268_01_symptoms.txt",
+        "exists": true,
+        "sha256": "8f9dc12aaa4148da001c84f61b62ea5c62e0f860dfcb77c6abd569de5d705733",
+        "size": 471
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\270_01_symptoms.txt",
+        "exists": true,
+        "sha256": "cdf4e7520dedd471ef4fd571249243697ebc05a0219f3313fe5d5a62cb7d4ebd",
+        "size": 1133
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\274_01_symptoms.txt",
+        "exists": true,
+        "sha256": "ac1f8615b37469178c495f7193410740cffadfaa42bd6d8ba9a833825be1f8c4",
+        "size": 696
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\278_01_symptoms.txt",
+        "exists": true,
+        "sha256": "00d26f19b477431e61424f36c306fea1da2c6ab85e071cb8b3501d38d1944c87",
+        "size": 710
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\284_01_symptoms.txt",
+        "exists": true,
+        "sha256": "0da16b6b58e76d98ba91d4b15be4b13a365aa21ce588f0b9f1dc6825d2596d92",
+        "size": 756
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\285_01_symptoms.txt",
+        "exists": true,
+        "sha256": "01c50f182f2acf49aebacce1a370764e501c8d1cf3156b4e713026cc76b8843e",
+        "size": 589
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\298_01_symptoms.txt",
+        "exists": true,
+        "sha256": "f765928d18b2904a82b84bad22c177e522a8a44677e492f83f452c0475730375",
+        "size": 800
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\303_01_symptoms.txt",
+        "exists": true,
+        "sha256": "027e7d78384c3d23f09596c235dd7daedf37117c19cc74ab5dfe1c9f011e0831",
+        "size": 808
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\311_01_symptoms.txt",
+        "exists": true,
+        "sha256": "6e760b791e26f4f03e7893e7e2ecc50e55af16198d25830c7a903ff736165347",
+        "size": 400
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\312_01_symptoms.txt",
+        "exists": true,
+        "sha256": "a3522fa6356cfe2d1f7ea19d33f79bb976f440b1cd5974a12754b87f2363bc82",
+        "size": 437
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\318_01_symptoms.txt",
+        "exists": true,
+        "sha256": "6857d72afba32c5dcbc5ee1a174b87a376f192067acfe20098780f83a10ed128",
+        "size": 485
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\323_01_symptoms.txt",
+        "exists": true,
+        "sha256": "5e6eb3c3e4ed7b375c5ffb83d36452699934a5943ae46f0aa02e6c23dbbd2def",
+        "size": 309
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\340_01_symptoms.txt",
+        "exists": true,
+        "sha256": "23310ac2a8b3fa42f6b6a5824cd766e050dc3279f120bb74bfafa08d3f657fbe",
+        "size": 284
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\342_01_symptoms.txt",
+        "exists": true,
+        "sha256": "e5916627705060efe8a314035138c8b3f094c8e0649f7b3c2101375558659f3f",
+        "size": 471
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\345_01_symptoms.txt",
+        "exists": true,
+        "sha256": "d4de1d37ad3e66d8fabb6937ba3f29a2a39e23933948fff65eedda3c12d294e3",
+        "size": 601
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\346_01_symptoms.txt",
+        "exists": true,
+        "sha256": "41ddac00603e07edd9da532b64d42bbe725e4f18648c1cb59eb423bc8f6ab433",
+        "size": 515
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\347_01_symptoms.txt",
+        "exists": true,
+        "sha256": "3a124151094e50036c025268656999c654f4e539156ce29a092377cddad56028",
+        "size": 424
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\355_01_symptoms.txt",
+        "exists": true,
+        "sha256": "6f5168d92960f719c60eb778630a9086453363e478464e510ba9a14fa3430d1a",
+        "size": 529
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\37_01_symptoms.txt",
+        "exists": true,
+        "sha256": "86c846e632f74eec6c814b6b6a579623bc8519c08b4fb461f33d9fa75b93665c",
+        "size": 458
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\38_01_symptoms.txt",
+        "exists": true,
+        "sha256": "4537dfa6086279f75e44b072a374b9fcc48e010b29fcd68f433e5ae2986675b3",
+        "size": 585
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\49_01_symptoms.txt",
+        "exists": true,
+        "sha256": "da82e14499ae6378bf09fc3503b4b1023a2eb98fdb061826a058836643ad2630",
+        "size": 677
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\55_01_symptoms.txt",
+        "exists": true,
+        "sha256": "f5e5391002236e927ec5d4d83831636d2987c12571e0007fb6001c82a27ff3da",
+        "size": 335
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\57_01_symptoms.txt",
+        "exists": true,
+        "sha256": "21ef9ac2dd1f8e0219c8fe8b12f991fa3e9a56575956d3120214d7b599ada542",
+        "size": 429
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\60_01_symptoms.txt",
+        "exists": true,
+        "sha256": "1a6cfb80d04aba88dfb69e80f8f61e024c5b23392159fe6e90e6c94c8f9fc37e",
+        "size": 1211
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\61_01_symptoms.txt",
+        "exists": true,
+        "sha256": "97476780cf22444cd78b055ac096b1a4d4549cae756af269b7f32c58bea2f1fc",
+        "size": 959
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\62_01_symptoms.txt",
+        "exists": true,
+        "sha256": "734950a32fcbd5321b1dfaaddfe12d0c75f2ad5ca30d0430b985df3ba44cfbd8",
+        "size": 362
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\63_01_symptoms.txt",
+        "exists": true,
+        "sha256": "72efa11576fc7230844d433f7c95ae19997ee7ea8438fad1dfed794583598709",
+        "size": 421
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\64_01_symptoms.txt",
+        "exists": true,
+        "sha256": "39e0a1fc9fbc575dcde3e42e6a0aa6ef4c18b6e999a9caba81154068bfcdce77",
+        "size": 540
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\65_01_symptoms.txt",
+        "exists": true,
+        "sha256": "207a39c47a97379856f3da0443df59eadee5ef8817193e4fca78fe3db60fcebe",
+        "size": 596
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\66_01_symptoms.txt",
+        "exists": true,
+        "sha256": "3ee37f13d8a419314c687ad87e2a9666d5f12b960ba7e51ce1b577d5f852e682",
+        "size": 544
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\67_01_symptoms.txt",
+        "exists": true,
+        "sha256": "799d324eb3547546920794e88c23173881a632e920854f7fa685a1b7fa1adaa4",
+        "size": 822
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\68_01_symptoms.txt",
+        "exists": true,
+        "sha256": "2ccef0280b37c9fba27dc8c63e709ceb44bc3d042865ab52bd8e4b676b1d4dce",
+        "size": 890
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\69_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7dad56606f23770227a6d3dae2f4a1cc71e1300ce6559b167f7478b8d07fb717",
+        "size": 447
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\70_01_symptoms.txt",
+        "exists": true,
+        "sha256": "8d4e3476c6bdc7bd102a75ecf052aa85833ee59801a8d74f0ceb60c54a22ace5",
+        "size": 576
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\71_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7681249ef8b6e268cb4b4b6af65c6b799997e9e236ef9c3ee958201c363cd7bf",
+        "size": 552
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\72_01_symptoms.txt",
+        "exists": true,
+        "sha256": "b003cf22db3b865af97fbec5cb08438c2dd7152ddedff1c35d59d14fadf4b22c",
+        "size": 432
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\73_01_symptoms.txt",
+        "exists": true,
+        "sha256": "88a76e75c2d2fdaebb7531c3fba82656fcd2b3119414066c76aa5eea0e9d3fa3",
+        "size": 515
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\74_01_symptoms.txt",
+        "exists": true,
+        "sha256": "469ff6c84cb3ca4fb2800de2d0f8c6a314fcfae31467cd1bfd31eba9cfd7bda1",
+        "size": 499
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\75_01_symptoms.txt",
+        "exists": true,
+        "sha256": "c7a785e3b19ed08eb1ff98be0b43057df54d174e11f2680ecb309f7f65f339fb",
+        "size": 415
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\76_01_symptoms.txt",
+        "exists": true,
+        "sha256": "5393b3405b875439d3bcabfe5be1fd204e813a3ffc8a040627051214e1bc1154",
+        "size": 439
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\77_01_symptoms.txt",
+        "exists": true,
+        "sha256": "7dfb0ecff5ea3ef66bc3b79f6ec0975d37ac3a0d8b83a4d8d315cf026b5dcee8",
+        "size": 302
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\78_01_symptoms.txt",
+        "exists": true,
+        "sha256": "781e5f0422a53bd2964a1a340cd5d1fc8bf363c062e606331a5459e28eec0971",
+        "size": 326
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\80_01_symptoms.txt",
+        "exists": true,
+        "sha256": "5b228a86823aff9b5402cea0e689205828c59223dd1b917d3c041d7c8a8c153e",
+        "size": 320
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\symptoms\\8_01_symptoms.txt",
+        "exists": true,
+        "sha256": "2d9aa2edc1a05befa429dca8194fede9112460a5d7142ae2f65b7f7ab6742f1b",
+        "size": 670
+      }
+    ],
+    "prescriptions93": [
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\107_01_prescription.txt",
+        "exists": true,
+        "sha256": "40acb85b4fb8691bb1eaa2c6bcb1caa78ad95387457365df79f5032d4fb4e7c3",
+        "size": 69
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\116_01_prescription.txt",
+        "exists": true,
+        "sha256": "fc58d8c91388fd07fbd2a6ed07c8eec2361540936f63cbc07556a8f4cd88f27a",
+        "size": 45
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\117_01_prescription.txt",
+        "exists": true,
+        "sha256": "7f725da30ad85cc35c01e3a31aebfc6ffa403145a8fa64f18e0db38df8377964",
+        "size": 82
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\118_01_prescription.txt",
+        "exists": true,
+        "sha256": "9c953e495f35c04a1dc6224e5154fdaadea9bf0658b8bdb24abc6846604b3745",
+        "size": 251
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\136_01_prescription.txt",
+        "exists": true,
+        "sha256": "fb125023309e839cf8180d097b2dafd3943718587e603087fbc987c814322544",
+        "size": 96
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\137_01_prescription.txt",
+        "exists": true,
+        "sha256": "9cbebd57ac2db805e8f72fa81a3aa8d723e7aee775378959d89cb32454558ac7",
+        "size": 132
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\13_01_prescription.txt",
+        "exists": true,
+        "sha256": "fb30a8aae5ae30c0ae44ff6745ca0c5364a7b1b061e57df690496459abf7f711",
+        "size": 291
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\140_01_prescription.txt",
+        "exists": true,
+        "sha256": "b71e21e0ebf0d44c292fc444659966daf8b5a866ddff392a681d42cfb9f0c5a6",
+        "size": 218
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\141_01_prescription.txt",
+        "exists": true,
+        "sha256": "fcfece040291b9d52170dfb96a860b879ab45d3d0b048af29117041909e152e7",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\142_01_prescription.txt",
+        "exists": true,
+        "sha256": "44033bda0010129b961e2c254f55857a1254fede05d367745c3f56e14500b0f9",
+        "size": 123
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\143_01_prescription.txt",
+        "exists": true,
+        "sha256": "fccd9123e69a6b3cc11d04826770fa76cebd8438406e18642cdbeb781da176cf",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\144_01_prescription.txt",
+        "exists": true,
+        "sha256": "a6b0040998c87cab1bde2033b39b46ab739fe9bc512f06fb63e5f75a6fcce15e",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\145_01_prescription.txt",
+        "exists": true,
+        "sha256": "81f2dcd3a76fdb57394c7f5d249d804a359d51318b6837503fd6c03994b49887",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\146_01_prescription.txt",
+        "exists": true,
+        "sha256": "b1d1fb0cf53d710c9d47c2782443f5e9f54fbd8c0010c17b6cb2dde66d688e78",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\148_01_prescription.txt",
+        "exists": true,
+        "sha256": "890b9a532263196c3ae9037a6c2332c1acb32e539fff3740eeac31daaec823f3",
+        "size": 51
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\149_01_prescription.txt",
+        "exists": true,
+        "sha256": "d6d921b61685c565064e41e78f7e3aae3cceeade36c7747541a53dbe8d7a11b6",
+        "size": 58
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\156_03_prescription.txt",
+        "exists": true,
+        "sha256": "ef54134bda82c9d1154158c88943d54be431563056174880a29d229075adc84f",
+        "size": 206
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\156_04_prescription.txt",
+        "exists": true,
+        "sha256": "3a3564493656c15401a0eeea96f8b451464c4c48da2cc9d45ad09800922b283e",
+        "size": 134
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\156_05_prescription.txt",
+        "exists": true,
+        "sha256": "2b02ae9c28106d994cf4001d91e98a2f1ea3be089de978079043b1b19057eb69",
+        "size": 243
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\156_06_prescription.txt",
+        "exists": true,
+        "sha256": "ef5b60539b870107bb7c542321b3aa442cad5dfcd2e22ebf70dcd7487c096a14",
+        "size": 264
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\160_01_prescription.txt",
+        "exists": true,
+        "sha256": "9fb8efe88dd7730269ac0f213918a31286d5c05400d2b1732cb9644c5ed1005b",
+        "size": 235
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\178_01_prescription.txt",
+        "exists": true,
+        "sha256": "6b7cc4dcadddd7e402d8b7e858553e68964373b279626b317fc7d249dfacf591",
+        "size": 42
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\194_01_prescription.txt",
+        "exists": true,
+        "sha256": "3a58aef9edab4733835a399bd64ad37d9caaf715d0cb1551a422f1a5f7ce6c9e",
+        "size": 236
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\195_01_prescription.txt",
+        "exists": true,
+        "sha256": "32742f55e5cb1e755556f3ec76b40080b081e629e8d3031bdd4581f273795150",
+        "size": 288
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\198_01_prescription.txt",
+        "exists": true,
+        "sha256": "3b6d2b4eb81f9a6ddee0ad8da8d5d2ff7e0e6ea958744d9942fc96e8e4d8fe42",
+        "size": 137
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\199_01_prescription.txt",
+        "exists": true,
+        "sha256": "f73a6dd0f98678398dcc26f494b529d12ec59b91886fa95d4ffdc787c40c3028",
+        "size": 68
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\1_01_prescription.txt",
+        "exists": true,
+        "sha256": "83f8c9601820601c11eb36c47cd732ffcb3cea1da3aa1af3eb0f5d672648b4e8",
+        "size": 176
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\200_01_prescription.txt",
+        "exists": true,
+        "sha256": "50b97e5c0dbfdff8c20165f057b2aca27f46afcccfd7bfe6e4dcd49fda20dfd3",
+        "size": 51
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\201_01_prescription.txt",
+        "exists": true,
+        "sha256": "483c6beb2b8d151f4e4f9669e7a2059e661e996a1b602391e7805493f0f5adea",
+        "size": 70
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\202_01_prescription.txt",
+        "exists": true,
+        "sha256": "6a11c1bed77e3b4cd3c10c786f7d45f632badb6fa5393a2f81a1fc6b8e28cbff",
+        "size": 48
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\207_01_prescription.txt",
+        "exists": true,
+        "sha256": "56f47c1052c71c16dd8d880138fb77ec1abae048b0b481fab89cef99a65af234",
+        "size": 115
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\208_01_prescription.txt",
+        "exists": true,
+        "sha256": "98ea7a26d054558be1a8218bf073f07e7cbc3eb513d8ad84bd4bb714e974a180",
+        "size": 408
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\209_01_prescription.txt",
+        "exists": true,
+        "sha256": "fe33714367bed1781c8b3c469da95a167f1bbd5e62a6f2003736d207cf1c9bdc",
+        "size": 572
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\212_01_prescription.txt",
+        "exists": true,
+        "sha256": "bfb3d78d49108abe65fcab1a9beab18494a14589aced96b1cc0a2bbf098ff328",
+        "size": 105
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\213_01_prescription.txt",
+        "exists": true,
+        "sha256": "1fc62146931f967e72b9d7df7b36da73e884d17cc0db88c177b9f279c13f7609",
+        "size": 86
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\214_01_prescription.txt",
+        "exists": true,
+        "sha256": "7178851ff6dcfd2b4c1373e0941fd6360a1a04d2d226e3878f359a14714b4c9a",
+        "size": 179
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\216_01_prescription.txt",
+        "exists": true,
+        "sha256": "c6c259150dfd9f90ff402afb1abd8dabefadccc6c7c9c55aa0f918692deb488b",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\216_02_prescription.txt",
+        "exists": true,
+        "sha256": "cb302f5dee597775197eb971107e8145191588fb3ae427cd93ed4ba1d1edc84d",
+        "size": 48
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\216_03_prescription.txt",
+        "exists": true,
+        "sha256": "015af93bdf0f7d0ee51dfd7970627e4ff6a5c25ec2ae484e22eb32792b26e484",
+        "size": 100
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\216_04_prescription.txt",
+        "exists": true,
+        "sha256": "00f4d2960b9c14a32b1748bd15629ab93ec9469aa7c7e1719b25d8a3e371d53d",
+        "size": 184
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\216_05_prescription.txt",
+        "exists": true,
+        "sha256": "4c74134543347db4223a484afd90129f0263c54c45a181c0c2bb1fdf68c98d82",
+        "size": 135
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\221_01_prescription.txt",
+        "exists": true,
+        "sha256": "41c79033653190b08772e38c4e327d0a0208b4aa8e09ebb44552f343cf1471d7",
+        "size": 249
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\223_01_prescription.txt",
+        "exists": true,
+        "sha256": "022efbae59bae6b6e641133bdda441a07296bf7920a96db37c5a1d2cc33725f7",
+        "size": 85
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\225_01_prescription.txt",
+        "exists": true,
+        "sha256": "bb7d15e57f0b80310829b2875e1f267e294b501cfffb7398bc258dda679295af",
+        "size": 93
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\22_01_prescription.txt",
+        "exists": true,
+        "sha256": "62e23c204a400d8fb597c50e78d3385f45e36ce167b00f3ee4d88f698be07cba",
+        "size": 66
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\234_01_prescription.txt",
+        "exists": true,
+        "sha256": "08125c0e8bd5c02475120c6b3eac607a4077e69e83cd7d281ab8e65bbb2cc983",
+        "size": 142
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\236_01_prescription.txt",
+        "exists": true,
+        "sha256": "b4fbc8296061bbe4c6a31b77efae0429fd3c7bfd7b9a532348b25b6bad7f2ce7",
+        "size": 189
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\23_01_prescription.txt",
+        "exists": true,
+        "sha256": "ef5d43bb50cbad7d68818f4ac642d5e6c1c20586181246d8ba787a8126f5e353",
+        "size": 66
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\249_01_prescription.txt",
+        "exists": true,
+        "sha256": "d9d93c68ef27812e3397cd35d0c6af8a2a08122aa2e2d1ea637227e76b4cfcdc",
+        "size": 102
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\268_01_prescription.txt",
+        "exists": true,
+        "sha256": "d4dfd2f5deb9d896719d6317b04313cffe2f6f53648d24cf28021efb3c375374",
+        "size": 51
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\270_01_prescription.txt",
+        "exists": true,
+        "sha256": "0c7de5729ac55f1aa24bbbb943cd87e72c74ada9e954a5921016892ce1cdcb28",
+        "size": 69
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\274_01_prescription.txt",
+        "exists": true,
+        "sha256": "dbc7e7a4329a00e0c579f73b23e5b78b95efb6f2f79008031f91a28c5d56aada",
+        "size": 129
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\278_01_prescription.txt",
+        "exists": true,
+        "sha256": "1c79df17f21bbde725e86350f566aadc4fe0a53530c409e86cee016eb37418aa",
+        "size": 42
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\284_01_prescription.txt",
+        "exists": true,
+        "sha256": "bb7b039357b85aa5968fb4418808dbf190927d4071244c0c6150bbe4749341fb",
+        "size": 42
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\285_01_prescription.txt",
+        "exists": true,
+        "sha256": "8e10e8ae66bc8108b929368d5645e93a4bfa78bc135e6fb2223d1e4da6db242e",
+        "size": 42
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\298_01_prescription.txt",
+        "exists": true,
+        "sha256": "4618bda42690115c6044c0ae3dd6e4692cb0e4344ed4be9f5f9f3e7d5c9b346f",
+        "size": 145
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\303_01_prescription.txt",
+        "exists": true,
+        "sha256": "a52c72bdfbc1d153f9d61170483cd814cb9bcdac916185f0156e39d008185ffb",
+        "size": 92
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\311_01_prescription.txt",
+        "exists": true,
+        "sha256": "a835875409b07ab456553817f91dd5d25a06c052d6ba2f039e812ef6db4c613d",
+        "size": 88
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\312_01_prescription.txt",
+        "exists": true,
+        "sha256": "72d8cb8b1deb9490dc29197f7fffafa999aa34017d3d230150990fdbfdb7eae0",
+        "size": 69
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\318_01_prescription.txt",
+        "exists": true,
+        "sha256": "59687c010cda4ad57a37513cb331bd04c49a436d5ca14cd16106be8e5e320a50",
+        "size": 120
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\323_01_prescription.txt",
+        "exists": true,
+        "sha256": "f879288f3be096c309e43b84c00f040dba524d3734232f065a8f8f59e4b9020c",
+        "size": 153
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\340_01_prescription.txt",
+        "exists": true,
+        "sha256": "d2c0f2ab8614e329db557714c4c45595feaddf2a2337d1ed41ce59e5dba642a4",
+        "size": 60
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\342_01_prescription.txt",
+        "exists": true,
+        "sha256": "da2279cdea126d226bacdb35c6210ae2cde88f416536896e1a25cb4b60e2cf0f",
+        "size": 214
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\345_01_prescription.txt",
+        "exists": true,
+        "sha256": "db7d77fad51dc67a0b210e4f7d7486a07c3c9df8d5b42a7f02e70b4ab3d89f0e",
+        "size": 186
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\346_01_prescription.txt",
+        "exists": true,
+        "sha256": "d3f938bf6af752a0f5ce4fddc5c8af8ee301097046cb156a4af82788112409fe",
+        "size": 191
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\347_01_prescription.txt",
+        "exists": true,
+        "sha256": "e31ee82ac849874ff89cd328699cf8ed32672cb94ec36bbbd74d5395ac0eec12",
+        "size": 84
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\355_01_prescription.txt",
+        "exists": true,
+        "sha256": "096093e6cf548d3f906ec571a3390c4960cd190db0086992879c86014e74c4a0",
+        "size": 51
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\37_01_prescription.txt",
+        "exists": true,
+        "sha256": "80dea2f500a140fb037d3a1252e6d1f9d9a5e42e1d6e8bff18a64fd745e6e3f9",
+        "size": 265
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\38_01_prescription.txt",
+        "exists": true,
+        "sha256": "ac5333c97f7f6c868510a5f86f11f57dae383a7bd0bfd728ebd122900a608a78",
+        "size": 212
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\49_01_prescription.txt",
+        "exists": true,
+        "sha256": "8d9bc7f174aa983279b65b498b871ae3d4c600394061119021e941194da6904e",
+        "size": 333
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\55_01_prescription.txt",
+        "exists": true,
+        "sha256": "bb30e7a1feb94764d4d2faed51a845658e936c292cd050363dcaadc2a2d2233a",
+        "size": 237
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\57_01_prescription.txt",
+        "exists": true,
+        "sha256": "ad9f2145832ab9a46b42fbfa52acc187cf1095c63610d7887102b3fecd393ba7",
+        "size": 179
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\60_01_prescription.txt",
+        "exists": true,
+        "sha256": "f2c7ad98c96fd3deac8456e62dc719770147114b0c900c11dd0eee513ba6d9dd",
+        "size": 116
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\61_01_prescription.txt",
+        "exists": true,
+        "sha256": "b2a42392510848e30d082b4785f3020743ddc64673b9e083d84274db1f87a2d5",
+        "size": 280
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\62_01_prescription.txt",
+        "exists": true,
+        "sha256": "86392602964b98bbafc92a7c26bdc58f309495b8b8d253b3e861f710e3ac0f9b",
+        "size": 244
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\63_01_prescription.txt",
+        "exists": true,
+        "sha256": "6622a1d6a47223412c480f4802ec574834138e3270aa936b084ead8fdfcf7519",
+        "size": 279
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\64_01_prescription.txt",
+        "exists": true,
+        "sha256": "d0b52c6980a6e331a397482f16eca64ecb271b1295e39bc49ed056c594d5a09c",
+        "size": 207
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\65_01_prescription.txt",
+        "exists": true,
+        "sha256": "4c1ab2975f8242f11d49083a6cead3a63a3886fe3a64a59074a5561731c6c84f",
+        "size": 139
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\66_01_prescription.txt",
+        "exists": true,
+        "sha256": "f4ad5e79c02718c745b39e5b4be16a3535dfdedc3025ca34dd3f21beeac52603",
+        "size": 131
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\67_01_prescription.txt",
+        "exists": true,
+        "sha256": "008499f1efd5a1b8810e27eb6cfd5c02e8cd49b4c15fe31464af788897460342",
+        "size": 44
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\68_01_prescription.txt",
+        "exists": true,
+        "sha256": "51141acad3046f628d54d1de7460ea74a0f7a32a4ca7cd4261baf8c34a2bdb79",
+        "size": 44
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\69_01_prescription.txt",
+        "exists": true,
+        "sha256": "5a8dd6d4685ed8db572ea8d3231cf86083c6ea5509b67ca595611ded6513e689",
+        "size": 69
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\70_01_prescription.txt",
+        "exists": true,
+        "sha256": "159f0850538516e326ee0018190f544479cf945a9da962654c23b1dc06a8a1d8",
+        "size": 44
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\71_01_prescription.txt",
+        "exists": true,
+        "sha256": "9a9d97e54904ed6c0f6597ac9be30a5dafecc11a69d6a118ec305e650cc5e2a9",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\72_01_prescription.txt",
+        "exists": true,
+        "sha256": "d805795524a25dd5afdc2582dbb6f28bda343cf4a7705849942c6932547d503c",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\73_01_prescription.txt",
+        "exists": true,
+        "sha256": "58a8e3bc1c23af1ff096cd05be07240d568879d9f47500cb85bacf0a8af111ef",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\74_01_prescription.txt",
+        "exists": true,
+        "sha256": "fcccded8ed359afd585209904eff1bda64327699bcfaf79e6f6f1f07c7dedc2b",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\75_01_prescription.txt",
+        "exists": true,
+        "sha256": "1f6572174abbca5246b335d5997d90a5ba87bb50f53b1fbc9e6f5135b9417203",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\76_01_prescription.txt",
+        "exists": true,
+        "sha256": "449b1fb984a35e1b5cdc79038afdc7d8c3e11606304518ad658952a36140ee5b",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\77_01_prescription.txt",
+        "exists": true,
+        "sha256": "8ce504769937972e63695576b928e65277ab36ef909eeb1cf91b8367dc2385c1",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\78_01_prescription.txt",
+        "exists": true,
+        "sha256": "21afbae9b7f817da947ba5d6cd973e8ec0bbe728da2287fcb3df18669cad9c10",
+        "size": 50
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\80_01_prescription.txt",
+        "exists": true,
+        "sha256": "68c6cd9417b64e4be962f65e04f62868036c369fa9aa7399b61b7f6f3298f8d9",
+        "size": 41
+      },
+      {
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\prescriptions\\8_01_prescription.txt",
+        "exists": true,
+        "sha256": "bff0c49a502ef12868b3c19e8e9415556c3db49500a20a35fcde758409bd2886",
+        "size": 85
+      }
+    ],
+    "blind_outputs": [
+      {
+        "tag": "v140",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法140\\_blind140_results.json",
+        "exists": true,
+        "sha256": "08d05d27302f12b682ce0a42c4f01b143a418be94b1d8086a551c1b85deb2915"
+      },
+      {
+        "tag": "v2",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93\\_blind93_results.json",
+        "exists": true,
+        "sha256": "0348326ada55ea4d6a2c06edd2f56bce556e966976087a2b28d7294014f5f972"
+      },
+      {
+        "tag": "v3",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v3\\_blind93v3_results.json",
+        "exists": true,
+        "sha256": "eb83d5f49470cfffa5a5ba9235cda299768ee0f6fd6ec57e4d15998f16062a95"
+      },
+      {
+        "tag": "v4",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v4\\_blind93v4_results.json",
+        "exists": true,
+        "sha256": "addb60319dd1523d6c9c9a936ff657e1586b0ff00e8f1793cd52a25f3509a1cb"
+      },
+      {
+        "tag": "v5",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v5\\_blind93v5_results.json",
+        "exists": true,
+        "sha256": "cac1f241f41e8de24adc39ac070ca112ccbf58f2b06e70b0a161460ce9c834bc"
+      },
+      {
+        "tag": "v6",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v6\\_blind93v6_results.json",
+        "exists": true,
+        "sha256": "88a4c392bfd0b28ef4f34f09056d9aa44f290868e7cd37a346794c57e55ef06e"
+      },
+      {
+        "tag": "v7",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v7\\_blind93v7_results.json",
+        "exists": true,
+        "sha256": "0ba8189209978fa6d6bda1b8b1c7824a7e1aeb705076e08030526c18647385a3"
+      },
+      {
+        "tag": "v8",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v8\\_blind93v8_results.json",
+        "exists": true,
+        "sha256": "0b5e886478a7961bad425237eb63f5e3a9ba82a2664eea342c7855b20b47ec81"
+      },
+      {
+        "tag": "v9",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\_blind93v9_results.json",
+        "exists": true,
+        "sha256": "59d74384d1823e23121f3147d5419f83e85c94320ef68e2ac3524dbe7a32e62f"
+      }
+    ],
+    "old_baseline": [
+      {
+        "tag": "gold_parse93v9.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\gold_parse93v9.py",
+        "exists": true,
+        "sha256": "7526a3cf34edd3c40bd7ab9100bce4040f221f9c386312b1e5c384465d53a4d5"
+      },
+      {
+        "tag": "score93v9.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\score93v9.py",
+        "exists": true,
+        "sha256": "f2bb47fd58a5c420df45b5f72a19e0477b09b5383c8f570769ce04075a7ae60b"
+      },
+      {
+        "tag": "_gold_results93v9.pkl",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\_gold_results93v9.pkl",
+        "exists": true,
+        "sha256": "b1d3c72fe672e6b49b87600d7e637eb58b84d7c1baed6bbad49e5abf1749d894"
+      },
+      {
+        "tag": "判分汇总.json(旧)",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\判分汇总.json",
+        "exists": true,
+        "sha256": "db90a384a2d4b2a0091df594fe79b20e3081de736df7845833a2b58e84d56f48"
+      },
+      {
+        "tag": "判分明细.csv(旧)",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\判分明细.csv",
+        "exists": true,
+        "sha256": "310a5b2b50b586f29fef6bd634920aa43aa18e079c6ddba57b2c28ce81c0f944"
+      },
+      {
+        "tag": "盲法93v9回归报告.md",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\盲法93_v9\\盲法93v9回归报告.md",
+        "exists": true,
+        "sha256": "cef8f4db0fc6e191c30d02c006efbd808a0ff730951196194b372e25ee419aa3"
+      },
+      {
+        "tag": "技能迭代收敛报告.md",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\技能迭代收敛报告.md",
+        "exists": true,
+        "sha256": "7b659fa93282060e63dc829efdafc4b867ee2e84a141d0f8bcde5e342ab958b7"
+      },
+      {
+        "tag": "GH蒸馏落地报告.md",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\GH蒸馏落地报告.md",
+        "exists": true,
+        "sha256": "87c42859cd76694d5074bdba5dcbf3d1110a0033c6649ca1d5a02618de7154b3"
+      }
+    ],
+    "benchmark_v2": [
+      {
+        "tag": "normalize_acupoints.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\normalize_acupoints.py",
+        "exists": true,
+        "sha256": "1171101675bbab9b51bf4dbfd0e6f4bc9dad00e21f49c7ec15a46f98980c10a8"
+      },
+      {
+        "tag": "gold_parse93v2.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\gold_parse93v2.py",
+        "exists": true,
+        "sha256": "31f520ff7442e188c91dd0339eddec04f38fcfa771ca98520288a13d2f9326c1"
+      },
+      {
+        "tag": "score_benchmark_v2.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\score_benchmark_v2.py",
+        "exists": true,
+        "sha256": "c0a52347c4a4e5daed52032ce1e9ebad63a3e4180a34a5fe0be1cc6a0e111ba4"
+      },
+      {
+        "tag": "verify_benchmark_v2.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\verify_benchmark_v2.py",
+        "exists": true,
+        "sha256": "7cde76116b280aab8fba53c3388ceb0e46b0133e51c6f61df1d8247ed60d9a1f"
+      },
+      {
+        "tag": "analyze_diff_v2.py",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\analyze_diff_v2.py",
+        "exists": true,
+        "sha256": "037a7f4f018e8ca6623425b924d31de242646fe51478885e54b67f77ec08b493"
+      },
+      {
+        "tag": "_gold_results93v2.json",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\_gold_results93v2.json",
+        "exists": true,
+        "sha256": "f9eb00930cf996bbcd2a828a25dab6486e8ae9bdc50739540b30cd7db3cb1a69"
+      },
+      {
+        "tag": "_gold_results93v2.pkl",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\_gold_results93v2.pkl",
+        "exists": true,
+        "sha256": "2a9ba7a1550543c4c21147038eb18bbdf7c2492785ac8f3f5dfc3d61aefdb724"
+      },
+      {
+        "tag": "判分汇总v2.json",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\判分汇总v2.json",
+        "exists": true,
+        "sha256": "da91f5d16e0f620defcd63b06d14605aa132830fdd81a05192d00284bbd9f1eb"
+      },
+      {
+        "tag": "判分明细v2.csv",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\判分明细v2.csv",
+        "exists": true,
+        "sha256": "9aceb9971cb950905d4cc1a9ede3d5c3cc77bfe327fc0f728318c6a43b6ee882"
+      },
+      {
+        "tag": "审计日志v2.json",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\审计日志v2.json",
+        "exists": true,
+        "sha256": "506a2e8aaea8d1c40a78a6deae13d8c30e250a8db8963e94eb0c9ec4444e4bbc"
+      },
+      {
+        "tag": "旧新口径差异报告.md",
+        "path": "D:\\projectAGI\\nhx\\盲法对照实验\\benchmark_v2\\旧新口径差异报告.md",
+        "exists": true,
+        "sha256": "e742a00d8502696932ff9347b2e8a4ef03966385a62893ad0279fb8bce8d69a8"
+      }
+    ]
+  }
+}

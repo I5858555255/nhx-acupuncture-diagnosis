@@ -1,0 +1,1408 @@
+{
+  "n_cases": 93,
+  "n_scorable": 86,
+  "n_unscored": 7,
+  "unscored": {
+    "116_01": "原文未列出可解析穴名: 同前",
+    "178_01": "原文标注无处方",
+    "268_01": "原文未列出可解析穴名: 左：右：",
+    "278_01": "原文标注无处方",
+    "284_01": "原文标注无处方",
+    "285_01": "原文标注无处方",
+    "80_01": "原文标注无处方"
+  },
+  "v140": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.2844,
+          "prec": 0.2891,
+          "f1": 0.272,
+          "jac": 0.17
+        },
+        "micro": {
+          "recall": 0.2641,
+          "prec": 0.2905,
+          "f1": 0.2766,
+          "jac": 0.1605
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.3441,
+          "prec": 0.2675,
+          "f1": 0.2887,
+          "jac": 0.1789
+        },
+        "micro": {
+          "recall": 0.3348,
+          "prec": 0.2688,
+          "f1": 0.2982,
+          "jac": 0.1752
+        }
+      }
+    },
+    "mean_units_main": 5.872093023255814,
+    "mean_points_main": 7.325581395348837,
+    "sum_points_main": 630,
+    "sum_points_all": 863,
+    "sum_tp_main": 183,
+    "sum_tp_all": 232
+  },
+  "v2": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.3246,
+          "prec": 0.3629,
+          "f1": 0.3226,
+          "jac": 0.2078
+        },
+        "micro": {
+          "recall": 0.2799,
+          "prec": 0.3521,
+          "f1": 0.3119,
+          "jac": 0.1848
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.3793,
+          "prec": 0.3123,
+          "f1": 0.3212,
+          "jac": 0.2031
+        },
+        "micro": {
+          "recall": 0.3319,
+          "prec": 0.3108,
+          "f1": 0.321,
+          "jac": 0.1912
+        }
+      }
+    },
+    "mean_units_main": 5.325581395348837,
+    "mean_points_main": 6.406976744186046,
+    "sum_points_main": 551,
+    "sum_points_all": 740,
+    "sum_tp_main": 194,
+    "sum_tp_all": 230
+  },
+  "v3": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.3367,
+          "prec": 0.3643,
+          "f1": 0.3284,
+          "jac": 0.2128
+        },
+        "micro": {
+          "recall": 0.2814,
+          "prec": 0.3552,
+          "f1": 0.314,
+          "jac": 0.1862
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.3972,
+          "prec": 0.3208,
+          "f1": 0.3321,
+          "jac": 0.2106
+        },
+        "micro": {
+          "recall": 0.3405,
+          "prec": 0.3194,
+          "f1": 0.3296,
+          "jac": 0.1973
+        }
+      }
+    },
+    "mean_units_main": 5.313953488372093,
+    "mean_points_main": 6.383720930232558,
+    "sum_points_main": 549,
+    "sum_points_all": 739,
+    "sum_tp_main": 195,
+    "sum_tp_all": 236
+  },
+  "v4": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.3623,
+          "prec": 0.3728,
+          "f1": 0.346,
+          "jac": 0.2286
+        },
+        "micro": {
+          "recall": 0.3059,
+          "prec": 0.3681,
+          "f1": 0.3341,
+          "jac": 0.2006
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.4257,
+          "prec": 0.3331,
+          "f1": 0.3509,
+          "jac": 0.2262
+        },
+        "micro": {
+          "recall": 0.368,
+          "prec": 0.332,
+          "f1": 0.3491,
+          "jac": 0.2114
+        }
+      }
+    },
+    "mean_units_main": 5.476744186046512,
+    "mean_points_main": 6.6976744186046515,
+    "sum_points_main": 576,
+    "sum_points_all": 768,
+    "sum_tp_main": 212,
+    "sum_tp_all": 255
+  },
+  "v5": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.4308,
+          "prec": 0.409,
+          "f1": 0.3988,
+          "jac": 0.267
+        },
+        "micro": {
+          "recall": 0.3752,
+          "prec": 0.4056,
+          "f1": 0.3898,
+          "jac": 0.2421
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.4823,
+          "prec": 0.3644,
+          "f1": 0.3932,
+          "jac": 0.2577
+        },
+        "micro": {
+          "recall": 0.4315,
+          "prec": 0.3655,
+          "f1": 0.3958,
+          "jac": 0.2467
+        }
+      }
+    },
+    "mean_units_main": 6.0813953488372094,
+    "mean_points_main": 7.453488372093023,
+    "sum_points_main": 641,
+    "sum_points_all": 818,
+    "sum_tp_main": 260,
+    "sum_tp_all": 299
+  },
+  "v6": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.4554,
+          "prec": 0.3857,
+          "f1": 0.3977,
+          "jac": 0.2641
+        },
+        "micro": {
+          "recall": 0.4069,
+          "prec": 0.3806,
+          "f1": 0.3933,
+          "jac": 0.2448
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.5037,
+          "prec": 0.348,
+          "f1": 0.3909,
+          "jac": 0.254
+        },
+        "micro": {
+          "recall": 0.4589,
+          "prec": 0.3475,
+          "f1": 0.3955,
+          "jac": 0.2465
+        }
+      }
+    },
+    "mean_units_main": 6.8604651162790695,
+    "mean_points_main": 8.616279069767442,
+    "sum_points_main": 741,
+    "sum_points_all": 915,
+    "sum_tp_main": 282,
+    "sum_tp_all": 318
+  },
+  "v7": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.4127,
+          "prec": 0.3894,
+          "f1": 0.3788,
+          "jac": 0.2514
+        },
+        "micro": {
+          "recall": 0.3535,
+          "prec": 0.3834,
+          "f1": 0.3679,
+          "jac": 0.2254
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.4923,
+          "prec": 0.3536,
+          "f1": 0.389,
+          "jac": 0.2543
+        },
+        "micro": {
+          "recall": 0.443,
+          "prec": 0.3521,
+          "f1": 0.3923,
+          "jac": 0.244
+        }
+      }
+    },
+    "mean_units_main": 6.104651162790698,
+    "mean_points_main": 7.430232558139535,
+    "sum_points_main": 639,
+    "sum_points_all": 872,
+    "sum_tp_main": 245,
+    "sum_tp_all": 307
+  },
+  "v8": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.4127,
+          "prec": 0.3894,
+          "f1": 0.3788,
+          "jac": 0.2514
+        },
+        "micro": {
+          "recall": 0.3535,
+          "prec": 0.3834,
+          "f1": 0.3679,
+          "jac": 0.2254
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.4923,
+          "prec": 0.3536,
+          "f1": 0.389,
+          "jac": 0.2543
+        },
+        "micro": {
+          "recall": 0.443,
+          "prec": 0.3521,
+          "f1": 0.3923,
+          "jac": 0.244
+        }
+      }
+    },
+    "mean_units_main": 6.104651162790698,
+    "mean_points_main": 7.430232558139535,
+    "sum_points_main": 639,
+    "sum_points_all": 872,
+    "sum_tp_main": 245,
+    "sum_tp_all": 307
+  },
+  "v9": {
+    "metrics": {
+      "main": {
+        "macro": {
+          "recall": 0.439,
+          "prec": 0.3653,
+          "f1": 0.3795,
+          "jac": 0.2499
+        },
+        "micro": {
+          "recall": 0.3867,
+          "prec": 0.3592,
+          "f1": 0.3725,
+          "jac": 0.2289
+        }
+      },
+      "all": {
+        "macro": {
+          "recall": 0.5086,
+          "prec": 0.3434,
+          "f1": 0.3902,
+          "jac": 0.2535
+        },
+        "micro": {
+          "recall": 0.4646,
+          "prec": 0.3444,
+          "f1": 0.3956,
+          "jac": 0.2466
+        }
+      }
+    },
+    "mean_units_main": 6.895348837209302,
+    "mean_points_main": 8.674418604651162,
+    "sum_points_main": 746,
+    "sum_points_all": 935,
+    "sum_tp_main": 268,
+    "sum_tp_all": 322
+  },
+  "dist_v9_recall_main": {
+    "100%": 7,
+    "80-99%": 3,
+    "60-79%": 10,
+    "40-59%": 28,
+    "<40%": 38
+  },
+  "dist_v9_jac_main": {
+    "100%": 1,
+    "80-99%": 0,
+    "60-79%": 0,
+    "40-59%": 10,
+    "<40%": 75
+  },
+  "层_v9": {
+    "对症": {
+      "出单元": 327,
+      "命中案": 72
+    },
+    "俞募背俞": {
+      "出单元": 46,
+      "命中案": 5
+    },
+    "八脉交会": {
+      "出单元": 136,
+      "命中案": 38
+    },
+    "特效奇穴": {
+      "出单元": 84,
+      "命中案": 17
+    }
+  },
+  "分层_v9": {
+    "followup": {
+      "n": 20,
+      "macro_recall": 0.3094,
+      "macro_prec": 0.3389
+    },
+    "anchor_first": {
+      "n": 66,
+      "macro_recall": 0.4782,
+      "macro_prec": 0.3733
+    },
+    "chain_names": [
+      "anchor_146",
+      "anchor_198",
+      "anchor_216",
+      "anchor_66",
+      "first_visit",
+      "followup_146",
+      "followup_198",
+      "followup_216",
+      "followup_66"
+    ]
+  },
+  "v9零命中_recall": [
+    "201_01",
+    "207_01",
+    "318_01"
+  ],
+  "新旧差异_v9": [
+    {
+      "case_id": "107_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 3,
+      "new_gc": 3
+    },
+    {
+      "case_id": "117_01",
+      "old_r_main": 0.75,
+      "new_recall": 0.75,
+      "old_prec": 0.375,
+      "new_prec": 0.3,
+      "old_gc": 4,
+      "new_gc": 4
+    },
+    {
+      "case_id": "118_01",
+      "old_r_main": 0.3636,
+      "new_recall": 0.3636,
+      "old_prec": 0.5,
+      "new_prec": 0.4444,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "136_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.2857,
+      "new_prec": 0.2,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "137_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.5,
+      "new_prec": 0.4,
+      "old_gc": 4,
+      "new_gc": 4
+    },
+    {
+      "case_id": "13_01",
+      "old_r_main": 0.2632,
+      "new_recall": 0.2778,
+      "old_prec": 0.7143,
+      "new_prec": 0.5,
+      "old_gc": 19,
+      "new_gc": 18
+    },
+    {
+      "case_id": "140_01",
+      "old_r_main": 0.25,
+      "new_recall": 0.2727,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 12,
+      "new_gc": 11
+    },
+    {
+      "case_id": "141_01",
+      "old_r_main": 0.2727,
+      "new_recall": 0.2727,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "142_01",
+      "old_r_main": 0.4615,
+      "new_recall": 0.5,
+      "old_prec": 0.8571,
+      "new_prec": 0.6667,
+      "old_gc": 13,
+      "new_gc": 12
+    },
+    {
+      "case_id": "143_01",
+      "old_r_main": 0.4545,
+      "new_recall": 0.4545,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "144_01",
+      "old_r_main": 0.4545,
+      "new_recall": 0.4545,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "145_01",
+      "old_r_main": 0.4545,
+      "new_recall": 0.4545,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "146_01",
+      "old_r_main": 0.3636,
+      "new_recall": 0.3636,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "148_01",
+      "old_r_main": 0.4545,
+      "new_recall": 0.4545,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "149_01",
+      "old_r_main": 0.25,
+      "new_recall": 0.25,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 12,
+      "new_gc": 12
+    },
+    {
+      "case_id": "156_03",
+      "old_r_main": 0.5,
+      "new_recall": 0.5714,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 8,
+      "new_gc": 7
+    },
+    {
+      "case_id": "156_04",
+      "old_r_main": 0.375,
+      "new_recall": 0.4286,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 8,
+      "new_gc": 7
+    },
+    {
+      "case_id": "156_05",
+      "old_r_main": 0.2,
+      "new_recall": 0.2222,
+      "old_prec": 0.25,
+      "new_prec": 0.1818,
+      "old_gc": 10,
+      "new_gc": 9
+    },
+    {
+      "case_id": "156_06",
+      "old_r_main": 0.1818,
+      "new_recall": 0.3,
+      "old_prec": 0.2857,
+      "new_prec": 0.3,
+      "old_gc": 11,
+      "new_gc": 10
+    },
+    {
+      "case_id": "160_01",
+      "old_r_main": 0.1818,
+      "new_recall": 0.2,
+      "old_prec": 0.2857,
+      "new_prec": 0.25,
+      "old_gc": 11,
+      "new_gc": 10
+    },
+    {
+      "case_id": "194_01",
+      "old_r_main": 0.3636,
+      "new_recall": 0.3636,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "195_01",
+      "old_r_main": 0.3846,
+      "new_recall": 0.3846,
+      "old_prec": 0.625,
+      "new_prec": 0.5,
+      "old_gc": 13,
+      "new_gc": 13
+    },
+    {
+      "case_id": "198_01",
+      "old_r_main": 0.1429,
+      "new_recall": 0.1429,
+      "old_prec": 0.125,
+      "new_prec": 0.1111,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "199_01",
+      "old_r_main": 0.1429,
+      "new_recall": 0.1429,
+      "old_prec": 0.1429,
+      "new_prec": 0.1111,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "1_01",
+      "old_r_main": 0.1111,
+      "new_recall": 0.1111,
+      "old_prec": 0.1429,
+      "new_prec": 0.125,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "200_01",
+      "old_r_main": 0.2857,
+      "new_recall": 0.2857,
+      "old_prec": 0.2857,
+      "new_prec": 0.2222,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "201_01",
+      "old_r_main": 0.0,
+      "new_recall": 0.0,
+      "old_prec": 0.0,
+      "new_prec": 0.0,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "202_01",
+      "old_r_main": 0.1111,
+      "new_recall": 0.1111,
+      "old_prec": 0.1429,
+      "new_prec": 0.125,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "207_01",
+      "old_r_main": 0.0,
+      "new_recall": 0.0,
+      "old_prec": 0.0,
+      "new_prec": 0.0,
+      "old_gc": 3,
+      "new_gc": 3
+    },
+    {
+      "case_id": "208_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "209_01",
+      "old_r_main": 0.25,
+      "new_recall": 0.25,
+      "old_prec": 0.1429,
+      "new_prec": 0.1111,
+      "old_gc": 4,
+      "new_gc": 4
+    },
+    {
+      "case_id": "212_01",
+      "old_r_main": 0.5714,
+      "new_recall": 0.5714,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "213_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.1429,
+      "new_prec": 0.125,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "214_01",
+      "old_r_main": 0.75,
+      "new_recall": 0.75,
+      "old_prec": 0.8571,
+      "new_prec": 0.6,
+      "old_gc": 8,
+      "new_gc": 8
+    },
+    {
+      "case_id": "216_01",
+      "old_r_main": 0.6667,
+      "new_recall": 0.6667,
+      "old_prec": 0.8571,
+      "new_prec": 0.6,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "216_02",
+      "old_r_main": 0.4444,
+      "new_recall": 0.4444,
+      "old_prec": 0.5714,
+      "new_prec": 0.4,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "216_03",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "216_04",
+      "old_r_main": 0.1111,
+      "new_recall": 0.1111,
+      "old_prec": 0.1429,
+      "new_prec": 0.1429,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "216_05",
+      "old_r_main": 0.5556,
+      "new_recall": 0.5556,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 9,
+      "new_gc": 9
+    },
+    {
+      "case_id": "221_01",
+      "old_r_main": 0.2727,
+      "new_recall": 0.6,
+      "old_prec": 0.4286,
+      "new_prec": 0.6,
+      "old_gc": 11,
+      "new_gc": 10
+    },
+    {
+      "case_id": "223_01",
+      "old_r_main": 0.6667,
+      "new_recall": 0.6667,
+      "old_prec": 0.2857,
+      "new_prec": 0.25,
+      "old_gc": 3,
+      "new_gc": 3
+    },
+    {
+      "case_id": "225_01",
+      "old_r_main": 0.6,
+      "new_recall": 0.6,
+      "old_prec": 0.4286,
+      "new_prec": 0.4286,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "22_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.2857,
+      "new_prec": 0.2857,
+      "old_gc": 2,
+      "new_gc": 2
+    },
+    {
+      "case_id": "234_01",
+      "old_r_main": 0.375,
+      "new_recall": 0.375,
+      "old_prec": 0.4286,
+      "new_prec": 0.375,
+      "old_gc": 8,
+      "new_gc": 8
+    },
+    {
+      "case_id": "236_01",
+      "old_r_main": 0.1818,
+      "new_recall": 0.5,
+      "old_prec": 0.2857,
+      "new_prec": 0.4167,
+      "old_gc": 11,
+      "new_gc": 10
+    },
+    {
+      "case_id": "23_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.2857,
+      "new_prec": 0.2857,
+      "old_gc": 2,
+      "new_gc": 2
+    },
+    {
+      "case_id": "249_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.125,
+      "new_prec": 0.125,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "270_01",
+      "old_r_main": 0.6667,
+      "new_recall": 0.6667,
+      "old_prec": 0.2857,
+      "new_prec": 0.2857,
+      "old_gc": 3,
+      "new_gc": 3
+    },
+    {
+      "case_id": "274_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.5714,
+      "new_prec": 0.5,
+      "old_gc": 4,
+      "new_gc": 4
+    },
+    {
+      "case_id": "298_01",
+      "old_r_main": 0.4545,
+      "new_recall": 0.4545,
+      "old_prec": 0.7143,
+      "new_prec": 0.7143,
+      "old_gc": 11,
+      "new_gc": 11
+    },
+    {
+      "case_id": "303_01",
+      "old_r_main": 0.8,
+      "new_recall": 0.8,
+      "old_prec": 0.5714,
+      "new_prec": 0.5714,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "311_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.25,
+      "new_prec": 0.2,
+      "old_gc": 4,
+      "new_gc": 4
+    },
+    {
+      "case_id": "312_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.25,
+      "new_prec": 0.2,
+      "old_gc": 2,
+      "new_gc": 2
+    },
+    {
+      "case_id": "318_01",
+      "old_r_main": 0.0,
+      "new_recall": 0.0,
+      "old_prec": 0.0,
+      "new_prec": 0.0,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "323_01",
+      "old_r_main": 0.1429,
+      "new_recall": 0.1429,
+      "old_prec": 0.1429,
+      "new_prec": 0.1,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "340_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 0.5,
+      "new_prec": 0.5,
+      "old_gc": 1,
+      "new_gc": 1
+    },
+    {
+      "case_id": "342_01",
+      "old_r_main": 0.6667,
+      "new_recall": 0.6667,
+      "old_prec": 0.2857,
+      "new_prec": 0.2222,
+      "old_gc": 3,
+      "new_gc": 3
+    },
+    {
+      "case_id": "345_01",
+      "old_r_main": 0.6,
+      "new_recall": 0.6,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "346_01",
+      "old_r_main": 0.8,
+      "new_recall": 0.8,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "347_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.1429,
+      "new_prec": 0.1111,
+      "old_gc": 5,
+      "new_gc": 5
+    },
+    {
+      "case_id": "355_01",
+      "old_r_main": 1.0,
+      "new_recall": 1.0,
+      "old_prec": 1.0,
+      "new_prec": 1.0,
+      "old_gc": 1,
+      "new_gc": 1
+    },
+    {
+      "case_id": "37_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.5714,
+      "new_prec": 0.5,
+      "old_gc": 8,
+      "new_gc": 8
+    },
+    {
+      "case_id": "38_01",
+      "old_r_main": 0.3333,
+      "new_recall": 0.3333,
+      "old_prec": 0.5,
+      "new_prec": 0.4444,
+      "old_gc": 12,
+      "new_gc": 12
+    },
+    {
+      "case_id": "49_01",
+      "old_r_main": 0.3,
+      "new_recall": 0.3,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "55_01",
+      "old_r_main": 0.2667,
+      "new_recall": 0.2667,
+      "old_prec": 0.5714,
+      "new_prec": 0.4,
+      "old_gc": 15,
+      "new_gc": 15
+    },
+    {
+      "case_id": "57_01",
+      "old_r_main": 0.125,
+      "new_recall": 0.125,
+      "old_prec": 0.2857,
+      "new_prec": 0.2222,
+      "old_gc": 16,
+      "new_gc": 16
+    },
+    {
+      "case_id": "60_01",
+      "old_r_main": 0.625,
+      "new_recall": 0.625,
+      "old_prec": 0.625,
+      "new_prec": 0.5556,
+      "old_gc": 8,
+      "new_gc": 8
+    },
+    {
+      "case_id": "61_01",
+      "old_r_main": 0.4286,
+      "new_recall": 0.4286,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "62_01",
+      "old_r_main": 0.2857,
+      "new_recall": 0.2857,
+      "old_prec": 0.3333,
+      "new_prec": 0.2857,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "63_01",
+      "old_r_main": 0.4286,
+      "new_recall": 0.4286,
+      "old_prec": 0.5,
+      "new_prec": 0.4286,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "64_01",
+      "old_r_main": 0.4286,
+      "new_recall": 0.4286,
+      "old_prec": 0.4286,
+      "new_prec": 0.375,
+      "old_gc": 7,
+      "new_gc": 7
+    },
+    {
+      "case_id": "65_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 8,
+      "new_gc": 8
+    },
+    {
+      "case_id": "66_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "67_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.625,
+      "new_prec": 0.5,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "68_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.5,
+      "new_prec": 0.4,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "69_01",
+      "old_r_main": 0.5,
+      "new_recall": 0.5,
+      "old_prec": 0.7143,
+      "new_prec": 0.5556,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "70_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.25,
+      "new_prec": 0.2,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "71_01",
+      "old_r_main": 0.3,
+      "new_recall": 0.3,
+      "old_prec": 0.4286,
+      "new_prec": 0.375,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "72_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.2857,
+      "new_prec": 0.2222,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "73_01",
+      "old_r_main": 0.3,
+      "new_recall": 0.3,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "74_01",
+      "old_r_main": 0.3,
+      "new_recall": 0.3,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "75_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "76_01",
+      "old_r_main": 0.4,
+      "new_recall": 0.4,
+      "old_prec": 0.5714,
+      "new_prec": 0.4444,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "77_01",
+      "old_r_main": 0.2,
+      "new_recall": 0.2,
+      "old_prec": 0.4,
+      "new_prec": 0.3333,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "78_01",
+      "old_r_main": 0.3,
+      "new_recall": 0.3,
+      "old_prec": 0.4286,
+      "new_prec": 0.3333,
+      "old_gc": 10,
+      "new_gc": 10
+    },
+    {
+      "case_id": "8_01",
+      "old_r_main": 0.4444,
+      "new_recall": 0.875,
+      "old_prec": 0.5714,
+      "new_prec": 0.5833,
+      "old_gc": 9,
+      "new_gc": 8
+    }
+  ],
+  "旧口径汇总_v9": {
+    "macro_r_main": 0.42226976744186046,
+    "macro_new_recall": 0.43896162790697674,
+    "sum_hm": 258,
+    "sum_mc_units": 593,
+    "sum_new_points": 746,
+    "sum_new_tp": 268
+  },
+  "重点": {
+    "107_01": {
+      "gold": [
+        "委中",
+        "承山",
+        "阴谷"
+      ],
+      "recall": 1.0,
+      "prec": 0.3333,
+      "tp": 3,
+      "命中": [
+        "列缺",
+        "后溪",
+        "委中",
+        "定喘",
+        "承山",
+        "照海",
+        "申脉",
+        "肺俞",
+        "阴谷"
+      ]
+    },
+    "156_05": {
+      "gold": [
+        "三阴交",
+        "关元",
+        "地机",
+        "曲池",
+        "水道",
+        "照海",
+        "章门",
+        "足三里",
+        "阴陵泉"
+      ],
+      "recall": 0.2222,
+      "prec": 0.1818,
+      "tp": 2,
+      "命中": [
+        "三阴交",
+        "公孙",
+        "内关",
+        "后溪",
+        "太冲",
+        "承山",
+        "条口",
+        "申脉",
+        "肝俞",
+        "肝关",
+        "阴陵泉"
+      ]
+    },
+    "311_01": {
+      "gold": [
+        "外关",
+        "委中",
+        "耳胆点",
+        "阴谷"
+      ],
+      "recall": 0.5,
+      "prec": 0.2,
+      "tp": 2,
+      "命中": [
+        "公孙",
+        "内关",
+        "外关",
+        "太冲",
+        "耳胆点",
+        "胆俞",
+        "胆石点",
+        "行间",
+        "足临泣",
+        "阿是"
+      ]
+    },
+    "60_01": {
+      "gold": [
+        "合谷",
+        "外关",
+        "太冲",
+        "曲池",
+        "梁丘",
+        "肩井",
+        "肩髃",
+        "足三里"
+      ],
+      "recall": 0.625,
+      "prec": 0.5556,
+      "tp": 5,
+      "命中": [
+        "公孙",
+        "内关",
+        "合谷",
+        "太冲",
+        "心俞",
+        "曲池",
+        "肘尖",
+        "肩井",
+        "足三里"
+      ]
+    },
+    "340_01": {
+      "gold": [
+        "耳肾点"
+      ],
+      "recall": 1.0,
+      "prec": 0.5,
+      "tp": 1,
+      "命中": [
+        "太溪",
+        "耳肾点"
+      ]
+    },
+    "201_01": {
+      "gold": [
+        "三阴交",
+        "中极",
+        "关元",
+        "后溪",
+        "太冲",
+        "水道",
+        "申脉",
+        "耳眼点",
+        "阴陵泉"
+      ],
+      "recall": 0.0,
+      "prec": 0.0,
+      "tp": 0,
+      "命中": [
+        "临泣",
+        "外关",
+        "睛明"
+      ]
+    },
+    "207_01": {
+      "gold": [
+        "丘墟",
+        "侠溪",
+        "太渊"
+      ],
+      "recall": 0.0,
+      "prec": 0.0,
+      "tp": 0,
+      "命中": [
+        "临泣",
+        "养老",
+        "列缺",
+        "外关",
+        "照海",
+        "肝俞",
+        "肝关",
+        "行间",
+        "迎香",
+        "间使"
+      ]
+    },
+    "318_01": {
+      "gold": [
+        "合谷",
+        "太渊",
+        "头临泣",
+        "曲池",
+        "睛明"
+      ],
+      "recall": 0.0,
+      "prec": 0.0,
+      "tp": 0,
+      "命中": [
+        "公孙",
+        "内关",
+        "内膝眼",
+        "后溪",
+        "外膝眼",
+        "心俞",
+        "申脉",
+        "痞根",
+        "肾俞",
+        "足三里",
+        "间使",
+        "阴陵泉",
+        "鹤顶"
+      ]
+    },
+    "216_04": {
+      "gold": [
+        "合谷",
+        "地仓",
+        "外关",
+        "廉泉",
+        "攒竹",
+        "解溪",
+        "阳白",
+        "颊车",
+        "鱼腰"
+      ],
+      "recall": 0.1111,
+      "prec": 0.1429,
+      "tp": 1,
+      "命中": [
+        "中渚",
+        "听会",
+        "听宫",
+        "外关",
+        "然谷",
+        "耳门",
+        "足临泣"
+      ]
+    }
+  }
+}
