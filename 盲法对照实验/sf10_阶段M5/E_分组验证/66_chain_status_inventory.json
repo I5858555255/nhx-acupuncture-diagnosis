@@ -1,0 +1,684 @@
+{
+  "file": "66_chain_status_inventory.json",
+  "description": "P1-B：66 链状态清单（机器可读版）。链级指标数值以两份 CSV 为准，见同目录的 66_chain_status_inventory.md。本文件只登记链标识、案件数与状态，不推算任何结果。",
+  "generated": "2026-10-16",
+  "chain_files": {
+    "v12_per_chain": "sf10_阶段M5/E_分组验证/分组交叉验证表.csv",
+    "v13_per_chain": "sf10_阶段M5/G_验收/按链留出验证表.csv"
+  },
+  "summary": {
+    "total_chains": 66,
+    "multi_case_chains": 4,
+    "single_case_chains": 62,
+    "have_v12_per_chain_results": 66,
+    "have_v13_per_chain_results": 66,
+    "have_v14r5_per_chain_results": 0,
+    "v14r5_overall_result_file": "sf10_阶段M5/G_验收/判分汇总v14r5.json"
+  },
+  "not_executed": [
+    "leave_one_patient_chain_out_cross_validation",
+    "cross_chain_generalization_estimate"
+  ],
+  "chains": [
+    {
+      "chain": "146",
+      "kind": "multi_case",
+      "case_count": 3,
+      "follow_up_count": 2,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "198",
+      "kind": "multi_case",
+      "case_count": 5,
+      "follow_up_count": 4,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "216",
+      "kind": "multi_case",
+      "case_count": 3,
+      "follow_up_count": 2,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "66",
+      "kind": "multi_case",
+      "case_count": 13,
+      "follow_up_count": 12,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-5", "RC-6"]
+    },
+    {
+      "chain": "S_107_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_117_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_118_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_136_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-6"]
+    },
+    {
+      "chain": "S_137_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-6"]
+    },
+    {
+      "chain": "S_13_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_140_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["R2"]
+    },
+    {
+      "chain": "S_141_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["R2"]
+    },
+    {
+      "chain": "S_142_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_143_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_144_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_145_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_156_03",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_156_04",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_156_05",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["R3"]
+    },
+    {
+      "chain": "S_156_06",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_160_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_194_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-6"]
+    },
+    {
+      "chain": "S_195_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_1_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_207_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_208_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_209_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_212_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_213_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_214_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_216_04",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_216_05",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_221_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_223_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_225_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_22_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_234_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-5"]
+    },
+    {
+      "chain": "S_236_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_23_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_249_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-6"]
+    },
+    {
+      "chain": "S_270_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_274_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_298_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_303_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_311_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_312_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_318_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_323_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_340_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_342_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_345_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_346_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_347_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_355_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_37_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_38_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_49_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_55_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_57_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_60_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": ["RC-5"]
+    },
+    {
+      "chain": "S_61_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_62_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_63_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_64_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_65_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    },
+    {
+      "chain": "S_8_01",
+      "kind": "single_case",
+      "case_count": 1,
+      "follow_up_count": 0,
+      "v12_per_chain_available": true,
+      "v13_per_chain_available": true,
+      "v14r5_per_chain_available": false,
+      "v13_trigger_rules": []
+    }
+  ]
+}
