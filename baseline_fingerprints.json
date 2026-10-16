@@ -1,0 +1,79 @@
+{
+  "file": "baseline_fingerprints.json",
+  "description": "P0 基线指纹记录。哈希基于读取后计算，只读。路径均为相对仓库根的 POSIX 风格。",
+  "generated": "2026-10-16",
+  "hashes": [
+    {
+      "path": "README.md",
+      "sha256": "7714356B097A6A10BFB5E7BAE8DBA9F05DF82B1AC55CAACD6F706300F5BEFE51",
+      "purpose": "仓库说明、指标口径与当前基线声明"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "B3C271F5FF0956B95453FABC54369C1A538B0FA742DFCDCD461020C1F461ED9E",
+      "purpose": "许可证"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/SKILL.md",
+      "sha256": "C898A98740F5461027B418BDCD6B961EEFEEB406E709D118D5B25C5A68CEF439",
+      "purpose": "正式 v14r5 执行契约（主技能当前版）"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis_v14r5/skill/SKILL.md",
+      "sha256": "C898A98740F5461027B418BDCD6B961EEFEEB406E709D118D5B25C5A68CEF439",
+      "purpose": "v14r5 候选副本（与正式版 SKILL.md 字节一致，哈希相同为预期）"
+    }
+  ],
+  "not_hashed": [
+    {
+      "path": "benchmark_v2/canonical_scorer.py",
+      "reason": "所在目录 `盲法对照实验/benchmark_v2` 路径含中文目录名，本环境的 shell 命令不支持输入该路径；已通过目录读取确认文件存在，未计算指纹。"
+    },
+    {
+      "path": "benchmark_v2/gold_parse93v2.py",
+      "reason": "所在目录路径含中文，同上。"
+    },
+    {
+      "path": "benchmark_v2/verify_benchmark_v2.py",
+      "reason": "所在目录路径含中文，同上。"
+    },
+    {
+      "path": "benchmark_v2/score_benchmark_v2.py",
+      "reason": "所在目录路径含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/references/诊断与针灸实施指南.md",
+      "reason": "文件与 SKILL.md 同名，路径含中文，本环境无法计算指纹；已存在于 inventory 第 4.1 节。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/references/特效库全量.json",
+      "reason": "路径含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/references/治则手法库.json",
+      "reason": "路径含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/references/典型案例示范集.md",
+      "reason": "路径含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/诊断与针灸实施指南.md",
+      "reason": "路径含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/教程_utf8.txt",
+      "reason": "文件名含中文，同上。"
+    },
+    {
+      "path": "doubao-acupuncture-diagnosis/针灸篇-知识条目整理.md",
+      "reason": "文件名含中文，同上。"
+    }
+  ],
+  "notes": [
+    "第一个条目（README.md）的哈希基于本批执行时读取的当前内容。",
+    "第二个条目（LICENSE）哈希基于当前内容。",
+    "第三个条目（doubao-acupuncture-diagnosis/SKILL.md）哈希基于本次移动后的位置；其内容未被修改，哈希与第四个条目完全相同（预期）。",
+    "第四个条目（doubao-acupuncture-diagnosis_v14r5/skill/SKILL.md）哈希同样与第三个条目完全相同，说明候选副本与正式版在 v14r5 时为字节一致。"
+  ]
+}
