@@ -101,12 +101,12 @@ for c in CASES:
 io.open(os.path.join(HERE, "R1_dump.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
 
 # 原书 列缺/照海 主治行摘录
-bk = os.path.join(ROOT, "教程_utf8.txt")
+bk = os.path.join(ROOT, "doubao-acupuncture-diagnosis", "教程_utf8.txt")
 lines = []
 if os.path.exists(bk):
     ls = io.open(bk, encoding="utf-8", errors="ignore").read().split("\n")
     for i, l in enumerate(ls):
-        if ("列缺" in l or "照海" in l) and ("主" in l or "治" in l or "喉" in l or "任脉" in l or "阴跷" in l or "阴蹻" in l):
+        if ("列缺" in l or "照海" in l) and ("主" in l or "治" in l or "喉" in l or "任脉" in l or "阴跷" in l or "阴蹻" in l or "络" in l):
             lines.append("L%d: %s" % (i + 1, l[:300]))
 io.open(os.path.join(HERE, "R1_book_lines.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lines[:60]) + "\n")
 print("wrote R1_dump.txt / R1_book_lines.txt ; cases=%d book_lines=%d" % (len(CASES), len(lines)))
