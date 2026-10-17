@@ -1,0 +1,2864 @@
+{
+  "selfcheck": true,
+  "base": {
+    "全量86": {
+      "TP": 362,
+      "FP": 316,
+      "FN": 331,
+      "F1": 0.5185
+    },
+    "核心集64": {
+      "TP": 269,
+      "FP": 237,
+      "FN": 218,
+      "F1": 0.5353
+    },
+    "M1_28": {
+      "TP": 145,
+      "FP": 79,
+      "FN": 121,
+      "F1": 0.5933
+    },
+    "未M1_58": {
+      "TP": 217,
+      "FP": 237,
+      "FN": 210,
+      "F1": 0.4823
+    },
+    "复诊": {
+      "TP": 251,
+      "FP": 190,
+      "FN": 254,
+      "F1": 0.5156
+    },
+    "首诊": {
+      "TP": 111,
+      "FP": 126,
+      "FN": 77,
+      "F1": 0.5235
+    }
+  },
+  "variants": {
+    "A_v15表(出厂)": {
+      "sha256": "bc3d51b62884336a7986543d575aea124484b53ce90ed8796496c70c72c2ebf0",
+      "trigger_cases": [
+        "146_01",
+        "213_01",
+        "216_03",
+        "216_05",
+        "318_01",
+        "61_01",
+        "62_01"
+      ],
+      "deleted_units": 13,
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 362,
+          "FP_b": 316,
+          "FP_r": 303,
+          "FN_b": 331,
+          "FN_r": 331,
+          "F1_b": 0.5185,
+          "F1_r": 0.5223,
+          "dF1": 0.0038
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 269,
+          "FP_b": 237,
+          "FP_r": 226,
+          "FN_b": 218,
+          "FN_r": 218,
+          "F1_b": 0.5353,
+          "F1_r": 0.5394,
+          "dF1": 0.0041
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 72,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5996,
+          "dF1": 0.0063
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 217,
+          "FP_b": 237,
+          "FP_r": 231,
+          "FN_b": 210,
+          "FN_r": 210,
+          "F1_b": 0.4823,
+          "F1_r": 0.485,
+          "dF1": 0.0027
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 251,
+          "FP_b": 190,
+          "FP_r": 177,
+          "FN_b": 254,
+          "FN_r": 254,
+          "F1_b": 0.5156,
+          "F1_r": 0.5216,
+          "dF1": 0.006
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 126,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5235,
+          "dF1": 0.0
+        }
+      },
+      "side": [],
+      "dTP": 0,
+      "dFP": -13,
+      "dF1": 0.0038,
+      "dF1_64": 0.0041
+    },
+    "A_原书超集": {
+      "sha256": "bc3d51b62884336a7986543d575aea124484b53ce90ed8796496c70c72c2ebf0",
+      "trigger_cases": [
+        "146_01",
+        "213_01",
+        "216_03",
+        "216_05",
+        "318_01",
+        "61_01",
+        "62_01"
+      ],
+      "deleted_units": 13,
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 362,
+          "FP_b": 316,
+          "FP_r": 303,
+          "FN_b": 331,
+          "FN_r": 331,
+          "F1_b": 0.5185,
+          "F1_r": 0.5223,
+          "dF1": 0.0038
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 269,
+          "FP_b": 237,
+          "FP_r": 226,
+          "FN_b": 218,
+          "FN_r": 218,
+          "F1_b": 0.5353,
+          "F1_r": 0.5394,
+          "dF1": 0.0041
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 72,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5996,
+          "dF1": 0.0063
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 217,
+          "FP_b": 237,
+          "FP_r": 231,
+          "FN_b": 210,
+          "FN_r": 210,
+          "F1_b": 0.4823,
+          "F1_r": 0.485,
+          "dF1": 0.0027
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 251,
+          "FP_b": 190,
+          "FP_r": 177,
+          "FN_b": 254,
+          "FN_r": 254,
+          "F1_b": 0.5156,
+          "F1_r": 0.5216,
+          "dF1": 0.006
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 126,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5235,
+          "dF1": 0.0
+        }
+      },
+      "side": [],
+      "dTP": 0,
+      "dFP": -13,
+      "dF1": 0.0038,
+      "dF1_64": 0.0041
+    },
+    "A_原书从零重建": {
+      "sha256": "6965c35173dcd0a32c718e333bca240154e0457d3f9f97553158294ae4936434",
+      "trigger_cases": [
+        "146_01",
+        "160_01",
+        "207_01",
+        "213_01",
+        "216_03",
+        "216_05",
+        "303_01",
+        "318_01",
+        "61_01",
+        "62_01"
+      ],
+      "deleted_units": 18,
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 362,
+          "FP_b": 316,
+          "FP_r": 298,
+          "FN_b": 331,
+          "FN_r": 331,
+          "F1_b": 0.5185,
+          "F1_r": 0.524,
+          "dF1": 0.0055
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 269,
+          "FP_b": 237,
+          "FP_r": 223,
+          "FN_b": 218,
+          "FN_r": 218,
+          "F1_b": 0.5353,
+          "F1_r": 0.5408,
+          "dF1": 0.0055
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 72,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5996,
+          "dF1": 0.0063
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 217,
+          "FP_b": 237,
+          "FP_r": 226,
+          "FN_b": 210,
+          "FN_r": 210,
+          "F1_b": 0.4823,
+          "F1_r": 0.4875,
+          "dF1": 0.0052
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 251,
+          "FP_b": 190,
+          "FP_r": 175,
+          "FN_b": 254,
+          "FN_r": 254,
+          "F1_b": 0.5156,
+          "F1_r": 0.5221,
+          "dF1": 0.0065
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 123,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5273,
+          "dF1": 0.0038
+        }
+      },
+      "side": [],
+      "dTP": 0,
+      "dFP": -18,
+      "dF1": 0.0055,
+      "dF1_64": 0.0055
+    }
+  },
+  "loco": {
+    "A_v15表(出厂)": {
+      "sha256": "bc3d51b62884336a7986543d575aea124484b53ce90ed8796496c70c72c2ebf0",
+      "verdict_counts": {
+        "启用": 66,
+        "收缩": 0,
+        "关闭": 0
+      },
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 362,
+          "FP_b": 316,
+          "FP_r": 303,
+          "FN_b": 331,
+          "FN_r": 331,
+          "F1_b": 0.5185,
+          "F1_r": 0.5223,
+          "dF1": 0.0038
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 269,
+          "FP_b": 237,
+          "FP_r": 226,
+          "FN_b": 218,
+          "FN_r": 218,
+          "F1_b": 0.5353,
+          "F1_r": 0.5394,
+          "dF1": 0.0041
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 72,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5996,
+          "dF1": 0.0063
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 217,
+          "FP_b": 237,
+          "FP_r": 231,
+          "FN_b": 210,
+          "FN_r": 210,
+          "F1_b": 0.4823,
+          "F1_r": 0.485,
+          "dF1": 0.0027
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 251,
+          "FP_b": 190,
+          "FP_r": 177,
+          "FN_b": 254,
+          "FN_r": 254,
+          "F1_b": 0.5156,
+          "F1_r": 0.5216,
+          "dF1": 0.006
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 126,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5235,
+          "dF1": 0.0
+        }
+      },
+      "verdicts": {
+        "followup_66": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "followup_198": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "followup_146": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "followup_216": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "S_107_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_117_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_118_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_136_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_137_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_13_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_140_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_141_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_142_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_143_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_144_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_145_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_156_03": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_156_04": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_156_05": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_156_06": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_160_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_194_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_195_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_1_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_207_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_208_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_209_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_212_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_213_01": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "S_214_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_216_04": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_216_05": {
+          "verdict": "启用(净+12)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 12,
+          "net": 12
+        },
+        "S_221_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_223_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_225_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_22_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_234_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_236_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_23_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_249_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_270_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_274_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_298_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_303_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_311_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_312_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_318_01": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "S_323_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_340_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_342_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_345_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_346_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_347_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_355_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_37_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_38_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_49_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_55_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_57_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_60_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_61_01": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "S_62_01": {
+          "verdict": "启用(净+11)",
+          "train_trig": 6,
+          "del_TP": 0,
+          "del_FP": 11,
+          "net": 11
+        },
+        "S_63_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_64_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_65_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        },
+        "S_8_01": {
+          "verdict": "启用(净+13)",
+          "train_trig": 7,
+          "del_TP": 0,
+          "del_FP": 13,
+          "net": 13
+        }
+      },
+      "dTP": 0,
+      "dFP": -13,
+      "dF1": 0.0038,
+      "dF1_64": 0.0041,
+      "side": [],
+      "changed_cases": [
+        "146_01",
+        "213_01",
+        "216_03",
+        "216_05",
+        "318_01",
+        "61_01",
+        "62_01"
+      ]
+    },
+    "A_原书从零重建": {
+      "sha256": "6965c35173dcd0a32c718e333bca240154e0457d3f9f97553158294ae4936434",
+      "verdict_counts": {
+        "启用": 66,
+        "收缩": 0,
+        "关闭": 0
+      },
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 362,
+          "FP_b": 316,
+          "FP_r": 298,
+          "FN_b": 331,
+          "FN_r": 331,
+          "F1_b": 0.5185,
+          "F1_r": 0.524,
+          "dF1": 0.0055
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 269,
+          "FP_b": 237,
+          "FP_r": 223,
+          "FN_b": 218,
+          "FN_r": 218,
+          "F1_b": 0.5353,
+          "F1_r": 0.5408,
+          "dF1": 0.0055
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 72,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5996,
+          "dF1": 0.0063
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 217,
+          "FP_b": 237,
+          "FP_r": 226,
+          "FN_b": 210,
+          "FN_r": 210,
+          "F1_b": 0.4823,
+          "F1_r": 0.4875,
+          "dF1": 0.0052
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 251,
+          "FP_b": 190,
+          "FP_r": 175,
+          "FN_b": 254,
+          "FN_r": 254,
+          "F1_b": 0.5156,
+          "F1_r": 0.5221,
+          "dF1": 0.0065
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 123,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5273,
+          "dF1": 0.0038
+        }
+      },
+      "verdicts": {
+        "followup_66": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "followup_198": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "followup_146": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "followup_216": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_107_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_117_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_118_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_136_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_137_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_13_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_140_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_141_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_142_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_143_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_144_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_145_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_156_03": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_156_04": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_156_05": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_156_06": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_160_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_194_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_195_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_1_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_207_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_208_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_209_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_212_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_213_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_214_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_216_04": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_216_05": {
+          "verdict": "启用(净+17)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 17,
+          "net": 17
+        },
+        "S_221_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_223_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_225_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_22_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_234_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_236_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_23_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_249_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_270_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_274_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_298_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_303_01": {
+          "verdict": "启用(净+17)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 17,
+          "net": 17
+        },
+        "S_311_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_312_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_318_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_323_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_340_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_342_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_345_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_346_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_347_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_355_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_37_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_38_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_49_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_55_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_57_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_60_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_61_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_62_01": {
+          "verdict": "启用(净+16)",
+          "train_trig": 9,
+          "del_TP": 0,
+          "del_FP": 16,
+          "net": 16
+        },
+        "S_63_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_64_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_65_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        },
+        "S_8_01": {
+          "verdict": "启用(净+18)",
+          "train_trig": 10,
+          "del_TP": 0,
+          "del_FP": 18,
+          "net": 18
+        }
+      },
+      "dTP": 0,
+      "dFP": -18,
+      "dF1": 0.0055,
+      "dF1_64": 0.0055,
+      "side": [],
+      "changed_cases": [
+        "146_01",
+        "160_01",
+        "207_01",
+        "213_01",
+        "216_03",
+        "216_05",
+        "303_01",
+        "318_01",
+        "61_01",
+        "62_01"
+      ]
+    }
+  },
+  "signals": [
+    {
+      "kw": "偏头",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "偏頭",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "冲",
+      "units": [
+        "公孙"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "呕",
+      "units": [
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "噫",
+      "units": [
+        "公孙+内关"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "噯",
+      "units": [
+        "公孙+内关"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "外翻",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "太阳",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "干",
+      "units": [
+        "列缺+照海",
+        "照海"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "环",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "痫",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "癇",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "癫",
+      "units": [
+        "照海",
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "癲",
+      "units": [
+        "照海",
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "眥",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "胁",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "脊椎",
+      "units": [
+        "后溪",
+        "后溪+申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "脘",
+      "units": [
+        "公孙",
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "跷",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "蹺",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "闷",
+      "units": [
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "阳蹻",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "阴",
+      "units": [
+        "列缺"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "阴跷",
+      "units": [
+        "照海"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "陰蹻",
+      "units": [
+        "照海"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "陽蹻",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "项",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "颈",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "外关+临泣",
+        "外关+足临泣",
+        "申脉"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "颊",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣"
+      ],
+      "chain_n": 0,
+      "chains": [],
+      "single_chain": true
+    },
+    {
+      "kw": "眦",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 1,
+      "chains": [
+        "S_209_01"
+      ],
+      "single_chain": true
+    },
+    {
+      "kw": "脊",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "申脉"
+      ],
+      "chain_n": 1,
+      "chains": [
+        "S_208_01"
+      ],
+      "single_chain": true
+    },
+    {
+      "kw": "膈",
+      "units": [
+        "列缺+照海",
+        "照海"
+      ],
+      "chain_n": 1,
+      "chains": [
+        "S_1_01"
+      ],
+      "single_chain": true
+    },
+    {
+      "kw": "足外",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 1,
+      "chains": [
+        "S_236_01"
+      ],
+      "single_chain": true
+    },
+    {
+      "kw": "下肢",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_142_01",
+        "S_145_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "任",
+      "units": [
+        "列缺"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_8_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "咽",
+      "units": [
+        "列缺",
+        "列缺+照海",
+        "照海"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_1_01",
+        "S_38_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "喘",
+      "units": [
+        "公孙+内关"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_107_01",
+        "S_1_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "嘔",
+      "units": [
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_346_01",
+        "S_8_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "带",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_212_01",
+        "S_214_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "悸",
+      "units": [
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_234_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "督",
+      "units": [
+        "后溪",
+        "后溪+申脉"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_345_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "脅",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_156_06",
+        "S_38_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "跟",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 2,
+      "chains": [
+        "S_208_01",
+        "S_221_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "帶",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 3,
+      "chains": [
+        "S_107_01",
+        "S_234_01",
+        "S_249_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "悶",
+      "units": [
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 3,
+      "chains": [
+        "S_270_01",
+        "S_346_01",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "環",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 3,
+      "chains": [
+        "S_1_01",
+        "S_270_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "膀胱",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 3,
+      "chains": [
+        "S_209_01",
+        "S_249_01",
+        "S_270_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "衝",
+      "units": [
+        "公孙"
+      ],
+      "chain_n": 1,
+      "chains": [
+        "followup_198"
+      ],
+      "single_chain": true
+    },
+    {
+      "kw": "踝",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 4,
+      "chains": [
+        "S_118_01",
+        "S_194_01",
+        "S_207_01",
+        "S_355_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "項",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "申脉"
+      ],
+      "chain_n": 4,
+      "chains": [
+        "S_225_01",
+        "S_323_01",
+        "S_345_01",
+        "S_346_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "頸",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "外关+临泣",
+        "外关+足临泣",
+        "申脉"
+      ],
+      "chain_n": 4,
+      "chains": [
+        "S_22_01",
+        "S_23_01",
+        "S_345_01",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "鼻",
+      "units": [
+        "列缺"
+      ],
+      "chain_n": 4,
+      "chains": [
+        "S_156_04",
+        "S_1_01",
+        "S_207_01",
+        "S_274_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "吐",
+      "units": [
+        "内关"
+      ],
+      "chain_n": 5,
+      "chains": [
+        "S_140_01",
+        "S_156_03",
+        "S_156_06",
+        "S_1_01",
+        "S_214_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "目",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 5,
+      "chains": [
+        "S_156_04",
+        "S_346_01",
+        "S_60_01",
+        "S_64_01",
+        "followup_198"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "頰",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣"
+      ],
+      "chain_n": 4,
+      "chains": [
+        "S_156_04",
+        "S_214_01",
+        "S_323_01",
+        "followup_216"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "腰",
+      "units": [
+        "临泣",
+        "后溪",
+        "后溪+申脉",
+        "外关+临泣",
+        "外关+足临泣",
+        "申脉",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 6,
+      "chains": [
+        "S_107_01",
+        "S_13_01",
+        "S_221_01",
+        "S_249_01",
+        "followup_216",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "腹",
+      "units": [
+        "公孙",
+        "公孙+内关"
+      ],
+      "chain_n": 7,
+      "chains": [
+        "S_117_01",
+        "S_156_03",
+        "S_156_04",
+        "S_156_05",
+        "S_156_06",
+        "S_160_01",
+        "S_355_01"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "喉",
+      "units": [
+        "列缺",
+        "列缺+照海",
+        "照海"
+      ],
+      "chain_n": 6,
+      "chains": [
+        "S_107_01",
+        "S_208_01",
+        "S_346_01",
+        "S_38_01",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "太陽",
+      "units": [
+        "申脉"
+      ],
+      "chain_n": 7,
+      "chains": [
+        "S_136_01",
+        "S_137_01",
+        "S_209_01",
+        "S_213_01",
+        "S_249_01",
+        "S_49_01",
+        "followup_216"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "皮",
+      "units": [
+        "列缺"
+      ],
+      "chain_n": 6,
+      "chains": [
+        "S_1_01",
+        "S_209_01",
+        "S_270_01",
+        "S_303_01",
+        "S_323_01",
+        "followup_198"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "咳",
+      "units": [
+        "公孙+内关",
+        "列缺+照海"
+      ],
+      "chain_n": 8,
+      "chains": [
+        "S_107_01",
+        "S_209_01",
+        "S_312_01",
+        "S_342_01",
+        "S_347_01",
+        "S_49_01",
+        "S_57_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "耳",
+      "units": [
+        "临泣",
+        "外关",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣",
+        "足临泣"
+      ],
+      "chain_n": 10,
+      "chains": [
+        "S_107_01",
+        "S_195_01",
+        "S_216_04",
+        "S_298_01",
+        "S_311_01",
+        "S_312_01",
+        "S_340_01",
+        "S_37_01",
+        "followup_146",
+        "followup_198"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "肩",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "外关+临泣",
+        "外关+足临泣"
+      ],
+      "chain_n": 11,
+      "chains": [
+        "S_136_01",
+        "S_156_05",
+        "S_156_06",
+        "S_195_01",
+        "S_212_01",
+        "S_223_01",
+        "S_345_01",
+        "S_38_01",
+        "S_64_01",
+        "S_8_01",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "胸",
+      "units": [
+        "公孙",
+        "公孙+内关",
+        "内关",
+        "列缺",
+        "列缺+照海",
+        "外关",
+        "照海"
+      ],
+      "chain_n": 14,
+      "chains": [
+        "S_118_01",
+        "S_140_01",
+        "S_143_01",
+        "S_144_01",
+        "S_156_04",
+        "S_1_01",
+        "S_234_01",
+        "S_346_01",
+        "S_49_01",
+        "S_55_01",
+        "S_57_01",
+        "followup_146",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "乾",
+      "units": [
+        "列缺+照海",
+        "照海"
+      ],
+      "chain_n": 14,
+      "chains": [
+        "S_156_03",
+        "S_160_01",
+        "S_1_01",
+        "S_209_01",
+        "S_303_01",
+        "S_312_01",
+        "S_318_01",
+        "S_342_01",
+        "S_37_01",
+        "S_38_01",
+        "S_49_01",
+        "S_57_01",
+        "S_65_01",
+        "followup_198"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "背",
+      "units": [
+        "后溪",
+        "后溪+申脉",
+        "外关",
+        "申脉"
+      ],
+      "chain_n": 15,
+      "chains": [
+        "S_136_01",
+        "S_137_01",
+        "S_156_03",
+        "S_194_01",
+        "S_195_01",
+        "S_208_01",
+        "S_234_01",
+        "S_311_01",
+        "S_37_01",
+        "S_38_01",
+        "S_49_01",
+        "S_55_01",
+        "S_57_01",
+        "S_64_01",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "肺",
+      "units": [
+        "列缺",
+        "列缺+照海"
+      ],
+      "chain_n": 18,
+      "chains": [
+        "S_107_01",
+        "S_140_01",
+        "S_141_01",
+        "S_142_01",
+        "S_143_01",
+        "S_144_01",
+        "S_145_01",
+        "S_156_04",
+        "S_207_01",
+        "S_209_01",
+        "S_303_01",
+        "S_312_01",
+        "S_347_01",
+        "S_355_01",
+        "S_49_01",
+        "S_55_01",
+        "S_57_01",
+        "followup_146"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "陰",
+      "units": [
+        "列缺"
+      ],
+      "chain_n": 14,
+      "chains": [
+        "S_107_01",
+        "S_117_01",
+        "S_118_01",
+        "S_13_01",
+        "S_142_01",
+        "S_156_04",
+        "S_156_05",
+        "S_274_01",
+        "S_345_01",
+        "S_60_01",
+        "S_61_01",
+        "S_64_01",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "眼",
+      "units": [
+        "临泣",
+        "外关+临泣",
+        "外关+足临泣",
+        "臨泣"
+      ],
+      "chain_n": 30,
+      "chains": [
+        "S_117_01",
+        "S_118_01",
+        "S_13_01",
+        "S_142_01",
+        "S_145_01",
+        "S_156_05",
+        "S_195_01",
+        "S_1_01",
+        "S_207_01",
+        "S_208_01",
+        "S_209_01",
+        "S_214_01",
+        "S_225_01",
+        "S_234_01",
+        "S_249_01",
+        "S_274_01",
+        "S_298_01",
+        "S_303_01",
+        "S_318_01",
+        "S_323_01",
+        "S_342_01",
+        "S_345_01",
+        "S_355_01",
+        "S_49_01",
+        "S_55_01",
+        "S_57_01",
+        "S_60_01",
+        "followup_146",
+        "followup_198",
+        "followup_216"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "心",
+      "units": [
+        "公孙",
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 28,
+      "chains": [
+        "S_117_01",
+        "S_13_01",
+        "S_141_01",
+        "S_143_01",
+        "S_144_01",
+        "S_156_03",
+        "S_195_01",
+        "S_1_01",
+        "S_212_01",
+        "S_22_01",
+        "S_234_01",
+        "S_236_01",
+        "S_23_01",
+        "S_270_01",
+        "S_274_01",
+        "S_298_01",
+        "S_303_01",
+        "S_318_01",
+        "S_345_01",
+        "S_346_01",
+        "S_38_01",
+        "S_49_01",
+        "S_55_01",
+        "S_60_01",
+        "S_8_01",
+        "followup_146",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "胃",
+      "units": [
+        "公孙",
+        "公孙+内关",
+        "内关"
+      ],
+      "chain_n": 45,
+      "chains": [
+        "S_107_01",
+        "S_118_01",
+        "S_13_01",
+        "S_140_01",
+        "S_141_01",
+        "S_143_01",
+        "S_156_03",
+        "S_156_06",
+        "S_160_01",
+        "S_194_01",
+        "S_195_01",
+        "S_1_01",
+        "S_207_01",
+        "S_208_01",
+        "S_209_01",
+        "S_212_01",
+        "S_214_01",
+        "S_221_01",
+        "S_225_01",
+        "S_236_01",
+        "S_249_01",
+        "S_270_01",
+        "S_274_01",
+        "S_298_01",
+        "S_303_01",
+        "S_311_01",
+        "S_312_01",
+        "S_323_01",
+        "S_342_01",
+        "S_345_01",
+        "S_346_01",
+        "S_347_01",
+        "S_355_01",
+        "S_37_01",
+        "S_38_01",
+        "S_49_01",
+        "S_55_01",
+        "S_57_01",
+        "S_60_01",
+        "S_63_01",
+        "S_65_01",
+        "S_8_01",
+        "followup_146",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    },
+    {
+      "kw": "便",
+      "units": [
+        "照海"
+      ],
+      "chain_n": 56,
+      "chains": [
+        "S_107_01",
+        "S_117_01",
+        "S_118_01",
+        "S_136_01",
+        "S_13_01",
+        "S_140_01",
+        "S_141_01",
+        "S_142_01",
+        "S_143_01",
+        "S_144_01",
+        "S_145_01",
+        "S_156_03",
+        "S_156_04",
+        "S_156_05",
+        "S_156_06",
+        "S_160_01",
+        "S_195_01",
+        "S_1_01",
+        "S_207_01",
+        "S_208_01",
+        "S_209_01",
+        "S_212_01",
+        "S_214_01",
+        "S_221_01",
+        "S_225_01",
+        "S_22_01",
+        "S_234_01",
+        "S_236_01",
+        "S_23_01",
+        "S_249_01",
+        "S_270_01",
+        "S_274_01",
+        "S_298_01",
+        "S_303_01",
+        "S_311_01",
+        "S_312_01",
+        "S_318_01",
+        "S_323_01",
+        "S_345_01",
+        "S_346_01",
+        "S_347_01",
+        "S_355_01",
+        "S_37_01",
+        "S_38_01",
+        "S_49_01",
+        "S_57_01",
+        "S_60_01",
+        "S_61_01",
+        "S_62_01",
+        "S_63_01",
+        "S_64_01",
+        "S_65_01",
+        "S_8_01",
+        "followup_146",
+        "followup_198",
+        "followup_66"
+      ],
+      "single_chain": false
+    }
+  ],
+  "B2": {
+    "B2_固定词表": {
+      "sha256": "cfa97c88fb3cfccb1168c6fb1fe1c5a7d49e71f107d92879824e923c3923f63b",
+      "recovery_cases": [
+        "144_01",
+        "145_01",
+        "148_01"
+      ],
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 365,
+          "FP_b": 316,
+          "FP_r": 313,
+          "FN_b": 331,
+          "FN_r": 328,
+          "F1_b": 0.5185,
+          "F1_r": 0.5219,
+          "dF1": 0.0034
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 271,
+          "FP_b": 237,
+          "FP_r": 235,
+          "FN_b": 218,
+          "FN_r": 216,
+          "F1_b": 0.5353,
+          "F1_r": 0.5384,
+          "dF1": 0.0031
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 79,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5933,
+          "dF1": 0.0
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 220,
+          "FP_b": 237,
+          "FP_r": 234,
+          "FN_b": 210,
+          "FN_r": 207,
+          "F1_b": 0.4823,
+          "F1_r": 0.4875,
+          "dF1": 0.0052
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 254,
+          "FP_b": 190,
+          "FP_r": 187,
+          "FN_b": 254,
+          "FN_r": 251,
+          "F1_b": 0.5156,
+          "F1_r": 0.5211,
+          "dF1": 0.0055
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 126,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5235,
+          "dF1": 0.0
+        }
+      },
+      "side": [],
+      "dTP": 3,
+      "dFP": -3,
+      "dF1": 0.0034,
+      "dF1_64": 0.0031
+    },
+    "B2_逐折重导出": {
+      "sha256": "fac424f01a5822fdaaee24a2d02b306a161104728727edc7b26d3f441d03381a",
+      "recovery_cases": [
+        "145_01",
+        "148_01"
+      ],
+      "rows": {
+        "全量86": {
+          "TP_b": 362,
+          "TP_r": 364,
+          "FP_b": 316,
+          "FP_r": 314,
+          "FN_b": 331,
+          "FN_r": 329,
+          "F1_b": 0.5185,
+          "F1_r": 0.5208,
+          "dF1": 0.0023
+        },
+        "核心集64": {
+          "TP_b": 269,
+          "TP_r": 270,
+          "FP_b": 237,
+          "FP_r": 236,
+          "FN_b": 218,
+          "FN_r": 217,
+          "F1_b": 0.5353,
+          "F1_r": 0.5369,
+          "dF1": 0.0016
+        },
+        "M1_28": {
+          "TP_b": 145,
+          "TP_r": 145,
+          "FP_b": 79,
+          "FP_r": 79,
+          "FN_b": 121,
+          "FN_r": 121,
+          "F1_b": 0.5933,
+          "F1_r": 0.5933,
+          "dF1": 0.0
+        },
+        "未M1_58": {
+          "TP_b": 217,
+          "TP_r": 219,
+          "FP_b": 237,
+          "FP_r": 235,
+          "FN_b": 210,
+          "FN_r": 208,
+          "F1_b": 0.4823,
+          "F1_r": 0.4858,
+          "dF1": 0.0035
+        },
+        "复诊": {
+          "TP_b": 251,
+          "TP_r": 253,
+          "FP_b": 190,
+          "FP_r": 188,
+          "FN_b": 254,
+          "FN_r": 252,
+          "F1_b": 0.5156,
+          "F1_r": 0.5192,
+          "dF1": 0.0036
+        },
+        "首诊": {
+          "TP_b": 111,
+          "TP_r": 111,
+          "FP_b": 126,
+          "FP_r": 126,
+          "FN_b": 77,
+          "FN_r": 77,
+          "F1_b": 0.5235,
+          "F1_r": 0.5235,
+          "dF1": 0.0
+        }
+      },
+      "side": [],
+      "dTP": 2,
+      "dFP": -2,
+      "dF1": 0.0023,
+      "dF1_64": 0.0016
+    },
+    "signal_support": {
+      "水開始退": [
+        "S_144_01"
+      ],
+      "水退": [
+        "S_156_06"
+      ],
+      "持續往下退": [
+        "S_145_01"
+      ],
+      "往下退": [
+        "S_145_01"
+      ],
+      "可平躺": [
+        "S_141_01",
+        "S_143_01",
+        "S_145_01",
+        "S_156_04",
+        "S_156_06",
+        "S_49_01",
+        "followup_146",
+        "followup_66"
+      ],
+      "能平躺": [
+        "S_140_01"
+      ],
+      "比以前溫": [
+        "S_144_01"
+      ],
+      "心陽回頭": [
+        "followup_146"
+      ]
+    },
+    "loco_reason": {
+      "140_01": "急性期（负向命中）",
+      "141_01": "急性期（负向命中）",
+      "142_01": "急性期（负向命中）",
+      "143_01": "急性期（负向命中）",
+      "144_01": {
+        "触发信号": [
+          "水開始退",
+          "比以前溫"
+        ],
+        "留出后仍被其它链支撑的信号": [],
+        "各信号所属链": {
+          "水開始退": [
+            "S_144_01"
+          ],
+          "比以前溫": [
+            "S_144_01"
+          ]
+        }
+      },
+      "145_01": {
+        "触发信号": [
+          "持續往下退",
+          "往下退",
+          "可平躺"
+        ],
+        "留出后仍被其它链支撑的信号": [
+          "可平躺"
+        ],
+        "各信号所属链": {
+          "持續往下退": [
+            "S_145_01"
+          ],
+          "往下退": [
+            "S_145_01"
+          ],
+          "可平躺": [
+            "S_141_01",
+            "S_143_01",
+            "S_145_01",
+            "S_156_04",
+            "S_156_06",
+            "S_49_01",
+            "followup_146",
+            "followup_66"
+          ]
+        }
+      },
+      "146_01": "急性期（负向命中）",
+      "148_01": {
+        "触发信号": [
+          "可平躺",
+          "心陽回頭"
+        ],
+        "留出后仍被其它链支撑的信号": [
+          "可平躺"
+        ],
+        "各信号所属链": {
+          "可平躺": [
+            "S_141_01",
+            "S_143_01",
+            "S_145_01",
+            "S_156_04",
+            "S_156_06",
+            "S_49_01",
+            "followup_146",
+            "followup_66"
+          ],
+          "心陽回頭": [
+            "followup_146"
+          ]
+        }
+      },
+      "149_01": "急性期（负向命中）"
+    }
+  }
+}
