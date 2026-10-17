@@ -1,0 +1,42 @@
+复诊案数（组内存在更早案）=25 / 86
+其中【合法 LOCO 可测】（上一次就诊落在别折/训练集）=5 案：156_04、156_05、156_06、216_04、216_05
+
+基线 v14r5（全 86）: (362, 316, 331, 0.5185)
+A 部署上界（复诊=上次主穴）: (478, 233, 215, 0.6562)
+B 合法 LOCO（仅训练集内的上次）: (379, 297, 314, 0.5429)
+
+--- 复诊子集（25 案）上的对比 ---
+基线 : (110, 89, 128) F1 0.4841
+A    : (226, 6, 12) F1 0.9579  Δ=+0.4738
+B    : (127, 70, 111) F1 0.5683  Δ=+0.0842
+
+--- 合法 LOCO 子集（5 案） ---
+基线  : (20, 24, 24) F1 0.4415
+A   : (37, 5, 7) F1 0.8622
+B   : (37, 5, 7) F1 0.8622
+
+148_01   prev=146_01   fold=followup_146  prevfold=followup_146  | 基线F1 0.800 A 1.000 B 0.800
+149_01   prev=148_01   fold=followup_146  prevfold=followup_146  | 基线F1 0.476 A 0.957 B 0.476
+156_04   prev=156_03   fold=S_156_04      prevfold=S_156_03      | 基线F1 0.400 A 0.857 B 0.857
+156_05   prev=156_04   fold=S_156_05      prevfold=S_156_04      | 基线F1 0.556 A 0.875 B 0.875
+156_06   prev=156_05   fold=S_156_06      prevfold=S_156_05      | 基线F1 0.571 A 0.842 B 0.842
+199_01   prev=198_01   fold=followup_198  prevfold=followup_198  | 基线F1 0.143 A 0.857 B 0.143
+200_01   prev=199_01   fold=followup_198  prevfold=followup_198  | 基线F1 0.154 A 1.000 B 0.154
+201_01   prev=200_01   fold=followup_198  prevfold=followup_198  | 基线F1 0.154 A 0.875 B 0.154
+202_01   prev=201_01   fold=followup_198  prevfold=followup_198  | 基线F1 0.133 A 1.000 B 0.133
+216_02   prev=216_01   fold=followup_216  prevfold=followup_216  | 基线F1 0.444 A 1.000 B 0.444
+216_03   prev=216_02   fold=followup_216  prevfold=followup_216  | 基线F1 0.600 A 0.947 B 0.600
+216_04   prev=216_03   fold=S_216_04      prevfold=followup_216  | 基线F1 0.125 A 0.737 B 0.737
+216_05   prev=216_04   fold=S_216_05      prevfold=S_216_04      | 基线F1 0.556 A 1.000 B 1.000
+67_01    prev=66_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.700 A 1.000 B 0.700
+68_01    prev=67_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.737 A 1.000 B 0.737
+69_01    prev=68_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.588 A 1.000 B 0.588
+70_01    prev=69_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.471 A 1.000 B 0.471
+71_01    prev=70_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.556 A 1.000 B 0.556
+72_01    prev=71_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.444 A 1.000 B 0.444
+73_01    prev=72_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.737 A 1.000 B 0.737
+74_01    prev=73_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.444 A 1.000 B 0.444
+75_01    prev=74_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.588 A 1.000 B 0.588
+76_01    prev=75_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.667 A 1.000 B 0.667
+77_01    prev=76_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.588 A 1.000 B 0.588
+78_01    prev=77_01    fold=followup_66   prevfold=followup_66   | 基线F1 0.471 A 1.000 B 0.471
