@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""P-final / P-final-2 / P-final-3 验证：候选A 合入 SKILL.md 后的三重校验（v17 版）。
+"""P-final / P-final-2 / P-final-3 / P-final-4 验证（v18 版）。
 
-1) 转写保真度：SKILL.md 条文中的"本单元证候关键词"须与**当前真相源**逐词一致
-   —— v15＝`候选规则_条文化.json`；v16＝`PM_原书词表.json`；**v17＝`PM_原书词表_v17.json`**；
-   "已登记规则追加关键词"始终取自 `候选规则_条文化.json`；
-2) 复算达标：由**真相源 + 引擎**自算 v17 预测集（不依赖任何中间 JSON），用唯一正式评分器复算：
+1) 转写保真度：SKILL.md 八脉词表须与 `PM_原书词表_v17.json` 逐词一致；
+   且须含 v18 复诊延续层（R-FU）条文与规则真相源引用。
+2) 复算达标（自算预测，不依赖中间 JSON）：
    —— 基线 v14r5 `362/316/331/0.5185`；
-   —— **v17 候选A `362/299/331/0.5233`**（v16 历史值 `362/298/331/0.5240`；v15 `362/303/331/0.5223`）；
-3) 基线变更范围：SKILL.md 之外不得有其它技能文件改动（由 git 命令另行核验，本脚本只读）。
+   —— v17 候选A `362/299/331/0.5233`；
+   —— **v18（v17 + R-FU 复诊延续）`420/263/273/0.5949`**。
+3) 基线变更范围：SKILL.md 之外不得有其它技能文件改动（git 另行核验）。
 
 只读；不修改任何文件。
 """
@@ -25,6 +25,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 SKILL = os.path.join(ROOT, "doubao-acupuncture-diagnosis", "SKILL.md")
 PC = os.path.join(ROOT, "blind法对照实验", "P-C_受控实验")
 PM = os.path.join(ROOT, "blind法对照实验", "P-M_每折重提炼复核")
+PN = os.path.join(ROOT, "blind法对照实验", "P-N_开放重提炼")
 EXP = None
 for _n in sorted(os.listdir(ROOT)):
     if os.path.isfile(os.path.join(ROOT, _n, "benchmark_v2", "canonical_scorer.py")):
@@ -45,18 +46,22 @@ spec = json.load(io.open(os.path.join(PC, "候选规则_条文化.json"), encodi
 add_kw = spec["已登记规则追加关键词"]
 book = json.load(io.open(os.path.join(PM, "PM_原书词表_v17.json"), encoding="utf-8"))
 json_kw = book["单元证候关键词"]
+rule = json.load(io.open(os.path.join(PN, "PN_followup_rule.json"), encoding="utf-8"))
 
 for probe in ["八脉交会无对应证候者降临床参考建议（v16·候选A·原书源词表）",
-              "**v17 变更基线**", "## 附录·v17 候选合入条文（R1 微修·`列缺` 增补「皮」）"]:
+              "**v17 变更基线**", "**v18 变更基线**",
+              "## 附录·v17 候选合入条文", "## 附录·v18 候选合入条文",
+              "v18·复诊延续层（R-FU，机制级）", "PN_followup_rule.json"]:
     if probe not in skill:
         fails.append("缺少插入片段: %s" % probe)
 
-matched_lines = [l for l in skill.splitlines() if "八脉交会无对应证候者降临床参考建议（v16·候选A·原书源词表）" in l]
-line = matched_lines[0] if matched_lines else ""
-if not matched_lines:
+line = ""
+matched = [l for l in skill.splitlines() if "八脉交会无对应证候者降临床参考建议（v16·候选A·原书源词表）" in l]
+if not matched:
     fails.append("无法定位 SKILL.md 候选A 主条")
     skill_map = {}
 else:
+    line = matched[0]
     m = re.search(r"\*\*本单元证候关键词[^：]*：(.*?)。\*\*(?:词表口径|已登记规则适应症追加)", line)
     if not m:
         fails.append("无法定位 SKILL.md 证候关键词区段")
@@ -77,20 +82,19 @@ for unit, kws in json_kw.items():
     if unit not in skill_map:
         fails.append("SKILL.md 缺单元别名: %s" % unit)
         continue
-    missing = [k for k in kws if k not in skill_map[unit]]
-    if missing:
-        fails.append("单元 %s 关键词未转写: %s" % (unit, missing))
-
+    miss = [k for k in kws if k not in skill_map[unit]]
+    if miss:
+        fails.append("单元 %s 关键词未转写: %s" % (unit, miss))
 for cond, kws in add_kw.items():
     for k in kws:
         if k not in line:
-            fails.append("追加关键词未转写: %s (条件 %s)" % (k, cond))
+            fails.append("追加关键词未转写: %s (%s)" % (k, cond))
 
-# ---- 2) 复算达标（自算 v17 预测集）----
+# ---- 2) 复算达标 ----
 gold = pickle.load(open(os.path.join(BENCH, "_gold_results93v2.pkl"), "rb"))
 NEW = gold["results"]
 SC = [c for c in gold["case_ids"] if len(NEW[c]["gold_members"]) > 0]
-GOLD = {c: set(NEW[c]["gold_members"]) for c in SC}
+GOLD = {c: set(normalize_units(NEW[c]["gold_members"])) for c in SC}
 PRED = json.load(io.open(os.path.join(G, "盲法v14r5", "_blind93v14r5_results.json"), encoding="utf-8"))
 REC = {c: {str(e.get("穴", "")).strip(): e for e in (PRED[c].get("主穴记录", []) or [])} for c in SC}
 LAYER = {c: {u: ln for ln, pts in (PRED[c].get("主穴分层") or {}).items() for u in pts} for c in SC}
@@ -111,9 +115,9 @@ def sym(c):
 
 SYM = {c: sym(c) for c in SC}
 
-
-def dels(c):
-    out = set()
+V17 = json.loads(json.dumps(PRED))
+for c in SC:
+    d = set()
     for u in (PRED[c].get("主穴", []) or []):
         if LAYER[c].get(u, "") != spec["作用层"] or u in spec["排除单元"]:
             continue
@@ -126,18 +130,21 @@ def dels(c):
             if COND[cond](dep):
                 keys += ex
         if not [k for k in keys if k in SYM[c]]:
-            out |= set(normalize_units([u]))
-    return out
+            d |= set(normalize_units([u]))
+    V17[c]["主穴"] = [p for p in V17[c].get("主穴", [])
+                     if not (normalize_units([p]) and next(iter(normalize_units([p]))) in d)]
 
-
-RUN = json.loads(json.dumps(PRED))
-TRIG = {}
-for c in SC:
-    d = dels(c)
-    if d:
-        TRIG[c] = sorted(d)
-        RUN[c]["主穴"] = [p for p in RUN[c].get("主穴", [])
-                          if not (normalize_units([p]) and next(iter(normalize_units([p]))) in d)]
+# v18：R-FU（复诊延续，条件化）
+MARK = re.compile(rule["延续标记正则"])
+V18 = json.loads(json.dumps(V17))
+FIRE = []
+for g, ids in rule["患者分组(仅多案组)"].items():
+    ids = sorted(ids, key=lambda x: (int(x.split("_")[1]), x))
+    for i in range(1, len(ids)):
+        c, p = ids[i], ids[i - 1]
+        if MARK.search(SYM[c]):
+            V18[c]["主穴"] = list(V18[p]["主穴"])
+            FIRE.append(c)
 
 
 def blk(d):
@@ -157,23 +164,27 @@ def blk(d):
 
 
 base = blk(PRED)
-run = blk(RUN)
+run17 = blk(V17)
+run18 = blk(V18)
 if base != (362, 316, 331, 0.5185):
     fails.append("基线复算异常（期望 362/316/331/0.5185）: %s" % (base,))
-if run != (362, 299, 331, 0.5233):
-    fails.append("候选A(v17) 复算异常（期望 362/299/331/0.5233）: %s" % (run,))
+if run17 != (362, 299, 331, 0.5233):
+    fails.append("v17 复算异常（期望 362/299/331/0.5233）: %s" % (run17,))
+if run18 != (420, 263, 273, 0.5949):
+    fails.append("v18 复算异常（期望 420/263/273/0.5949）: %s" % (run18,))
 
-print("== P-final-3 验证（v17·R1 微修）==")
-print("1) 转写保真度：真相源 PM_原书词表_v17.json 单元 %d 个、追加条件 %d 组；转写问题 %d 项"
-      % (len(json_kw), len(add_kw), sum(1 for f in fails if ("转写" in f or "缺单元" in f))))
-print("2) 基线复算：TP/FP/FN/F1 = %s" % (base,))
-print("   候选A(v17) 复算：TP/FP/FN/F1 = %s  →  ΔTP %+d / ΔFP %+d / ΔF1 %+.4f"
-      % (run, run[0] - base[0], run[1] - base[1], run[3] - base[3]))
-print("   触发案 %d 个：%s" % (len(TRIG), "、".join(sorted(TRIG))))
+print("== P-final-4 验证（v18·R-FU 复诊延续层）==")
+print("1) 转写保真度：八脉词表真相源 %d 单元 / 追加 %d 组；规则真相源＝PN_followup_rule.json（%d 多案组）；转写问题 %d 项"
+      % (len(json_kw), len(add_kw), len(rule["患者分组(仅多案组)"]),
+         sum(1 for f in fails if ("转写" in f or "缺单元" in f))))
+print("2) 基线 v14r5   : %s" % (base,))
+print("   v17 候选A     : %s   →  ΔF1 %+.4f" % (run17, run17[3] - base[3]))
+print("   v18 +R-FU     : %s   →  ΔF1 %+.4f（对 v17 %+.4f）；触发 %d 案"
+      % (run18, run18[3] - base[3], run18[3] - run17[3], len(FIRE)))
 if fails:
     print("3) 结果：**FAIL** —— %d 项" % len(fails))
     for f in fails:
         print("   - %s" % f)
     sys.exit(1)
-print("3) 结果：**PASS**（转写一致 + 复算达标）")
+print("3) 结果：**PASS**（转写一致 + v17/v18 复算达标）")
 sys.exit(0)
