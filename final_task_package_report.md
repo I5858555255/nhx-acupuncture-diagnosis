@@ -115,3 +115,17 @@ P3/P4 两个阶段未运行任何实验：任务包默认授权不包含受控�
 - **验证限制**：已通过 GitHub API 检查文件和目录存在性；当前环境无法直接克隆仓库，因此本次未重跑 P5 三个 Python 脚本。此前总报告记录的脚本通过结果是历史运行记录，不应被说成本次复测结果。
 - **未执行事项**：P3 受控实验仍为 `BLOCKED_PENDING_AUTHORIZATION`；P4 外部 holdout 仍为 `WAITING_FOR_NEW_PUBLIC_DATASET` / `BLOCKED_PENDING_AUTHORIZATION`。本次授权范围为文档修正，不扩大到实验或规则合入。
 - **下一门槛**：审查 PR diff；在用户另行批准前，不合并到 `main`。
+
+---
+
+## 十二、P5 复测补记（2026-10-17，追加）
+
+第 11 节「验证限制」记载的“本次未重跑 P5 三个 Python 脚本”，对应当时的执行环境（无法克隆仓库）。后续已在本机完整仓库副本中完成复测：将 PR 分支检出到独立 `git worktree`（未改动 `main` 工作区），运行三个只读脚本：
+
+- `check_contract_consistency.py`：6/6 PASS，exit 0。
+- `check_path_integrity.py`：全部 PASS，exit 0。
+- `check_baseline_regression.py`：exit 0，4 项中 3 PASS、1 WARN。
+
+已知 WARN：正式判分 JSON（`sf10_阶段M5/G_验收/判分汇总v14r5.json`）为 0–1 小数口径（实测如 `0.3762`、`0.5185`），README 为百分比口径；脚本按设计告警但不判失败，该口径差异未修复，也不得表述为“全部无警告通过”。
+
+本补记只更新复测状态，不覆盖第 11 节及第一至十节的历史记录；复测不扩大既有验证结论的适用范围（不构成诊断规则验证、外部泛化验证或 131 节知识条目全量审计完成的证明）。PR #1 仍为 Draft、未合并；P3 / P4 仍未执行。
