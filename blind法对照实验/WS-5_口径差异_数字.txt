@@ -1,0 +1,24 @@
+== WS-5 口径差异：数字分解 ==
+
+canonical 可判分集（_gold_results93v2）案数 = 86
+真盲法140 可判分集（判分明细.csv gold>0）案数 = 86
+两集合**交叠**案数 = 86；canonical-only = 0；140-only = 0
+
+--- A. canonical v14r5（统一点级归一化）---
+全 86 案 : TP362/FP316/FN331  recall 0.5224  precision 0.5339  macro-F1 0.5185  逐案recall均值 0.5585
+交叠 86 案: TP362/FP316/FN331  recall 0.5224  precision 0.5339  macro-F1 0.5185  逐案recall均值 0.5585
+
+--- B. 真盲法140 口径（重合率(主)=命中/gold，独立盲跑 _blind140）---
+全 86 案 重合率(主) 均值 0.2688
+交叠 86 案 重合率(主) 均值 0.2688（中位 0.2500）
+
+--- C. 分解（同一判分集交叠 86 案）---
+canonical 逐案recall均值 0.5585  −  真盲法 重合率主均值 0.2688  =  +0.2897 个绝对百分点
+
+--- D. 交叠案内「口径差」的构成（供报告引用）---
+1) 预测来源不同：canonical 用 `_blind93v14r5_results.json`（v14r5 冻结跑）；
+   真盲法用 `_blind140_results.json`（严格盲：输入仅症状、剥离诊断行、处方隔离、无自我判分）。
+2) 指标不同：canonical 报 F1（precision+recall 调和）；真盲法报 recall-only（重合率主）。
+3) gold 解析不同：真盲法140 剥侧别前缀、透刺按两端点、别名归并、gold 去重端点；
+   canonical 用 `normalize_units` 统一归一化（含膝五针/三皇/开四关展开规则）。
+4) 集合不同：两 86 案**并非同一批案号**（见上：交叠 86，canonical-only 0，140-only 0）。

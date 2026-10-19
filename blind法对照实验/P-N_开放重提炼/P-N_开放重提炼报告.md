@@ -145,3 +145,14 @@
 `PN_open_induce.py`／`PN_result.txt`（N-A）、`PN_packets.py`／`PN_folds.json`／`packets/`（N-B 盲包）、`PN_score.py`／`PN_b_score.txt`／`PN_b_summary.json`（N-B 评分）、`PN_check_selftext.py`／`PN_selftext_check.txt`（归因核查）、`PN_followup.py`／`PN_c_followup.txt`／`PN_c_summary.json`（P-N-C）、本报告。
 
 > 免责声明：以上为学习方法论与技能评测整理，不构成医疗建议，临床须由资质专业人员操作。
+
+---
+
+## 7. 追加补记（2026-10-19）——**严格洁净复跑：N-B 口径降级**
+
+- 上文 §5 报的 **N-B 全量 `501/303/192 / F1 0.6741`** 系 **as-run 口径（含 12 条协议泄漏）**，现**如实降级为"泄漏上界跑"**，不再作为 N-B 的对外口径。
+- 对 6 个泄漏案（`156_06`／`194_01`／`1_01`／`208_01`／`213_01`／`216_04`）以**最严读取纪律**重跑（只读本包 3 文件 + 5 个白名单原书单文件；禁目录级/递归检索、禁 `SKILL.md`／变更记录／`典型案例示范集.md`／gold）后：
+  - **全 86 案 `TP498/FP314/FN195 / F1 0.6676`**（ΔF1 **−0.0065** vs as-run）；6 案全部小幅下降。
+  - 产物：`PN_strict_compare.py`／`PN_strict_score.txt`／`PN_strict_summary.json`；原预测存档为各折 `留出案预测_复跑前.json`。
+- **结论不变**：LLM 开放重提炼仍显著高于基线（`+0.1491`）与 v18（`+0.0727`）；机械基线（k-NN `0.4307`／关联规则 `0.3007`）远低于它。仍属**上界估计**（执行者＝同族 LLM、非独立临床盲审）。
+- 详见主计划 `技能提升任务计划_v1.md` §25。
