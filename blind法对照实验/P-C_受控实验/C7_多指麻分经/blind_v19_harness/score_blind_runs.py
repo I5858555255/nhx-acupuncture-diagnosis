@@ -127,7 +127,19 @@ def main():
     out.append("   上游采用案数（自报）：%d / %d" % (n_up, len(SC)))
     out.append("")
 
-    # ---- 4) 泄漏探测 ----
+    # ---- 4a) 独立性审计：防"直接抄 gold"（4b 只查历史 as-run 抓不到这一类）----
+    eq_gold = sum(1 for c in SC if set(normalize_units(P[c])) == GOLD[c])
+    precs = [len(set(normalize_units(P[c])) & GOLD[c]) / float(len(set(normalize_units(P[c]))))
+             for c in SC if P[c]]
+    sizes = [len(set(normalize_units(P[c]))) for c in SC]
+    out.append("4a) 独立性审计：与 gold **集合完全一致** %d/%d = %.1f%%（有效推断通常 <20%%；"
+               "若偏高须人工复核是否接触 gold）" % (eq_gold, len(SC), 100.0 * eq_gold / len(SC)))
+    out.append("    平均 |P| = %.2f（gold 平均 %.2f）；平均逐案 precision = %.4f"
+               % (statistics.mean(sizes), statistics.mean([len(GOLD[c]) for c in SC]),
+                  statistics.mean(precs)))
+    out.append("")
+
+    # ---- 4b) 泄漏探测：与历史 as-run 的逐案完全一致率 ----
     hist = json.load(io.open(os.path.join(G, "盲法v14r5", "_blind93v14r5_results.json"), encoding="utf-8"))
     same = 0
     for c in SC:
@@ -135,12 +147,41 @@ def main():
         if h and h == set(normalize_units(P[c])):
             same += 1
     rate = same / float(len(SC))
-    out.append("4) 泄漏探测：与历史 as-run（`_blind93v14r5_results.json`）逐案主穴**完全一致** %d/%d = %.1f%%"
+    out.append("4b) 泄漏探测：与历史 as-run（`_blind93v14r5_results.json`）逐案主穴**完全一致** %d/%d = %.1f%%"
                % (same, len(SC), 100 * rate))
     if rate > 0.5:
         out.append("   **⚠ 告警**：一致率 >50%，该批很可能接触过仓库历史结果 → **不得作为盲法结论**，只能登记为「含协议泄漏的上界跑」。")
     else:
         out.append("   未触发告警阈值（50%）。")
+    out.append("")
+
+    # ---- 4c) 分层：复诊案（R-FU 链内） vs 单诊案 ----
+    rule = json.load(io.open(os.path.join(ROOT, "blind法对照实验", "P-N_开放重提炼",
+                                          "PN_followup_rule.json"), encoding="utf-8"))
+    chain_ids = set(x for ids in rule["患者分组(仅多案组)"].values() for x in ids)
+    for lbl, sub in (("链内复诊案", [c for c in SC if c in chain_ids]),
+                     ("单诊案", [c for c in SC if c not in chain_ids])):
+        if sub:
+            out.append("4c) %s n=%d：F1 = %.4f　TP/FP/FN = %d/%d/%d"
+                       % (lbl, len(sub), statistics.mean([f1s[c] for c in sub]),
+                          sum(len(set(normalize_units(P[c])) & GOLD[c]) for c in sub),
+                          sum(len(set(normalize_units(P[c])) - GOLD[c]) for c in sub),
+                          sum(len(GOLD[c] - set(normalize_units(P[c]))) for c in sub)))
+    out.append("")
+
+    # ---- 4d) 链内 gold 自重合度：说明 R-FU 在 canonical 口径下被结构化放大 ----
+    js = []
+    for ids in rule["患者分组(仅多案组)"].values():
+        ids = sorted(ids, key=lambda x: (int(x.split("_")[1]), x))
+        for i in range(1, len(ids)):
+            ga, gb = GOLD[ids[i]], GOLD[ids[i - 1]]
+            if ga | gb:
+                js.append(len(ga & gb) / float(len(ga | gb)))
+    if js:
+        out.append("4d) 链内相邻 gold Jaccard：均值 %.3f / 中位 %.3f（n=%d）"
+                   "——复诊案 gold 高度重复，'沿用上一诊' 在该口径下天然高分，"
+                   "故链内 F1 不可单独作为推理能力证据"
+                   % (statistics.mean(js), statistics.median(js), len(js)))
     out.append("")
 
     # ---- 5) 逐案差异（相对 v19 预测级） ----
