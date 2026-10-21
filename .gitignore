@@ -25,3 +25,6 @@ __pycache__/
 
 # 第二套对照技能（已蒸馏并入主技能，远程移除；本地保留工作区）
 renji-zhenjiu/
+
+# v19 blind rerun bundle (generated; rebuild with _build_harness.py)
+_blind_bundle_out/
