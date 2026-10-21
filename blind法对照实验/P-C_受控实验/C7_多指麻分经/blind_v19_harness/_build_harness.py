@@ -94,6 +94,8 @@ def render_case(cid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(ROOT, "_blind_bundle_out"))
+    ap.add_argument("--arm", default="A-1", choices=["A-1", "A-2"],
+                    help="A-1=带上游（全 86 案）；A-2=上游置空（仅重跑有上一诊的 25 案）")
     a = ap.parse_args()
 
     gold = pickle.load(open(os.path.join(BENCH, "_gold_results93v2.pkl"), "rb"))
@@ -113,24 +115,32 @@ def main():
     # ---- 分片：链整组不拆；S1–S3 先放链，再用单案填到 17 案，余下均分 S4/S5 ----
     chains_sorted = {g: sorted(ids, key=lambda x: (int(x.split("_")[1]), x))
                      for g, ids in chains.items()}
-    base = [("S1", ["66"]), ("S2", ["198", "216"]), ("S3", ["146", "156"])]
-    shards, used = [], set()
-    for name, groups in base:
-        ids = [c for g in groups for c in chains_sorted[g]]
-        used |= set(ids)
-        shards.append([name, ids])
-    rest = [c for c in sorted(SC, key=lambda x: (int(x.split("_")[1]), x)) if c not in used]
-    TARGET = 17
-    for sh in shards:
-        while len(sh[1]) < TARGET and rest:
-            sh[1].append(rest.pop(0))
-    half = (len(rest) + 1) // 2
-    shards.append(["S4", rest[:half]])
-    shards.append(["S5", rest[half:]])
+    if a.arm == "A-1":
+        base = [("S1", ["66"]), ("S2", ["198", "216"]), ("S3", ["146", "156"])]
+        shards, used = [], set()
+        for name, groups in base:
+            ids = [c for g in groups for c in chains_sorted[g]]
+            used |= set(ids)
+            shards.append([name, ids])
+        rest = [c for c in sorted(SC, key=lambda x: (int(x.split("_")[1]), x)) if c not in used]
+        TARGET = 17
+        for sh in shards:
+            while len(sh[1]) < TARGET and rest:
+                sh[1].append(rest.pop(0))
+        half = (len(rest) + 1) // 2
+        shards.append(["S4", rest[:half]])
+        shards.append(["S5", rest[half:]])
+        assert sum(len(v) for _, v in shards) == len(SC) == 86, (sum(len(v) for _, v in shards), len(SC))
+    else:
+        # A-2：只重跑「有上一诊」的 25 案；其余 61 案 prompt 与 A-1 逐字节相同，直接复用。
+        sel = [c for c in SC if prev_of.get(c)]
+        assert len(sel) == 25, len(sel)
+        shards = [["A2-S1", [c for c in chains_sorted["66"] if prev_of.get(c)]],
+                  ["A2-S2", [c for g in ("156", "198") for c in chains_sorted[g] if prev_of.get(c)]],
+                  ["A2-S3", [c for g in ("146", "216") for c in chains_sorted[g] if prev_of.get(c)]]]
+        assert sum(len(v) for _, v in shards) == 25, [len(v) for _, v in shards]
 
-    assert sum(len(v) for _, v in shards) == len(SC) == 86, (sum(len(v) for _, v in shards), len(SC))
-
-    bundle = os.path.join(a.out, "blind_v19_bundle")
+    bundle = os.path.join(a.out, "blind_v19_bundle" if a.arm == "A-1" else "blind_v19_bundle_A2")
     if os.path.isdir(bundle):
         shutil.rmtree(bundle)
     for sub in ("cases", "prompts", "skill", "runs"):
@@ -141,7 +151,8 @@ def main():
     shutil.copytree(SKILL_DIR, skill_dst)
 
     # ---- 案例 ----
-    index = {"arm": "A-1", "skill_version": "v19", "total": len(SC), "cases": {}}
+    index = {"arm": a.arm, "skill_version": "v19", "total": sum(len(v) for _, v in shards),
+             "cases": {}}
     order = []
     for name, ids in shards:
         for n, c in enumerate(ids, 1):
@@ -155,14 +166,16 @@ def main():
             encoding="utf-8", newline="\n").write(
         json.dumps(index, ensure_ascii=False, indent=2) + "\n")
 
-    run_plan = {"arm": "A-1", "skill_version": "v19",
-                "note": "链内必须按 order_in_shard 递增执行；跨片不共享上游。",
+    run_plan = {"arm": a.arm, "skill_version": "v19",
+                "note": "链内必须按 order_in_shard 递增执行；跨片不共享上游。" if a.arm == "A-1"
+                        else "A-2 臂：本臂不提供任何上游信息；链内仍按 order_in_shard 递增执行以便追溯。",
                 "shards": {name: [c for _, _, c in order if _ == name] for name, _ in shards}}
     io.open(os.path.join(bundle, "run_plan.json"), "w",
             encoding="utf-8", newline="\n").write(
         json.dumps(run_plan, ensure_ascii=False, indent=2) + "\n")
 
-    tpl = io.open(os.path.join(HERE, "prompt_template.md"), encoding="utf-8").read()
+    tpl = io.open(os.path.join(HERE, "prompt_template.md" if a.arm == "A-1"
+                               else "prompt_template_A2.md"), encoding="utf-8").read()
     for name, n, c in order:
         case_text = io.open(os.path.join(bundle, "cases", "%s.md" % c), encoding="utf-8").read()
         prev = prev_of.get(c)
@@ -173,7 +186,7 @@ def main():
         io.open(os.path.join(bundle, "prompts", "%s_%02d_%s.txt" % (name, n, c)), "w",
                 encoding="utf-8", newline="\n").write(body)
 
-    for f in ("README_执行者须知.md",):
+    for f in (("README_执行者须知.md",) if a.arm == "A-1" else ("README_执行者须知_A2.md",)):
         src = os.path.join(HERE, f)
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(bundle, f))
@@ -191,7 +204,7 @@ def main():
     io.open(os.path.join(bundle, "manifest.sha256"), "w", encoding="utf-8", newline="\n").write(mani)
 
     # ---- zip ----
-    zpath = os.path.join(a.out, "blind_v19_bundle.zip")
+    zpath = os.path.join(a.out, "blind_v19_bundle.zip" if a.arm == "A-1" else "blind_v19_bundle_A2.zip")
     if os.path.exists(zpath):
         os.remove(zpath)
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
@@ -200,9 +213,11 @@ def main():
                 p = os.path.join(r, f)
                 z.write(p, os.path.relpath(p, bundle).replace("\\", "/"))
 
-    msg = ["bundle = %s" % bundle,
+    msg = ["arm    = %s" % a.arm,
+           "bundle = %s" % bundle,
            "zip    = %s (%.2f MB)" % (zpath, os.path.getsize(zpath) / 1048576.0),
-           "cases  = %d（%s）" % (len(SC), "、".join("%s:%d" % (n, len(v)) for n, v in shards)),
+           "cases  = %d（%s）" % (sum(len(v) for _, v in shards),
+                                 "、".join("%s:%d" % (n, len(v)) for n, v in shards)),
            "skill  = %d files" % sum(len(fs) for _, _, fs in os.walk(skill_dst)),
            "manifest lines = %d" % len(mani.splitlines())]
     sys.stdout.buffer.write(("\n".join(msg) + "\n").encode("utf-8"))

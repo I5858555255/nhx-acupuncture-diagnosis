@@ -92,7 +92,21 @@ Claude Code 只需把上面的 `$dst` 换成 `$env:USERPROFILE\.claude\skills\do
 
 **R-FU 上游语义**：v19 的复诊延续层需要"上一诊主穴"通道。本协议用**执行者自己先前输出**充当该通道（＝v18 部署语义"用技能自己对上次案的输出"，不是 gold）。是否采纳由技能规则自行判定。跨片不共享上游（片内链已整组保序，见 `cases/_index.json` 的 `chain` / `prev_case`）。
 
-**允许的次要臂（Arm A-2，可选，预算允许再做一次）**：把 prompt 里「上游_上一诊主穴」一律填 `null`（等价"无上游通道"），可分离出"C7′ + 基础四层"的盲法水平。两臂结果分开报，**不得混算**。
+**次要臂 A-2（上游置空）**——已单独打包，只需重跑 **25 案**：
+
+```powershell
+python "blind法对照实验\P-C_受控实验\C7_多指麻分经\blind_v19_harness\_build_harness.py" --arm A-2
+# → D:\projectAGI\nhx\_blind_bundle_out\blind_v19_bundle_A2.zip（25 案，3 片 12/7/6）
+```
+
+- **为什么只 25 案**：86 案中只有 25 案有「上一诊」。其余 61 案的 prompt 在两臂**逐字节相同**，因此可直接复用 A-1 的结果，不必让对方重跑。
+- **判分**（组合臂，`--fill-from` 只允许补无上一诊的案，有上一诊的案**拒绝**跨臂复用）：
+
+```powershell
+python "...\score_blind_runs.py" --runs <A-2 runs> --fill-from <A-1 runs> --arm A-2 --out blind_v19_score_A2.txt
+```
+
+- **用途**：分离「C7′ + 基础四层」与「R-FU 链内」各自的盲法贡献；两臂结果**分开报，不得混算**。
 
 ---
 

@@ -48,7 +48,18 @@ def main():
     ap.add_argument("--runs", required=True)
     ap.add_argument("--arm", default="A-1")
     ap.add_argument("--out", default="blind_v19_score.txt")
+    ap.add_argument("--fill-from", default=None,
+                    help="A-2 臂专用：把「无上一诊」的案从该 runs 目录补齐（这些案两臂 prompt 完全相同）；"
+                         "有上一诊的案拒绝补齐")
     a = ap.parse_args()
+
+    rule = json.load(io.open(os.path.join(ROOT, "blind法对照实验", "P-N_开放重提炼",
+                                          "PN_followup_rule.json"), encoding="utf-8"))
+    prev_of = {}
+    for ids in rule["患者分组(仅多案组)"].values():
+        ids = sorted(ids, key=lambda x: (int(x.split("_")[1]), x))
+        for i, c in enumerate(ids):
+            prev_of[c] = ids[i - 1] if i else None
 
     gold = pickle.load(open(os.path.join(BENCH, "_gold_results93v2.pkl"), "rb"))
     SC = [c for c in gold["case_ids"] if len(gold["results"][c]["gold_members"]) > 0]
@@ -60,11 +71,26 @@ def main():
 
     # ---- 1) 完整性 / 合法性 ----
     missing, skipped, bad, P = [], [], [], {}
+    SRC = {}
+    filled, refused = [], []
     for c in SC:
         p = os.path.join(a.runs, "%s.json" % c)
         if not os.path.exists(p):
-            missing.append(c)
-            continue
+            if a.fill_from:
+                if prev_of.get(c):
+                    refused.append(c)
+                    missing.append(c)
+                    continue
+                p2 = os.path.join(a.fill_from, "%s.json" % c)
+                if os.path.exists(p2):
+                    p = p2
+                    filled.append(c)
+                else:
+                    missing.append(c)
+                    continue
+            else:
+                missing.append(c)
+                continue
         try:
             d = json.load(io.open(p, encoding="utf-8"))
         except Exception as e:
@@ -82,9 +108,16 @@ def main():
             bad.append("%s: case_id 不符 (%s)" % (c, d["case_id"]))
             continue
         P[c] = pts
+        SRC[c] = p
 
     out.append("1) 完整性：应 %d 案 / 实到 %d 案 / 缺失 %d / SKIPPED %d / 非法 %d"
                % (len(SC), len(P), len(missing), len(skipped), len(bad)))
+    if a.fill_from:
+        out.append("   组合臂：本臂独立生成 %d 案 + 从 `%s` 复用 %d 案（均为无上一诊案，两臂 prompt 逐字节相同）"
+                   % (len(SC) - len(filled) - len(missing), a.fill_from, len(filled)))
+        if refused:
+            out.append("   **拒收**：%d 案属「有上一诊」，不得跨臂复用 → %s"
+                       % (len(refused), "、".join(refused[:12])))
     for lbl, arr in (("缺失", missing), ("SKIPPED", skipped), ("非法", bad)):
         if arr:
             out.append("   [%s] %s" % (lbl, "；".join(arr[:12]) + ("…" if len(arr) > 12 else "")))
@@ -119,11 +152,11 @@ def main():
     out.append("")
     models = {}
     for c in SC:
-        d = json.load(io.open(os.path.join(a.runs, "%s.json" % c), encoding="utf-8"))
+        d = json.load(io.open(SRC[c], encoding="utf-8"))
         models[str(d.get("model", "未标注"))] = models.get(str(d.get("model", "未标注")), 0) + 1
     out.append("3) 执行者自报模型分布：%s" % "；".join("%s×%d" % (k, v) for k, v in sorted(models.items())))
     n_up = sum(1 for c in SC
-               if json.load(io.open(os.path.join(a.runs, "%s.json" % c), encoding="utf-8")).get("上游是否被采用"))
+               if json.load(io.open(SRC[c], encoding="utf-8")).get("上游是否被采用"))
     out.append("   上游采用案数（自报）：%d / %d" % (n_up, len(SC)))
     out.append("")
 
@@ -156,8 +189,6 @@ def main():
     out.append("")
 
     # ---- 4c) 分层：复诊案（R-FU 链内） vs 单诊案 ----
-    rule = json.load(io.open(os.path.join(ROOT, "blind法对照实验", "P-N_开放重提炼",
-                                          "PN_followup_rule.json"), encoding="utf-8"))
     chain_ids = set(x for ids in rule["患者分组(仅多案组)"].values() for x in ids)
     for lbl, sub in (("链内复诊案", [c for c in SC if c in chain_ids]),
                      ("单诊案", [c for c in SC if c not in chain_ids])):
